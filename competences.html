@@ -7,6 +7,13 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="icon" type="image/png" href="assets/favicon.png">
+  <style>
+    /* Ajustements pour les accordéons en thème sombre */
+    .accordion-item { background-color: rgba(255, 255, 255, 0.02); border-color: rgba(255,255,255,0.1); }
+    .accordion-button { background-color: rgba(0, 0, 0, 0.2); color: var(--bs-body-color); }
+    .accordion-button:not(.collapsed) { background-color: rgba(255, 15, 47, 0.1); color: #ff0f2f; box-shadow: none; }
+    .accordion-button::after { filter: invert(1); }
+  </style>
 </head>
 <body>
 
@@ -65,246 +72,460 @@
 
         <div class="tab-content" id="competencesTabsContent">
           
-          <!-- ONGLET 1 : ADMINISTRER -->
+          <!-- ============================== -->
+          <!-- ONGLET 1 : ADMINISTRER         -->
+          <!-- ============================== -->
           <div class="tab-pane fade show active" id="admin" role="tabpanel" aria-labelledby="admin-tab">
-            <div class="card p-4 p-md-5 shadow-lg reveal">
+            <div class="card p-4 shadow-lg reveal">
               <h2 class="h3 border-start border-4 border-danger ps-3 mb-4">Compétence : Administrer les réseaux et l'Internet</h2>
               
-              <!-- Liste des AC -->
-              <div class="mb-5">
-                <h4 class="h5 mb-3">Liste des Apprentissages Critiques (AC) :</h4>
-                <ul class="list-group list-group-flush border border-secondary rounded">
-                  <li class="list-group-item bg-transparent text-light border-secondary">
-                    <strong>AC11.01</strong> | Maîtriser les lois fondamentales de l’électricité afin d’intervenir sur des équipements de réseaux et télécommunications
-                    <div class="mt-2">
-                      <span class="badge bg-primary">R1.04 - Fondamentaux des systèmes électroniques</span>
-                    </div>
-                  </li>
-                  <li class="list-group-item bg-transparent text-light border-secondary">
-                    <strong>AC11.02</strong> | Comprendre l'architecture et les fondements des systèmes numériques, les principes du codage de l'information, des communications et de l'Internet
-                    <div class="mt-2">
-                      <span class="badge bg-primary">R1.06 - Architecture des systèmes numériques</span>
-                      <span class="badge bg-secondary">R2.06 - Numérisation de l'information</span>
-                    </div>
-                  </li>
-                  <li class="list-group-item bg-transparent text-light border-secondary">
-                    <strong>AC11.03</strong> | Configurer les fonctions de base du réseau local
-                    <div class="mt-2">
-                      <span class="badge bg-primary">R1.01 - Initiation aux réseaux informatiques</span>
-                      <span class="badge bg-secondary">R1.03 - Réseaux locaux et Equipements actifs</span>
-                    </div>
-                  </li>
-                  <li class="list-group-item bg-transparent text-light border-secondary">
-                    <strong>AC11.04</strong> | Maîtriser les rôles et les principes fondamentaux des systèmes d’exploitation afin d’interagir avec ceux-ci pour la configuration et l'administration des réseaux et services fournis
-                    <div class="mt-2">
-                      <span class="badge bg-primary">R1.08 - Base des systèmes d'exploitation</span>
-                      <span class="badge bg-secondary">R2.02 - Administration système et virtualisation</span>
-                    </div>
-                  </li>
-                  <li class="list-group-item bg-transparent text-light border-secondary">
-                    <strong>AC11.05</strong> | Identifier les dysfonctionnements du réseau local et savoir les signaler
-                    <div class="mt-2">
-                      <span class="badge bg-primary">R1.02 - Principes et architecture des réseaux</span>
-                      <span class="badge bg-secondary">R2.03 - Base des services réseaux</span>
-                    </div>
-                  </li>
-                  <li class="list-group-item bg-transparent text-light border-secondary">
-                    <strong>AC11.06</strong> | Installer un poste client, expliquer la procédure mise en place
-                    <div class="mt-2">
-                      <span class="badge bg-primary">R1.08 - Base des systèmes d'exploitation</span>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-
-              <!-- Trace détaillée -->
-              <div class="p-4 rounded border border-secondary" style="background-color: rgba(255, 255, 255, 0.02);">
-                <h4 class="h5 text-primary mb-4">Zoom sur : Exploiter des systèmes d'exploitation serveurs (Windows Server)</h4>
-                <p><strong>Ce que j'ai fait :</strong> J'ai conçu et déployé une infrastructure réseau centralisée sous Windows Server 2016. J'ai mis en place une architecture Active Directory avec des groupes distincts (Élèves/Profs), géré des points de montage NTFS, et automatisé le déploiement de logiciels via des GPO. J'ai également créé un script PowerShell pour automatiser la création des comptes.</p>
-                <p><strong>Pourquoi je l'ai fait :</strong> L'objectif était de centraliser l'authentification, de sécuriser les données via le "Moindre Privilège", et d'automatiser les tâches répétitives pour déployer les ressources de manière industrielle et sécurisée.</p>
-                <p><strong>Comment je l'ai fait :</strong> J'ai utilisé l'outil <em>Utilisateurs et ordinateurs Active Directory</em>. J'ai configuré les partages réseau en "Contrôle total" pour laisser la couche locale (NTFS) gérer les permissions restrictives. J'ai également développé un script <code>script.ps1</code> utilisant les cmdlets <code>New-ADUser</code>, <code>New-Item</code> et l'outil <code>icacls</code>.</p>
-                <p><strong>Mes difficultés :</strong> Comprendre que la permission finale est la plus restrictive entre celle du partage et celle du NTFS a été complexe. La syntaxe de l'outil <code>icacls</code> dans PowerShell a également demandé de la rigueur. J'ai dû forcer les mises à jour de stratégies avec <code>gpupdate /force</code>.</p>
-                <p><strong>Ce que j'en ai appris :</strong> J'ai saisi la différence fondamentale entre permissions réseau et locales. J'ai surtout pris conscience de l'importance de l'industrialisation (scripts, GPO) pour garantir la conformité d'un parc informatique.</p>
-                <p class="mb-4"><strong>Ce que je ferais autrement :</strong> Pour le script PowerShell, je ferais évoluer mon code pour qu'il lise un fichier <code>.csv</code> contenant les données de dizaines d'utilisateurs, permettant d'importer une promotion entière d'un seul coup.</p>
-
-                <div class="mt-4 p-3 border border-secondary rounded" style="background-color: rgba(255, 15, 47, 0.05);">
-                  <h5 class="h6 text-primary fw-bold mb-3">📸 Traces ciblées :</h5>
-                  <div class="row g-3">
-                    <div class="col-md-6 text-center">
-                      <p class="small text-muted mb-2"><em>Organisation des groupes AD</em></p>
-                      <img src="assets/trace1.png" alt="Capture Active Directory" class="img-fluid rounded border border-secondary zoomable-image" style="max-height: 200px; object-fit: cover;">
-                    </div>
-                    <div class="col-md-6 text-center">
-                      <p class="small text-muted mb-2"><em>Script d'automatisation PowerShell</em></p>
-                      <img src="assets/trace2.png" alt="Capture PowerShell" class="img-fluid rounded border border-secondary zoomable-image" style="max-height: 200px; object-fit: cover;">
+              <div class="accordion" id="accordionAdmin">
+                
+                <!-- AC 11.01 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ac1101">
+                      <strong>AC11.01</strong> &nbsp;| Maîtriser les lois fondamentales de l’électricité afin d’intervenir sur des équipements
+                    </button>
+                  </h2>
+                  <div id="ac1101" class="accordion-collapse collapse" data-bs-parent="#accordionAdmin">
+                    <div class="accordion-body">
+                      <div class="mb-3">
+                        <span class="badge bg-primary">R1.04 - Fondamentaux des systèmes électroniques</span>
+                      </div>
+                      <p><strong>Ce que j'ai fait :</strong> J'ai réalisé des montages de circuits électriques sur platines d'essais, effectué des mesures avec des multimètres et vérifié les lois de Kirchhoff (mailles et nœuds) ainsi que la loi d'Ohm.</p>
+                      <p><strong>Pourquoi je l'ai fait :</strong> C'est indispensable pour comprendre la couche physique des réseaux (couche 1 du modèle OSI) et savoir comment le signal électrique transite dans nos câbles (PoE, signaux binaires).</p>
+                      <p><strong>Comment je l'ai fait :</strong> En TP, j'ai câblé des résistances en série et en parallèle, et utilisé des générateurs de tension continue. J'ai ensuite consigné les valeurs théoriques et pratiques dans un tableau.</p>
+                      <p><strong>Mes difficultés :</strong> La manipulation des outils de mesure pour éviter les courts-circuits et bien comprendre la différence de branchement (série pour l'ampèremètre, parallèle pour le voltmètre) a demandé un temps d'adaptation.</p>
+                      <p><strong>Ce que j'en ai appris :</strong> J'ai validé la théorie par la pratique et compris l'importance de l'atténuation du signal dans un support physique.</p>
+                      <p><strong>Ce que je ferais autrement :</strong> Je prendrais le temps de modéliser systématiquement le circuit sur un simulateur (comme LTspice) avant de passer au câblage réel pour anticiper les résultats.</p>
                     </div>
                   </div>
                 </div>
-              </div>
 
+                <!-- AC 11.02 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ac1102">
+                      <strong>AC11.02</strong> &nbsp;| Comprendre l'architecture et les fondements des systèmes numériques et de l'Internet
+                    </button>
+                  </h2>
+                  <div id="ac1102" class="accordion-collapse collapse" data-bs-parent="#accordionAdmin">
+                    <div class="accordion-body">
+                      <div class="mb-3">
+                        <span class="badge bg-primary">R1.06 - Architecture des systèmes numériques</span>
+                        <span class="badge bg-secondary">R2.06 - Numérisation de l'information</span>
+                      </div>
+                      <p><strong>Ce que j'ai fait :</strong> J'ai étudié le fonctionnement interne d'un processeur, réalisé des conversions de bases (binaire, hexadécimal) et travaillé sur la logique combinatoire (portes logiques, tables de vérité).</p>
+                      <p><strong>Pourquoi je l'ai fait :</strong> Pour comprendre comment une machine (ordinateur ou routeur) traite réellement l'information au niveau matériel et comment les masques sous-réseaux sont calculés mathématiquement.</p>
+                      <p><strong>Comment je l'ai fait :</strong> Par des exercices d'algèbre de Boole, des simplifications de tableaux de Karnaugh, et l'utilisation de simulateurs logiques (Logisim) pour recréer des additionneurs binaires.</p>
+                      <p><strong>Mes difficultés :</strong> L'abstraction mathématique de l'algèbre de Boole et la méthode de Karnaugh pour simplifier les équations complexes m'ont demandé beaucoup de concentration.</p>
+                      <p><strong>Ce que j'en ai appris :</strong> J'ai une vision claire de la façon dont le code est traduit en impulsions électriques, ce qui m'aide énormément pour comprendre l'adressage IPv4 et IPv6.</p>
+                      <p><strong>Ce que je ferais autrement :</strong> J'utiliserais des outils de visualisation en ligne plus souvent pour m'entraîner à la conversion binaire de tête de manière plus ludique.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- AC 11.03 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ac1103">
+                      <strong>AC11.03</strong> &nbsp;| Configurer les fonctions de base du réseau local
+                    </button>
+                  </h2>
+                  <div id="ac1103" class="accordion-collapse collapse" data-bs-parent="#accordionAdmin">
+                    <div class="accordion-body">
+                      <div class="mb-3">
+                        <span class="badge bg-primary">R1.01 - Initiation aux réseaux</span>
+                        <span class="badge bg-secondary">R1.03 - Réseaux locaux</span>
+                      </div>
+                      <p><strong>Ce que j'ai fait :</strong> J'ai configuré des commutateurs et routeurs Cisco. J'ai mis en place des VLANs, configuré le routage inter-VLAN (Router-on-a-Stick), et défini des routes statiques.</p>
+                      <p><strong>Pourquoi je l'ai fait :</strong> Pour segmenter un réseau d'entreprise, isoler les différents services (RH, Production, Serveurs) et assurer la communication entre eux de manière contrôlée.</p>
+                      <p><strong>Comment je l'ai fait :</strong> J'ai d'abord simulé la topologie sur Cisco Packet Tracer, puis j'ai implémenté les commandes CLI (IOS Cisco) sur du matériel physique en baie de brassage via un câble console.</p>
+                      <p><strong>Mes difficultés :</strong> Mémoriser l'arborescence des modes de commandes Cisco (mode utilisateur, privilégié, configuration globale) et diagnostiquer les erreurs de configuration sur les ports Trunk.</p>
+                      <p><strong>Ce que j'en ai appris :</strong> Je maîtrise la logique d'acheminement des trames MAC (couche 2) et des paquets IP (couche 3), et l'importance cruciale de la documentation réseau.</p>
+                      <p><strong>Ce que je ferais autrement :</strong> Je prendrais l'habitude de sauvegarder mes configurations (`copy run start`) beaucoup plus régulièrement lors de mes TP sur matériel réel pour éviter les pertes de données.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- AC 11.04 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ac1104">
+                      <strong>AC11.04</strong> &nbsp;| Systèmes d’exploitation et administration des réseaux/services (Windows Server)
+                    </button>
+                  </h2>
+                  <div id="ac1104" class="accordion-collapse collapse" data-bs-parent="#accordionAdmin">
+                    <div class="accordion-body">
+                      <div class="mb-3">
+                        <span class="badge bg-primary">R1.08 - Base des systèmes d'exploitation</span>
+                        <span class="badge bg-secondary">R2.02 - Administration système</span>
+                      </div>
+                      <p><strong>Ce que j'ai fait :</strong> J'ai conçu et déployé une infrastructure centralisée sous Windows Server 2016. J'ai créé un domaine Active Directory, organisé des OU (Élèves/Profs), géré des partages NTFS et automatisé la création des comptes avec un script PowerShell.</p>
+                      <p><strong>Pourquoi je l'ai fait :</strong> Pour centraliser l'authentification des utilisateurs, sécuriser les données via le principe du "Moindre Privilège", et automatiser des tâches d'administration lourdes.</p>
+                      <p><strong>Comment je l'ai fait :</strong> En utilisant l'interface <em>Utilisateurs et ordinateurs Active Directory</em> et les GPO. Pour les permissions, j'ai configuré les partages en "Contrôle total" et géré les restrictions via NTFS. J'ai scripté avec les cmdlets <code>New-ADUser</code> et <code>icacls</code>.</p>
+                      <p><strong>Mes difficultés :</strong> Comprendre que la permission effective est la plus restrictive entre celle du partage réseau et celle du système de fichiers NTFS. La syntaxe PowerShell m'a également demandé beaucoup de rigueur.</p>
+                      <p><strong>Ce que j'en ai appris :</strong> La différence fondamentale entre permissions réseau et locales. J'ai pris conscience de l'importance de l'automatisation pour l'industrialisation d'un SI.</p>
+                      <p><strong>Ce que je ferais autrement :</strong> Mon script PowerShell pourrait être amélioré pour lire directement les données d'un fichier <code>.csv</code> fourni par les RH, afin d'importer toute une promotion d'un seul coup.</p>
+                      
+                      <!-- Traces -->
+                      <div class="mt-4 p-3 border border-secondary rounded" style="background-color: rgba(255, 15, 47, 0.05);">
+                        <h5 class="h6 text-primary fw-bold mb-3">📸 Traces ciblées :</h5>
+                        <div class="row g-3">
+                          <div class="col-md-6 text-center">
+                            <p class="small text-muted mb-2"><em>Organisation des groupes AD</em></p>
+                            <img src="assets/trace1.png" alt="Capture Active Directory" class="img-fluid rounded border border-secondary zoomable-image" style="max-height: 200px; object-fit: cover;">
+                          </div>
+                          <div class="col-md-6 text-center">
+                            <p class="small text-muted mb-2"><em>Script d'automatisation PowerShell</em></p>
+                            <img src="assets/trace2.png" alt="Capture PowerShell" class="img-fluid rounded border border-secondary zoomable-image" style="max-height: 200px; object-fit: cover;">
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+                <!-- AC 11.05 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ac1105">
+                      <strong>AC11.05</strong> &nbsp;| Identifier les dysfonctionnements du réseau local et savoir les signaler
+                    </button>
+                  </h2>
+                  <div id="ac1105" class="accordion-collapse collapse" data-bs-parent="#accordionAdmin">
+                    <div class="accordion-body">
+                      <div class="mb-3">
+                        <span class="badge bg-primary">R1.02 - Principes des réseaux</span>
+                        <span class="badge bg-secondary">R2.03 - Base des services réseaux</span>
+                      </div>
+                      <p><strong>Ce que j'ai fait :</strong> J'ai utilisé l'analyseur de trames Wireshark pour capturer du trafic et identifier l'origine de pannes réseau (boucles de routage, requêtes DHCP sans réponse).</p>
+                      <p><strong>Pourquoi je l'ai fait :</strong> Le "troubleshooting" (dépannage) est le cœur du métier R&T. Il faut savoir isoler un problème plutôt que de deviner son origine.</p>
+                      <p><strong>Comment je l'ai fait :</strong> En appliquant une méthode "Bottom-Up" (de la couche physique 1 à la couche applicative 7). Utilisation des commandes <code>ping</code>, <code>tracert / traceroute</code>, et des filtres Wireshark (ex: <code>ip.addr == ...</code>).</p>
+                      <p><strong>Mes difficultés :</strong> Lire et interpréter les paquets directement dans leurs formats bruts (hexadécimal) et comprendre la structure des entêtes (TCP, IP).</p>
+                      <p><strong>Ce que j'en ai appris :</strong> Les commandes de diagnostic de base sont très puissantes. J'ai appris à ne jamais paniquer face à une panne et à procéder par élimination.</p>
+                      <p><strong>Ce que je ferais autrement :</strong> Rédiger des fiches d'incidents plus détaillées ("tickets") lors des TP pour documenter la panne, ses causes, et la solution apportée, comme on le fait en entreprise.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- AC 11.06 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ac1106">
+                      <strong>AC11.06</strong> &nbsp;| Installer un poste client, expliquer la procédure mise en place
+                    </button>
+                  </h2>
+                  <div id="ac1106" class="accordion-collapse collapse" data-bs-parent="#accordionAdmin">
+                    <div class="accordion-body">
+                      <div class="mb-3">
+                        <span class="badge bg-primary">R1.08 - Base des systèmes d'exploitation</span>
+                      </div>
+                      <p><strong>Ce que j'ai fait :</strong> J'ai installé des systèmes d'exploitation clients (Windows 10, Ubuntu Linux) sur des machines physiques et des machines virtuelles (VirtualBox, VMware). J'ai configuré leurs paramètres réseaux.</p>
+                      <p><strong>Pourquoi je l'ai fait :</strong> Pour fournir un environnement de travail fonctionnel à un utilisateur final et le connecter au réseau local de l'entreprise.</p>
+                      <p><strong>Comment je l'ai fait :</strong> Création de clés USB bootables avec l'outil Rufus, gestion des séquences de boot dans le BIOS/UEFI, partitionnement des disques, et jonction aux domaines Active Directory.</p>
+                      <p><strong>Mes difficultés :</strong> Comprendre les différents types de partitionnement (MBR vs GPT) et les problèmes de pilotes (drivers) de cartes réseau post-installation.</p>
+                      <p><strong>Ce que j'en ai appris :</strong> L'importance de la phase de post-installation (mises à jour de sécurité, configuration des pare-feux locaux, installation d'antivirus).</p>
+                      <p><strong>Ce que je ferais autrement :</strong> Je m'intéresserais davantage aux outils de déploiement d'images réseau (comme WDS ou FOG) pour ne plus avoir à faire ces installations manuellement poste par poste.</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div> <!-- End Accordion -->
             </div>
           </div>
 
-          <!-- ONGLET 2 : CONNECTER -->
+          <!-- ============================== -->
+          <!-- ONGLET 2 : CONNECTER           -->
+          <!-- ============================== -->
           <div class="tab-pane fade" id="connect" role="tabpanel" aria-labelledby="connect-tab">
-            <div class="card p-4 p-md-5 shadow-lg reveal">
+            <div class="card p-4 shadow-lg reveal">
               <h2 class="h3 border-start border-4 border-danger ps-3 mb-4">Compétence : Connecter les entreprises et les usagers</h2>
               
-              <!-- Liste des AC -->
-              <div class="mb-5">
-                <h4 class="h5 mb-3">Liste des Apprentissages Critiques (AC) :</h4>
-                <ul class="list-group list-group-flush border border-secondary rounded">
-                  <li class="list-group-item bg-transparent text-light border-secondary">
-                    <strong>AC12.01</strong> | Mesurer, analyser et commenter les signaux
-                    <div class="mt-2">
-                      <span class="badge bg-primary">R1.13 - Mathématiques du signal</span>
-                      <span class="badge bg-secondary">R2.05 - Signaux et systèmes pour les transmissions</span>
-                    </div>
-                  </li>
-                  <li class="list-group-item bg-transparent text-light border-secondary">
-                    <strong>AC12.02</strong> | Caractériser des systèmes de transmissions élémentaires et découvrir la modélisation mathématique de leur fonctionnement
-                    <div class="mt-2">
-                      <span class="badge bg-primary">R1.14 - Mathématiques des transmissions</span>
-                      <span class="badge bg-secondary">R2.14 - Mathématiques des transmissions</span>
-                    </div>
-                  </li>
-                  <li class="list-group-item bg-transparent text-light border-secondary">
-                    <strong>AC12.03</strong> | Déployer des supports de transmission
-                    <div class="mt-2">
-                      <span class="badge bg-primary">R1.05 - Supports de transmission pour les réseaux</span>
-                    </div>
-                  </li>
-                  <li class="list-group-item bg-transparent text-light border-secondary">
-                    <strong>AC12.04</strong> | Connecter les systèmes de ToIP
-                    <div class="mt-2">
-                      <span class="badge bg-primary">R2.04 - Initiation à la téléphonie d'entreprise</span>
-                    </div>
-                  </li>
-                  <li class="list-group-item bg-transparent text-light border-secondary">
-                    <strong>AC12.05</strong> | Communiquer avec un tiers (client, collaborateur...) et adapter son discours et sa langue à son interlocuteur
-                    <div class="mt-2">
-                      <span class="badge bg-primary">R1.11 / R2.11 - Communication</span>
-                    </div>
-                  </li>
-                </ul>
-              </div>
+              <div class="accordion" id="accordionConnect">
 
-              <!-- Trace détaillée -->
-              <div class="p-4 rounded border border-secondary" style="background-color: rgba(255, 255, 255, 0.02);">
-                <h4 class="h5 text-primary mb-4">Zoom sur : AC 12.04 : Connecter les systèmes de ToIP (Téléphonie sur IP)</h4>
-                <p><strong>Ce que j'ai fait :</strong> J'ai déployé et configuré un serveur de téléphonie IPBX sous Asterisk (Linux Alpine). J'ai configuré des téléphones physiques de différentes marques : des postes Fanvil (via leur interface web graphique) et des postes Cisco (via auto-provisioning avec un serveur TFTP). J'ai également paramétré un plan de numérotation avec la gestion de la messagerie vocale (Voicemail) et un serveur vocal interactif (IVR).</p>
-                <p><strong>Pourquoi je l'ai fait :</strong> L'objectif était de mettre en place une infrastructure de communication complète permettant aux collaborateurs d'une entreprise de s'appeler en interne, de laisser des messages en cas de non-réponse, et de filtrer les appels entrants via un menu vocal automatisé, tout en garantissant l'interopérabilité entre différents constructeurs (Cisco et Fanvil).</p>
-                <p><strong>Comment je l'ai fait :</strong> Dans Asterisk, j'ai manipulé le fichier <code>pjsip.conf</code> pour déclarer les comptes SIP (endpoints, auth, aor) et le fichier <code>extensions.conf</code> pour définir le comportement du réseau (le Dialplan). Pour les téléphones Fanvil, j'ai renseigné manuellement l'IP du serveur SIP et l'authentification dans l'interface web. Pour les postes Cisco, j'ai installé un service <code>in.tftpd</code> et configuré des fichiers XML (ex: <code>SEP<MAC>.cnf.xml</code>) pour qu'ils récupèrent automatiquement leur configuration au démarrage sur le réseau.</p>
-                <p><strong>Mes difficultés :</strong> La syntaxe des fichiers de configuration Asterisk est très stricte. J'ai rencontré des difficultés avec la gestion des adresses IP et l'enregistrement des téléphones (problèmes de <em>bind</em> ou d'identifiants incorrects dans <code>pjsip.conf</code>). De plus, l'auto-provisioning des téléphones Cisco exigeait que le nom du fichier XML contienne la bonne adresse MAC sans aucune erreur de formatage.</p>
-                <p><strong>Ce que j'en ai appris :</strong> J'ai compris le fonctionnement concret du protocole SIP (utilisant le port UDP 5060) pour l'établissement des sessions. J'ai également saisi l'énorme avantage de l'auto-provisioning (TFTP/XML) en milieu professionnel par rapport à une configuration manuelle poste par poste via interface web.</p>
-                <p class="mb-4"><strong>Ce que je ferais autrement :</strong> Plutôt que de copier et de modifier manuellement le fichier XML <code>SEP_MAC-CISCO_.cnf.xml</code> pour chaque poste Cisco, je développerais un script Bash ou Python qui prendrait en entrée un fichier CSV (contenant les adresses MAC et les numéros d'extension) pour générer automatiquement tous les fichiers XML dans le dossier <code>/var/tftpboot</code>.</p>
-
-                <div class="mt-4 p-3 border border-secondary rounded" style="background-color: rgba(255, 15, 47, 0.05);">
-                  <h5 class="h6 text-primary fw-bold mb-3">📸 Traces ciblées :</h5>
-                  <div class="row g-3">
-                    <div class="col-md-6 text-center">
-                      <p class="small text-muted mb-2"><em>Fichier extensions.conf (Dialplan)</em></p>
-                      <img src="assets/trace5.png" alt="Asterisk extensions.conf" class="img-fluid rounded border border-secondary zoomable-image" style="max-height: 200px; object-fit: cover;">
-                    </div>
-                    <div class="col-md-6 text-center">
-                      <p class="small text-muted mb-2"><em>Fichier pjsip.conf (Enregistrement SIP)</em></p>
-                      <img src="assets/trace6.png" alt="Asterisk pjsip.conf" class="img-fluid rounded border border-secondary zoomable-image" style="max-height: 200px; object-fit: cover;">
-                    </div>
-                    <div class="col-md-6 text-center">
-                      <p class="small text-muted mb-2"><em>Fichier pjsip.conf (Enregistrement SIP)</em></p>
-                      <img src="assets/trace7.png" alt="Asterisk pjsip.conf" class="img-fluid rounded border border-secondary zoomable-image" style="max-height: 200px; object-fit: cover;">
+                <!-- AC 12.01 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ac1201">
+                      <strong>AC12.01</strong> &nbsp;| Mesurer, analyser et commenter les signaux
+                    </button>
+                  </h2>
+                  <div id="ac1201" class="accordion-collapse collapse" data-bs-parent="#accordionConnect">
+                    <div class="accordion-body">
+                      <div class="mb-3">
+                        <span class="badge bg-primary">R1.13 - Mathématiques du signal</span>
+                        <span class="badge bg-secondary">R2.05 - Signaux et systèmes</span>
+                      </div>
+                      <p><strong>Ce que j'ai fait :</strong> J'ai généré des signaux électriques (carrés, sinusoïdaux) et je les ai mesurés à l'aide d'oscilloscopes numériques pour en analyser le comportement dans le temps et en fréquence.</p>
+                      <p><strong>Pourquoi je l'ai fait :</strong> L'information transmise sur les réseaux (comme l'ADSL ou la fibre) repose sur des variations de signaux. Comprendre ces phénomènes permet de diagnostiquer les erreurs de transmission (bruit, atténuation).</p>
+                      <p><strong>Comment je l'ai fait :</strong> Utilisation de générateurs de basses fréquences (GBF), réglage des bases de temps et des déclencheurs (triggers) sur l'oscilloscope, et calculs de périodes, fréquences, et amplitudes.</p>
+                      <p><strong>Mes difficultés :</strong> La stabilisation d'un signal complexe à l'écran à l'aide de la fonction trigger, et le calcul mental rapide pour passer des divisions de l'écran aux valeurs réelles.</p>
+                      <p><strong>Ce que j'en ai appris :</strong> Un signal théorique carré n'est jamais parfait en réalité (temps de montée, de descente, dépassement), ce qui impacte la vitesse maximale de transmission des données (débit binaire).</p>
+                      <p><strong>Ce que je ferais autrement :</strong> J'utiliserais les fonctionnalités d'export USB de l'oscilloscope pour intégrer de vraies courbes dans mes comptes rendus de TP au lieu de les dessiner schématiquement.</p>
                     </div>
                   </div>
                 </div>
-              </div>
 
+                <!-- AC 12.02 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ac1202">
+                      <strong>AC12.02</strong> &nbsp;| Caractériser des systèmes de transmissions élémentaires (Modélisation)
+                    </button>
+                  </h2>
+                  <div id="ac1202" class="accordion-collapse collapse" data-bs-parent="#accordionConnect">
+                    <div class="accordion-body">
+                      <div class="mb-3">
+                        <span class="badge bg-primary">R1.14 - Mathématiques des transmissions</span>
+                        <span class="badge bg-secondary">SAE 1.03 - Découvrir un dispositif de transmission</span>
+                      </div>
+                      <p><strong>Ce que j'ai fait :</strong> Dans le cadre de la SAE 1.03, j'ai modélisé mathématiquement et numériquement une ligne de transmission en cuivre (câble coaxial, paires torsadées) à l'aide du logiciel LTspice.</p>
+                      <p><strong>Pourquoi je l'ai fait :</strong> Pour anticiper la dégradation du signal selon la longueur du câble, sans avoir besoin de dérouler physiquement des kilomètres de cuivre.</p>
+                      <p><strong>Comment je l'ai fait :</strong> En modélisant des tronçons de ligne par des composants élémentaires (Résistances, Inductances, Condensateurs = schéma RLC série/parallèle), puis en lançant des simulations temporelles et fréquentielles (diagrammes de Bode).</p>
+                      <p><strong>Mes difficultés :</strong> La prise en main de l'interface de LTspice, un peu austère, et la corrélation entre les équations mathématiques théoriques vues en cours et les résultats de la simulation.</p>
+                      <p><strong>Ce que j'en ai appris :</strong> J'ai visuellement compris pourquoi la longueur d'un câble Ethernet RJ45 est limitée à environ 100 mètres avant de subir une atténuation trop sévère nécessitant un répéteur.</p>
+                      <p><strong>Ce que je ferais autrement :</strong> Je prendrais le temps d'explorer l'outil MATLAB/Simulink en parallèle pour obtenir des graphiques plus esthétiques pour mes rapports de projet.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- AC 12.03 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ac1203">
+                      <strong>AC12.03</strong> &nbsp;| Déployer des supports de transmission
+                    </button>
+                  </h2>
+                  <div id="ac1203" class="accordion-collapse collapse" data-bs-parent="#accordionConnect">
+                    <div class="accordion-body">
+                      <div class="mb-3">
+                        <span class="badge bg-primary">R1.05 - Supports de transmission pour les réseaux</span>
+                      </div>
+                      <p><strong>Ce que j'ai fait :</strong> J'ai réalisé du câblage réseau physique (fabrication de cordons RJ45 droits et croisés) et testé la connectivité de la baie de brassage jusqu'aux prises murales.</p>
+                      <p><strong>Pourquoi je l'ai fait :</strong> Le câblage est la base de toute infrastructure. Un mauvais sertissage peut causer des erreurs intermittentes extrêmement complexes à détecter au niveau logique (pertes de paquets, chute de débit).</p>
+                      <p><strong>Comment je l'ai fait :</strong> À l'aide de pinces à sertir, de pinces à dénuder et de câbles UTP/STP. J'ai respecté scrupuleusement la norme de câblage T568B, puis testé mes câbles avec un testeur de continuité.</p>
+                      <p><strong>Mes difficultés :</strong> Maintenir les 8 petits fils de cuivre alignés dans le bon ordre de couleur lors de l'insertion dans l'embout RJ45 avant de serrer avec la pince.</p>
+                      <p><strong>Ce que j'en ai appris :</strong> La rigueur manuelle est aussi importante que la logique informatique. J'ai également compris le rôle du blindage (feuille d'aluminium) contre les interférences électromagnétiques (EMI).</p>
+                      <p><strong>Ce que je ferais autrement :</strong> J'aimerais m'entraîner davantage sur les supports optiques (fibre) et utiliser une soudeuse à fibre optique, car c'est le standard de demain.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- AC 12.04 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ac1204">
+                      <strong>AC12.04</strong> &nbsp;| Connecter les systèmes de ToIP (Asterisk / VoIP)
+                    </button>
+                  </h2>
+                  <div id="ac1204" class="accordion-collapse collapse" data-bs-parent="#accordionConnect">
+                    <div class="accordion-body">
+                      <div class="mb-3">
+                        <span class="badge bg-primary">R2.04 - Initiation à la téléphonie d'entreprise</span>
+                      </div>
+                      <p><strong>Ce que j'ai fait :</strong> J'ai déployé un serveur IPBX sous Asterisk (Linux Alpine), configuré des postes Fanvil (interface web) et des téléphones Cisco via auto-provisioning (serveur TFTP). J'ai paramétré le Dialplan (messagerie, serveur vocal interactif).</p>
+                      <p><strong>Pourquoi je l'ai fait :</strong> Pour mettre en place une infrastructure de communication permettant aux collaborateurs de s'appeler, tout en garantissant l'interopérabilité entre différents constructeurs via le protocole SIP.</p>
+                      <p><strong>Comment je l'ai fait :</strong> Dans Asterisk, manipulation des fichiers <code>pjsip.conf</code> (endpoints, auth) et <code>extensions.conf</code> (le Dialplan). Pour les Cisco, installation d'un service <code>in.tftpd</code> et création de fichiers XML (ex: <code>SEP<MAC>.cnf.xml</code>).</p>
+                      <p><strong>Mes difficultés :</strong> La syntaxe stricte d'Asterisk. Des soucis d'enregistrement SIP (erreurs de bind ou d'identifiants). L'auto-provisioning Cisco exigeait que le nom du fichier XML contienne la bonne adresse MAC sans aucune erreur.</p>
+                      <p><strong>Ce que j'en ai appris :</strong> Le fonctionnement du SIP (port UDP 5060) pour l'établissement des sessions. J'ai saisi l'avantage de l'auto-provisioning en milieu professionnel (déploiement de masse) face à la configuration manuelle.</p>
+                      <p><strong>Ce que je ferais autrement :</strong> Plutôt que de copier manuellement les fichiers XML, je développerais un script Python prenant en entrée un fichier CSV (MAC et extensions) pour générer automatiquement tous les fichiers de configuration.</p>
+                      
+                      <!-- Traces -->
+                      <div class="mt-4 p-3 border border-secondary rounded" style="background-color: rgba(255, 15, 47, 0.05);">
+                        <h5 class="h6 text-primary fw-bold mb-3">📸 Traces ciblées :</h5>
+                        <div class="row g-3">
+                          <div class="col-md-4 text-center">
+                            <p class="small text-muted mb-2"><em>Dialplan extensions.conf</em></p>
+                            <img src="assets/trace5.png" alt="Asterisk config" class="img-fluid rounded border border-secondary zoomable-image" style="max-height: 150px; object-fit: cover;">
+                          </div>
+                          <div class="col-md-4 text-center">
+                            <p class="small text-muted mb-2"><em>Enregistrement pjsip.conf</em></p>
+                            <img src="assets/trace6.png" alt="Asterisk SIP" class="img-fluid rounded border border-secondary zoomable-image" style="max-height: 150px; object-fit: cover;">
+                          </div>
+                          <div class="col-md-4 text-center">
+                            <p class="small text-muted mb-2"><em>Configuration pjsip</em></p>
+                            <img src="assets/trace7.png" alt="Asterisk SIP 2" class="img-fluid rounded border border-secondary zoomable-image" style="max-height: 150px; object-fit: cover;">
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+                <!-- AC 12.05 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ac1205">
+                      <strong>AC12.05</strong> &nbsp;| Communiquer avec un tiers et adapter son discours
+                    </button>
+                  </h2>
+                  <div id="ac1205" class="accordion-collapse collapse" data-bs-parent="#accordionConnect">
+                    <div class="accordion-body">
+                      <div class="mb-3">
+                        <span class="badge bg-primary">R1.11 / R2.11 - Communication</span>
+                      </div>
+                      <p><strong>Ce que j'ai fait :</strong> J'ai rédigé des rapports techniques pour chaque projet (SAE) et j'ai soutenu mes travaux à l'oral devant un jury d'enseignants. J'ai aussi rédigé des mails professionnels simulés.</p>
+                      <p><strong>Pourquoi je l'ai fait :</strong> Un technicien réseau ne fait pas que coder ou câbler. Il doit expliquer ses choix à sa hiérarchie, former des utilisateurs, et convaincre des clients. La communication est essentielle.</p>
+                      <p><strong>Comment je l'ai fait :</strong> J'ai structuré mes comptes rendus (Introduction, Méthodologie, Résultats, Conclusion) et conçu des diaporamas épurés. À l'oral, j'ai travaillé mon débit de parole et ma posture.</p>
+                      <p><strong>Mes difficultés :</strong> Vulgariser des concepts très techniques (comme le routage inter-VLAN) pour un auditoire qui ne serait pas forcément expert en informatique.</p>
+                      <p><strong>Ce que j'en ai appris :</strong> Un bon schéma vaut parfois mieux qu'un long discours. J'ai appris à adapter mon vocabulaire technique selon mon interlocuteur (directeur financier vs ingénieur réseau).</p>
+                      <p><strong>Ce que je ferais autrement :</strong> Je m'enregistrerais en vidéo lors de mes répétitions pour repérer mes tics de langage et améliorer la fluidité de mes présentations.</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div> <!-- End Accordion -->
             </div>
           </div>
 
-          <!-- ONGLET 3 : PROGRAMMER -->
+          <!-- ============================== -->
+          <!-- ONGLET 3 : PROGRAMMER          -->
+          <!-- ============================== -->
           <div class="tab-pane fade" id="prog" role="tabpanel" aria-labelledby="prog-tab">
-            <div class="card p-4 p-md-5 shadow-lg reveal">
+            <div class="card p-4 shadow-lg reveal">
               <h2 class="h3 border-start border-4 border-danger ps-3 mb-4">Compétence : Créer des outils et applications informatiques</h2>
               
-              <!-- Liste des AC -->
-              <div class="mb-5">
-                <h4 class="h5 mb-3">Liste des Apprentissages Critiques (AC) :</h4>
-                <ul class="list-group list-group-flush border border-secondary rounded">
-                  <li class="list-group-item bg-transparent text-light border-secondary">
-                    <strong>AC13.01</strong> | Utiliser un système informatique et ses outils
-                    <div class="mt-2">
-                      <span class="badge bg-primary">R1.08 - Base des systèmes d'exploitation</span>
-                      <span class="badge bg-secondary">R1.07 - Fondamentaux de la programmation</span>
-                    </div>
-                  </li>
-                  <li class="list-group-item bg-transparent text-light border-secondary">
-                    <strong>AC13.02</strong> | Lire, exécuter, corriger et modifier un programme
-                    <div class="mt-2">
-                      <span class="badge bg-primary">R1.07 - Fondamentaux de la programmation</span>
-                    </div>
-                  </li>
-                  <li class="list-group-item bg-transparent text-light border-secondary">
-                    <strong>AC13.03</strong> | Traduire un algorithme, dans un langage et pour un environnement donné
-                    <div class="mt-2">
-                      <span class="badge bg-primary">R1.07 - Fondamentaux de la programmation</span>
-                      <span class="badge bg-secondary">R2.08 - Analyse et traitement de données structurées</span>
-                    </div>
-                  </li>
-                  <li class="list-group-item bg-transparent text-light border-secondary">
-                    <strong>AC13.04</strong> | Connaître l’architecture et les technologies d’un site Web
-                    <div class="mt-2">
-                      <span class="badge bg-primary">R1.09 - Introduction aux technologies Web</span>
-                      <span class="badge bg-secondary">R2.09 - Initiation au développement Web</span>
-                    </div>
-                  </li>
-                  <li class="list-group-item bg-transparent text-light border-secondary">
-                    <strong>AC13.05</strong> | Choisir les mécanismes de gestion de données adaptés au développement de l’outil et argumenter ses choix
-                    <div class="mt-2">
-                      <span class="badge bg-primary">R2.07 - Sources de données</span>
-                      <span class="badge bg-secondary">R2.08 - Analyse et traitement de données structurées</span>
-                    </div>
-                  </li>
-                  <li class="list-group-item bg-transparent text-light border-secondary">
-                    <strong>AC13.06</strong> | S’intégrer dans un environnement propice au développement et au travail collaboratif
-                    <div class="mt-2">
-                      <span class="badge bg-primary">R1.15 - Gestion de projet</span>
-                    </div>
-                  </li>
-                </ul>
-              </div>
+              <div class="accordion" id="accordionProg">
 
-              <!-- Trace détaillée -->
-              <div class="p-4 rounded border border-secondary" style="background-color: rgba(255, 255, 255, 0.02);">
-                <h4 class="h5 text-primary mb-4">Zoom sur : AC 13.05 & 13.06 : Traitement de données et Environnement Collaboratif (Python)</h4>
-                
-                <p><strong>Ce que j'ai fait :</strong> Dans le cadre de la SAE 1.05, j'ai développé un outil logiciel en Python permettant d'analyser des données en format Open Data. Concrètement, j'ai créé un script modulaire capable de lire un fichier de données de clubs sportifs (<code>clubs-data-2023.csv</code>), de traiter ces informations, et de générer des visualisations sous forme de graphiques en ASCII directement dans le terminal.</p>
-                <p><strong>Pourquoi je l'ai fait :</strong> L'objectif était d'automatiser le traitement d'un grand volume de données brutes pour les rendre lisibles et exploitables. Il s'agissait également d'apprendre à travailler de manière professionnelle en découpant le code en plusieurs fichiers distincts.</p>
-                <p><strong>Comment je l'ai fait :</strong> J'ai structuré mon projet Python de manière modulaire avec un <code>main.py</code> qui sert de chef d'orchestre, appelant des fonctions d'analyse réparties dans <code>make_chart.py</code> et <code>create_ascii_chart.py</code>. J'ai utilisé les structures de données natives de Python (listes, dictionnaires) pour manipuler les données extraites du fichier CSV. Ce projet a été géré de manière collaborative en utilisant <strong>GitLab</strong>.</p>
-                <p><strong>Mes difficultés :</strong> La gestion du formatage du fichier CSV a été un défi (gestion des séparateurs, encodage des caractères). De plus, comprendre comment importer correctement mes modules d'un fichier à un autre a demandé des recherches pour éviter les erreurs d'importation.</p>
-                <p><strong>Ce que j'en ai appris :</strong> J'ai acquis des bases solides en algorithmique et en manipulation de données en Python. J'ai surtout appris l'importance cruciale d'un code propre, commenté et modulaire.</p>
-                <p class="mb-4"><strong>Ce que je ferais autrement :</strong> Au lieu de parser le fichier CSV manuellement avec les fonctions de base de Python, j'utiliserais à l'avenir une bibliothèque spécialisée comme <strong>Pandas</strong> pour écrire un code beaucoup plus robuste.</p>
-
-                <div class="mt-5 p-4 border border-secondary rounded" style="background-color: rgba(255, 15, 47, 0.05);">
-                  <h5 class="h6 text-primary fw-bold mb-4">💻 Traces ciblées : Fichiers sources à télécharger</h5>
-                  
-                  <div class="d-grid gap-3">
-                    <a href="assets/main.py" download class="btn btn-outline-light text-start d-flex justify-content-between align-items-center p-3">
-                      <span><strong>📄 main.py</strong> - Script principal de l'application</span>
-                      <span class="text-primary">📥 Télécharger</span>
-                    </a>
-                    <a href="assets/make_chart.py" download class="btn btn-outline-light text-start d-flex justify-content-between align-items-center p-3">
-                      <span><strong>📄 make_chart.py</strong> - Module de traitement et d'analyse</span>
-                      <span class="text-primary">📥 Télécharger</span>
-                    </a>
-                    <a href="assets/clubs-data-2023.csv" download class="btn btn-outline-light text-start d-flex justify-content-between align-items-center p-3">
-                      <span><strong>📊 clubs-data-2023.csv</strong> - Jeu de données brut (Open Data)</span>
-                      <span class="text-primary">📥 Télécharger</span>
-                    </a>
+                <!-- AC 13.01 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ac1301">
+                      <strong>AC13.01</strong> &nbsp;| Utiliser un système informatique et ses outils (Linux CLI)
+                    </button>
+                  </h2>
+                  <div id="ac1301" class="accordion-collapse collapse" data-bs-parent="#accordionProg">
+                    <div class="accordion-body">
+                      <div class="mb-3">
+                        <span class="badge bg-primary">R1.08 - Base des systèmes d'exploitation</span>
+                        <span class="badge bg-secondary">R1.07 - Fondamentaux de programmation</span>
+                      </div>
+                      <p><strong>Ce que j'ai fait :</strong> J'ai administré des systèmes Linux (Debian/Ubuntu) exclusivement en ligne de commande (CLI). J'ai géré l'arborescence des fichiers, les permissions (chmod, chown) et les utilisateurs système.</p>
+                      <p><strong>Pourquoi je l'ai fait :</strong> La majorité des serveurs et équipements réseaux (y compris Cisco, pare-feux, serveurs web) fonctionnent sur des bases Linux/Unix sans interface graphique. La maîtrise du shell est obligatoire.</p>
+                      <p><strong>Comment je l'ai fait :</strong> Connexion en SSH via PuTTY ou le terminal. Utilisation intensive des commandes Bash (<code>ls, grep, awk, tar, nano, vim</code>) et gestion des paquets avec <code>apt</code>.</p>
+                      <p><strong>Mes difficultés :</strong> Retenir les très nombreux paramètres et options des commandes (comme les drapeaux de la commande <code>tar -xzvf</code>) et s'habituer à l'éditeur <code>vim</code>.</p>
+                      <p><strong>Ce que j'en ai appris :</strong> L'interface en ligne de commande est infiniment plus rapide et puissante qu'une interface graphique une fois qu'on la maîtrise. J'ai aussi appris à lire la documentation via la commande <code>man</code>.</p>
+                      <p><strong>Ce que je ferais autrement :</strong> Créer un fichier "pense-bête" (cheat sheet) personnalisé dès les premiers cours pour centraliser les commandes utiles au lieu de les chercher à chaque fois sur Internet.</p>
+                    </div>
                   </div>
-                  
                 </div>
-              </div>
 
+                <!-- AC 13.02 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ac1302">
+                      <strong>AC13.02</strong> &nbsp;| Lire, exécuter, corriger et modifier un programme
+                    </button>
+                  </h2>
+                  <div id="ac1302" class="accordion-collapse collapse" data-bs-parent="#accordionProg">
+                    <div class="accordion-body">
+                      <div class="mb-3">
+                        <span class="badge bg-primary">R1.07 - Fondamentaux de la programmation</span>
+                      </div>
+                      <p><strong>Ce que j'ai fait :</strong> J'ai reçu des codes Python contenant des erreurs (syntaxe ou logique). Mon travail a consisté à comprendre l'intention du codeur original, trouver les bugs ("débogage") et appliquer des correctifs.</p>
+                      <p><strong>Pourquoi je l'ai fait :</strong> En entreprise, on crée rarement un projet de zéro (from scratch). On passe l'essentiel de son temps à maintenir, lire et améliorer le code des autres collaborateurs.</p>
+                      <p><strong>Comment je l'ai fait :</strong> J'ai utilisé l'outil de débogage intégré à mon IDE (Visual Studio Code). J'ai placé des points d'arrêt (breakpoints) et j'ai exécuté le code pas à pas pour suivre l'évolution des variables.</p>
+                      <p><strong>Mes difficultés :</strong> Comprendre la logique d'un code qui n'est pas commenté, et repérer les erreurs de type (ex: additionner une chaîne de caractères avec un entier, typique en Python).</p>
+                      <p><strong>Ce que j'en ai appris :</strong> J'ai appris à ne plus avoir peur des grands messages d'erreurs (tracebacks) dans la console : ils indiquent précisément la ligne et la nature du problème.</p>
+                      <p><strong>Ce que je ferais autrement :</strong> J'utiliserais des outils d'analyse statique de code (linters comme Pylint ou Flake8) pour détecter les erreurs de syntaxe automatiquement avant même l'exécution.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- AC 13.03 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ac1303">
+                      <strong>AC13.03</strong> &nbsp;| Traduire un algorithme, dans un langage et pour un environnement donné
+                    </button>
+                  </h2>
+                  <div id="ac1303" class="accordion-collapse collapse" data-bs-parent="#accordionProg">
+                    <div class="accordion-body">
+                      <div class="mb-3">
+                        <span class="badge bg-primary">R1.07 - Fondamentaux de programmation</span>
+                        <span class="badge bg-secondary">R2.08 - Analyse de données structurées</span>
+                      </div>
+                      <p><strong>Ce que j'ai fait :</strong> J'ai conçu des algorithmes (comme des algorithmes de recherche ou de tri) sous forme de pseudo-code sur papier, que j'ai ensuite traduits en langage Python.</p>
+                      <p><strong>Pourquoi je l'ai fait :</strong> Il est crucial de séparer la logique de résolution du problème mathématique de la contrainte syntaxique du langage informatique.</p>
+                      <p><strong>Comment je l'ai fait :</strong> J'ai structuré ma pensée en utilisant des logigrammes, puis j'ai déclaré des fonctions Python avec leurs boucles (`for`, `while`) et leurs conditions (`if`, `elif`).</p>
+                      <p><strong>Mes difficultés :</strong> Gérer correctement les conditions d'arrêt des boucles <code>while</code> (éviter les boucles infinies) et manipuler proprement les index dans les listes imbriquées.</p>
+                      <p><strong>Ce que j'en ai appris :</strong> Le temps passé à réfléchir avec un stylo et du papier fait gagner énormément de temps de codage et évite de recommencer son programme à zéro.</p>
+                      <p><strong>Ce que je ferais autrement :</strong> Implémenter le "Test Driven Development" (TDD) : écrire les tests qui vérifient mon algorithme avant même d'écrire la fonction elle-même.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- AC 13.04 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ac1304">
+                      <strong>AC13.04</strong> &nbsp;| Connaître l’architecture et les technologies d’un site Web
+                    </button>
+                  </h2>
+                  <div id="ac1304" class="accordion-collapse collapse" data-bs-parent="#accordionProg">
+                    <div class="accordion-body">
+                      <div class="mb-3">
+                        <span class="badge bg-primary">R1.09 - Intro aux technologies Web</span>
+                        <span class="badge bg-secondary">R2.09 - Initiation au dev Web</span>
+                      </div>
+                      <p><strong>Ce que j'ai fait :</strong> J'ai conçu et développé de A à Z ce portfolio numérique personnel. J'ai créé les pages, structuré le contenu et géré le design pour différents écrans.</p>
+                      <p><strong>Pourquoi je l'ai fait :</strong> Pour acquérir les fondamentaux du développement Front-End, comprendre le fonctionnement des requêtes HTTP du point de vue client, et me mettre en valeur numériquement.</p>
+                      <p><strong>Comment je l'ai fait :</strong> En utilisant les langages balisés HTML5 pour la structure et CSS3 pour le style. J'ai intégré le framework Bootstrap 5 pour faciliter la responsivité (affichage mobile). J'ai ensuite hébergé le site sur GitHub Pages.</p>
+                      <p><strong>Mes difficultés :</strong> L'alignement des éléments via CSS (modèle des boîtes, Flexbox), et la gestion du comportement des menus sur les petits écrans (smartphones).</p>
+                      <p><strong>Ce que j'en ai appris :</strong> J'ai compris la différence entre la structure sémantique (HTML) et la présentation visuelle (CSS), ainsi que le principe fondamental du "Mobile First".</p>
+                      <p><strong>Ce que je ferais autrement :</strong> J'introduirais plus de JavaScript dynamique pour créer des interactions plus poussées, ou j'explorerais un préprocesseur CSS comme SASS pour mieux organiser mes styles.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- AC 13.05 & 13.06 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ac1305">
+                      <strong>AC13.05 & 13.06</strong> &nbsp;| Gestion de données en Python & Environnement Collaboratif
+                    </button>
+                  </h2>
+                  <div id="ac1305" class="accordion-collapse collapse" data-bs-parent="#accordionProg">
+                    <div class="accordion-body">
+                      <div class="mb-3">
+                        <span class="badge bg-primary">R2.07 - Sources de données</span>
+                        <span class="badge bg-secondary">R1.15 - Gestion de projet</span>
+                      </div>
+                      <p><strong>Ce que j'ai fait :</strong> Lors de la SAE 1.05, j'ai développé un script modulaire en Python lisant un fichier Open Data (<code>clubs-data-2023.csv</code>), traitant ces données via dictionnaires/listes, et générant des graphiques ASCII en terminal. Le projet a été géré en équipe via GitLab.</p>
+                      <p><strong>Pourquoi je l'ai fait :</strong> Pour automatiser le traitement massif d'informations (Data) et pour m'initier au travail en équipe professionnalisant via des outils de versioning de code.</p>
+                      <p><strong>Comment je l'ai fait :</strong> Découpage modulaire : un <code>main.py</code> qui orchestre, appelant <code>make_chart.py</code> et <code>create_ascii_chart.py</code>. Sur le plan collaboratif, nous avons utilisé les commandes <code>git commit, push, pull</code> et géré les conflits sur GitLab.</p>
+                      <p><strong>Mes difficultés :</strong> Parser correctement le CSV (gestion des guillemets, encodage UTF-8). Côté collaboratif : les fusions de branches (merge conflicts) quand deux étudiants modifiaient la même ligne de code.</p>
+                      <p><strong>Ce que j'en ai appris :</strong> L'importance cruciale d'un code propre, commenté et séparé en modules. J'ai aussi appris que Git est une bouée de sauvetage indispensable en développement collaboratif.</p>
+                      <p><strong>Ce que je ferais autrement :</strong> Au lieu de coder le traitement du CSV à la main, j'utiliserais à l'avenir la bibliothèque <strong>Pandas</strong> de Python. Pour Git, j'imposerais une norme de nommage stricte ("Conventional Commits") pour nos commits d'équipe.</p>
+
+                      <!-- Traces -->
+                      <div class="mt-4 p-4 border border-secondary rounded" style="background-color: rgba(255, 15, 47, 0.05);">
+                        <h5 class="h6 text-primary fw-bold mb-4">💻 Traces ciblées : Fichiers sources à télécharger</h5>
+                        <div class="d-grid gap-3">
+                          <a href="assets/main.py" download class="btn btn-outline-light text-start d-flex justify-content-between align-items-center p-3">
+                            <span><strong>📄 main.py</strong> - Script principal de l'application</span>
+                            <span class="text-primary">📥 Télécharger</span>
+                          </a>
+                          <a href="assets/make_chart.py" download class="btn btn-outline-light text-start d-flex justify-content-between align-items-center p-3">
+                            <span><strong>📄 make_chart.py</strong> - Module de traitement et d'analyse</span>
+                            <span class="text-primary">📥 Télécharger</span>
+                          </a>
+                          <a href="assets/clubs-data-2023.csv" download class="btn btn-outline-light text-start d-flex justify-content-between align-items-center p-3">
+                            <span><strong>📊 clubs-data-2023.csv</strong> - Jeu de données brut (Open Data)</span>
+                            <span class="text-primary">📥 Télécharger</span>
+                          </a>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div> <!-- End Accordion -->
             </div>
           </div>
 
