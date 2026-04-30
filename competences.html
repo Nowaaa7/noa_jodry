@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Noa Jodry — Mes Compétences & AC</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+</head>
+<body>
+
+  <nav id="mainNavbar" class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Noa Jodry</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navCollapse">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
+          <li class="nav-item"><a class="nav-link" href="portfolio.html">Projets</a></li>
+          <li class="nav-item"><a class="nav-link" href="parcours.html">Parcours</a></li>
+          <li class="nav-item"><a class="nav-link active" href="competences.html">Compétences</a></li>
+          
+          <li class="nav-item ms-2">
+            <button id="theme-toggle" class="btn btn-outline-light btn-sm" title="Changer de thème">
+              <span id="icon-theme">☀️</span> 
+            </button>
+          </li>
+          
+          <li class="nav-item ms-2 d-none d-lg-block"><a class="btn btn-outline-light btn-sm" href="https://github.com/Nowaaa7" target="_blank">GitHub</a></li>
+          <li class="nav-item ms-2 d-none d-lg-block"><a class="btn btn-primary btn-sm" href="https://www.linkedin.com/in/noa-jodry/" target="_blank">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-5 mt-5">
+    <header class="text-center mb-5 reveal">
+      <h1 class="text-primary display-5 fw-bold">Mes Compétences & AC</h1>
+      <p class="lead">Analyse détaillée de mes Apprentissages Critiques selon le référentiel BUT R&T.</p>
+    </header>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        
+        <ul class="nav nav-pills nav-fill mb-5 reveal delay-1" id="competencesTabs" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="admin-tab" data-bs-toggle="tab" data-bs-target="#admin" type="button" role="tab" aria-controls="admin" aria-selected="true">
+              ⚙️ Administrer
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="connect-tab" data-bs-toggle="tab" data-bs-target="#connect" type="button" role="tab" aria-controls="connect" aria-selected="false">
+              🔗 Connecter
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="prog-tab" data-bs-toggle="tab" data-bs-target="#prog" type="button" role="tab" aria-controls="prog" aria-selected="false">
+              💻 Programmer
+            </button>
+          </li>
+        </ul>
+
+        <div class="tab-content" id="competencesTabsContent">
+          
+          <div class="tab-pane fade show active" id="admin" role="tabpanel" aria-labelledby="admin-tab">
+            <div class="card p-4 p-md-5 shadow-lg reveal">
+              <h2 class="h3 border-start border-4 border-danger ps-3 mb-5">Compétence : Administrer les réseaux et l'Internet</h2>
+              
+              <div class="p-4 rounded border border-secondary" style="background-color: rgba(255, 255, 255, 0.02);">
+                <h4 class="h5 text-primary mb-4">AC 11.02 : Exploiter des systèmes d'exploitation serveurs (Windows Server)</h4>
+                <p><strong>Ce que j'ai fait :</strong> J'ai conçu et déployé une infrastructure réseau centralisée sous Windows Server 2016. J'ai mis en place une architecture Active Directory avec des groupes distincts (Élèves/Profs), géré des points de montage NTFS, et automatisé le déploiement de logiciels via des GPO. J'ai également créé un script PowerShell pour automatiser la création des comptes.</p>
+                <p><strong>Pourquoi je l'ai fait :</strong> L'objectif était de centraliser l'authentification, de sécuriser les données via le "Moindre Privilège", et d'automatiser les tâches répétitives pour déployer les ressources de manière industrielle et sécurisée.</p>
+                <p><strong>Comment je l'ai fait :</strong> J'ai utilisé l'outil <em>Utilisateurs et ordinateurs Active Directory</em>. J'ai configuré les partages réseau en "Contrôle total" pour laisser la couche locale (NTFS) gérer les permissions restrictives. J'ai également développé un script <code>script.ps1</code> utilisant les cmdlets <code>New-ADUser</code>, <code>New-Item</code> et l'outil <code>icacls</code>.</p>
+                <p><strong>Mes difficultés :</strong> Comprendre que la permission finale est la plus restrictive entre celle du partage et celle du NTFS a été complexe. La syntaxe de l'outil <code>icacls</code> dans PowerShell a également demandé de la rigueur. J'ai dû forcer les mises à jour de stratégies avec <code>gpupdate /force</code>.</p>
+                <p><strong>Ce que j'en ai appris :</strong> J'ai saisi la différence fondamentale entre permissions réseau et locales. J'ai surtout pris conscience de l'importance de l'industrialisation (scripts, GPO) pour garantir la conformité d'un parc informatique.</p>
+                <p class="mb-4"><strong>Ce que je ferais autrement :</strong> Pour le script PowerShell, je ferais évoluer mon code pour qu'il lise un fichier <code>.csv</code> contenant les données de dizaines d'utilisateurs, permettant d'importer une promotion entière d'un seul coup.</p>
+
+                <div class="mt-4 p-3 border border-secondary rounded" style="background-color: rgba(255, 15, 47, 0.05);">
+                  <h5 class="h6 text-primary fw-bold mb-3">📸 Traces ciblées :</h5>
+                  <div class="row g-3">
+                    <div class="col-md-6 text-center">
+                      <p class="small text-muted mb-2"><em>Organisation des groupes AD</em></p>
+                      <img src="assets/trace1.png" alt="Capture Active Directory" class="img-fluid rounded border border-secondary zoomable-image" style="max-height: 200px; object-fit: cover;">
+                    </div>
+                    <div class="col-md-6 text-center">
+                      <p class="small text-muted mb-2"><em>Script d'automatisation PowerShell</em></p>
+                      <img src="assets/trace2.png" alt="Capture PowerShell" class="img-fluid rounded border border-secondary zoomable-image" style="max-height: 200px; object-fit: cover;">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="connect" role="tabpanel" aria-labelledby="connect-tab">
+            <div class="card p-4 p-md-5 shadow-lg reveal">
+              <h2 class="h3 border-start border-4 border-danger ps-3 mb-5">Compétence : Connecter les entreprises et les usagers</h2>
+              
+              <div class="p-4 rounded border border-secondary" style="background-color: rgba(255, 255, 255, 0.02);">
+                <h4 class="h5 text-primary mb-4">AC 12.04 : Connecter les systèmes de ToIP (Téléphonie sur IP)</h4>
+                <p><strong>Ce que j'ai fait :</strong> J'ai déployé et configuré un serveur de téléphonie IPBX sous Asterisk (Linux Alpine). J'ai configuré des téléphones physiques de différentes marques : des postes Fanvil (via leur interface web graphique) et des postes Cisco (via auto-provisioning avec un serveur TFTP). J'ai également paramétré un plan de numérotation avec la gestion de la messagerie vocale (Voicemail) et un serveur vocal interactif (IVR).</p>
+                <p><strong>Pourquoi je l'ai fait :</strong> L'objectif était de mettre en place une infrastructure de communication complète permettant aux collaborateurs d'une entreprise de s'appeler en interne, de laisser des messages en cas de non-réponse, et de filtrer les appels entrants via un menu vocal automatisé, tout en garantissant l'interopérabilité entre différents constructeurs (Cisco et Fanvil).</p>
+                <p><strong>Comment je l'ai fait :</strong> Dans Asterisk, j'ai manipulé le fichier <code>pjsip.conf</code> pour déclarer les comptes SIP (endpoints, auth, aor) et le fichier <code>extensions.conf</code> pour définir le comportement du réseau (le Dialplan). Pour les téléphones Fanvil, j'ai renseigné manuellement l'IP du serveur SIP et l'authentification dans l'interface web. Pour les postes Cisco, j'ai installé un service <code>in.tftpd</code> et configuré des fichiers XML (ex: <code>SEP<MAC>.cnf.xml</code>) pour qu'ils récupèrent automatiquement leur configuration au démarrage sur le réseau.</p>
+                <p><strong>Mes difficultés :</strong> La syntaxe des fichiers de configuration Asterisk est très stricte. J'ai rencontré des difficultés avec la gestion des adresses IP et l'enregistrement des téléphones (problèmes de <em>bind</em> ou d'identifiants incorrects dans <code>pjsip.conf</code>). De plus, l'auto-provisioning des téléphones Cisco exigeait que le nom du fichier XML contienne la bonne adresse MAC sans aucune erreur de formatage.</p>
+                <p><strong>Ce que j'en ai appris :</strong> J'ai compris le fonctionnement concret du protocole SIP (utilisant le port UDP 5060) pour l'établissement des sessions. J'ai également saisi l'énorme avantage de l'auto-provisioning (TFTP/XML) en milieu professionnel par rapport à une configuration manuelle poste par poste via interface web.</p>
+                <p class="mb-4"><strong>Ce que je ferais autrement :</strong> Plutôt que de copier et de modifier manuellement le fichier XML <code>SEP_MAC-CISCO_.cnf.xml</code> pour chaque poste Cisco, je développerais un script Bash ou Python qui prendrait en entrée un fichier CSV (contenant les adresses MAC et les numéros d'extension) pour générer automatiquement tous les fichiers XML dans le dossier <code>/var/tftpboot</code>.</p>
+
+                <div class="mt-4 p-3 border border-secondary rounded" style="background-color: rgba(255, 15, 47, 0.05);">
+                  <h5 class="h6 text-primary fw-bold mb-3">📸 Traces ciblées :</h5>
+                  <div class="row g-3">
+                    <div class="col-md-6 text-center">
+                      <p class="small text-muted mb-2"><em>Fichier extensions.conf (Dialplan)</em></p>
+                      <img src="assets/trace5.png" alt="Asterisk extensions.conf" class="img-fluid rounded border border-secondary zoomable-image" style="max-height: 200px; object-fit: cover;">
+                    </div>
+                    <div class="col-md-6 text-center">
+                      <p class="small text-muted mb-2"><em>Fichier pjsip.conf (Enregistrement SIP)</em></p>
+                      <img src="assets/trace6.png" alt="Asterisk pjsip.conf" class="img-fluid rounded border border-secondary zoomable-image" style="max-height: 200px; object-fit: cover;">
+                    </div>
+                    <div class="col-md-6 text-center">
+                      <p class="small text-muted mb-2"><em>Fichier pjsip.conf (Enregistrement SIP)</em></p>
+                      <img src="assets/trace7.png" alt="Asterisk pjsip.conf" class="img-fluid rounded border border-secondary zoomable-image" style="max-height: 200px; object-fit: cover;">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="prog" role="tabpanel" aria-labelledby="prog-tab">
+            <div class="card p-4 p-md-5 shadow-lg reveal">
+              <h2 class="h3 border-start border-4 border-danger ps-3 mb-5">Compétence : Créer des outils et applications informatiques</h2>
+              
+              <div class="p-4 rounded border border-secondary" style="background-color: rgba(255, 255, 255, 0.02);">
+                <h4 class="h5 text-primary mb-4">AC 13.05 & 13.06 : Traitement de données et Environnement Collaboratif (Python)</h4>
+                
+                <p><strong>Ce que j'ai fait :</strong> Dans le cadre de la SAE 1.05, j'ai développé un outil logiciel en Python permettant d'analyser des données en format Open Data. Concrètement, j'ai créé un script modulaire capable de lire un fichier de données de clubs sportifs (<code>clubs-data-2023.csv</code>), de traiter ces informations, et de générer des visualisations sous forme de graphiques en ASCII directement dans le terminal.</p>
+                <p><strong>Pourquoi je l'ai fait :</strong> L'objectif était d'automatiser le traitement d'un grand volume de données brutes pour les rendre lisibles et exploitables. Il s'agissait également d'apprendre à travailler de manière professionnelle en découpant le code en plusieurs fichiers distincts.</p>
+                <p><strong>Comment je l'ai fait :</strong> J'ai structuré mon projet Python de manière modulaire avec un <code>main.py</code> qui sert de chef d'orchestre, appelant des fonctions d'analyse réparties dans <code>make_chart.py</code> et <code>create_ascii_chart.py</code>. J'ai utilisé les structures de données natives de Python (listes, dictionnaires) pour manipuler les données extraites du fichier CSV. Ce projet a été géré de manière collaborative en utilisant <strong>GitLab</strong>.</p>
+                <p><strong>Mes difficultés :</strong> La gestion du formatage du fichier CSV a été un défi (gestion des séparateurs, encodage des caractères). De plus, comprendre comment importer correctement mes modules d'un fichier à un autre a demandé des recherches pour éviter les erreurs d'importation.</p>
+                <p><strong>Ce que j'en ai appris :</strong> J'ai acquis des bases solides en algorithmique et en manipulation de données en Python. J'ai surtout appris l'importance cruciale d'un code propre, commenté et modulaire.</p>
+                <p class="mb-4"><strong>Ce que je ferais autrement :</strong> Au lieu de parser le fichier CSV manuellement avec les fonctions de base de Python, j'utiliserais à l'avenir une bibliothèque spécialisée comme <strong>Pandas</strong> pour écrire un code beaucoup plus robuste.</p>
+
+                <div class="mt-5 p-4 border border-secondary rounded" style="background-color: rgba(255, 15, 47, 0.05);">
+                  <h5 class="h6 text-primary fw-bold mb-4">💻 Traces ciblées : Fichiers sources à télécharger</h5>
+                  
+                  <div class="d-grid gap-3">
+                    <a href="assets/main.py" download class="btn btn-outline-light text-start d-flex justify-content-between align-items-center p-3">
+                      <span><strong>📄 main.py</strong> - Script principal de l'application</span>
+                      <span class="text-primary">📥 Télécharger</span>
+                    </a>
+                    <a href="assets/make_chart.py" download class="btn btn-outline-light text-start d-flex justify-content-between align-items-center p-3">
+                      <span><strong>📄 make_chart.py</strong> - Module de traitement et d'analyse</span>
+                      <span class="text-primary">📥 Télécharger</span>
+                    </a>
+                    <a href="assets/clubs-data-2023.csv" download class="btn btn-outline-light text-start d-flex justify-content-between align-items-center p-3">
+                      <span><strong>📊 clubs-data-2023.csv</strong> - Jeu de données brut (Open Data)</span>
+                      <span class="text-primary">📥 Télécharger</span>
+                    </a>
+                  </div>
+                  
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div> </div>
+    </div>
+  </main>
+
+  <div id="lightbox">
+    <span id="lightbox-close">&times;</span>
+    <img id="lightbox-img" src="" alt="Image agrandie">
+  </div>
+
+  <footer class="site-footer text-center mt-5">
+    <div class="container">
+      <p class="mb-0 text-muted">© <span id="year"></span> Noa Jodry - Site à but personnel. | <a href="mentions_legales.html">Mentions légales & crédits</a></p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
