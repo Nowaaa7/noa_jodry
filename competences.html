@@ -9,10 +9,23 @@
   <link rel="icon" type="image/png" href="assets/favicon.png">
   <style>
     /* Ajustements pour les accordéons en thème sombre */
-    .accordion-item { background-color: rgba(255, 255, 255, 0.02); border-color: rgba(255,255,255,0.1); }
-    .accordion-button { background-color: rgba(0, 0, 0, 0.2); color: var(--bs-body-color); }
-    .accordion-button:not(.collapsed) { background-color: rgba(255, 15, 47, 0.1); color: #ff0f2f; box-shadow: none; }
-    .accordion-button::after { filter: invert(1); }
+    .accordion-item { 
+      background-color: rgba(255, 255, 255, 0.02); 
+      border-color: rgba(255,255,255,0.1); 
+    }
+    .accordion-button { 
+      background-color: rgba(0, 0, 0, 0.2); 
+      color: #ffffff !important; /* Texte forcé en blanc */
+    }
+    .accordion-button:not(.collapsed) { 
+      background-color: rgba(255, 15, 47, 0.1); 
+      color: #ff0f2f !important; /* Texte rouge quand l'onglet est ouvert */
+      box-shadow: none; 
+    }
+    /* Garde la flèche visible en blanc */
+    .accordion-button::after { 
+      filter: invert(1); 
+    }
   </style>
 </head>
 <body>
