@@ -15,7 +15,7 @@
     }
     .accordion-button { 
       background-color: rgba(0, 0, 0, 0.2); 
-      color: #ffffff !important; /* Texte forcé en blanc */
+      color: #ffffff !important; /* Texte du bouton forcé en blanc */
     }
     .accordion-button:not(.collapsed) { 
       background-color: rgba(255, 15, 47, 0.1); 
@@ -25,6 +25,13 @@
     /* Garde la flèche visible en blanc */
     .accordion-button::after { 
       filter: invert(1); 
+    }
+    /* --- NOUVEAU : Rend le texte à l'intérieur lisible --- */
+    .accordion-body {
+      color: rgba(255, 255, 255, 0.85) !important; /* Blanc légèrement adouci pour le confort de lecture */
+    }
+    .accordion-body strong {
+      color: #ffffff !important; /* Met les mots en gras en blanc pur pour les faire ressortir */
     }
   </style>
 </head>
