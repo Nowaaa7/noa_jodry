@@ -36,42 +36,6 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    // 4. GESTION DU THÈME CLAIR / SOMBRE
-    const themeToggleBtn = document.getElementById('theme-toggle');
-    const themeIcon = document.getElementById('icon-theme');
-    const htmlElement = document.documentElement;
-
-    // Vérifier si un thème est déjà sauvegardé
-    const currentTheme = localStorage.getItem('theme');
-
-    // Appliquer le thème sauvegardé au chargement
-    if (currentTheme === 'light') {
-        htmlElement.setAttribute('data-theme', 'light');
-        if(themeIcon) themeIcon.textContent = '🌙'; 
-        if(themeToggleBtn) {
-            themeToggleBtn.classList.remove('btn-outline-light');
-            themeToggleBtn.classList.add('btn-outline-primary');
-        }
-    }
-
-    // Au clic sur le bouton
-    if (themeToggleBtn) {
-        themeToggleBtn.addEventListener('click', () => {
-            if (htmlElement.getAttribute('data-theme') === 'light') {
-                htmlElement.removeAttribute('data-theme');
-                localStorage.setItem('theme', 'dark');
-                themeIcon.textContent = '☀️';
-                themeToggleBtn.classList.add('btn-outline-light');
-                themeToggleBtn.classList.remove('btn-outline-primary');
-            } else {
-                htmlElement.setAttribute('data-theme', 'light');
-                localStorage.setItem('theme', 'light');
-                themeIcon.textContent = '🌙';
-                themeToggleBtn.classList.remove('btn-outline-light');
-                themeToggleBtn.classList.add('btn-outline-primary');
-            }
-        });
-    }
     // 5. GESTION DU LIGHTBOX (Zoom sur image)
     const lightbox = document.getElementById('lightbox');
     const lightboxImg = document.getElementById('lightbox-img');
