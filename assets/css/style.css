@@ -10,11 +10,11 @@
     /* --- THÈME PAR DÉFAUT (SOMBRE / ROUGE) --- */
     --primary-color: #ff0f2f;       /* Rouge Néon */
     --secondary-color: #d0001f;     /* Rouge Foncé */
-    --bg-body: #000000;             
-    --bg-card: rgba(20, 20, 20, 0.7); 
+    --bg-body: #0b0b0f;             
+    --bg-card: rgba(20, 20, 25, 0.65); 
     --text-main: #f8f9fa;           
     --text-muted: #b0b3b8;          
-    --border-color: rgba(255, 255, 255, 0.1);
+    --border-color: rgba(255, 15, 47, 0.15);
     
     /* Animation SOMBRE (Plus visible) */
     --bg-gradient: linear-gradient(-45deg, #000000, #2b0005, #5c0011, #000000);
@@ -223,10 +223,20 @@ p, h1, h2, h3, h4, h5, h6, li, span, div { color: inherit; }
     padding: 3px; background-color: var(--bg-body);
 }
 
-.card:hover, .profile-card:hover {
+.profile-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 30px rgba(255, 15, 47, 0.15);
     border-color: var(--primary-color) !important;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: var(--primary-color) !important;
+    box-shadow: 0 15px 35px rgba(255, 15, 47, 0.2) !important;
+}
+
+.card {
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease, border-color 0.4s ease;
 }
 
 [data-theme="light"] .card:hover { box-shadow: 0 10px 30px rgba(0, 86, 179, 0.15); }
@@ -297,4 +307,15 @@ p, h1, h2, h3, h4, h5, h6, li, span, div { color: inherit; }
 .nav-pills .nav-link:hover:not(.active) {
     color: var(--primary-color) !important;
     background-color: rgba(255, 15, 47, 0.1); /* Léger fond rouge transparent */
+}
+.accordion-item {
+    background-color: rgba(255, 255, 255, 0.02) !important;
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+    margin-bottom: 10px;
+    border-radius: 8px !important;
+    overflow: hidden;
+}
+
+.accordion-button {
+    font-weight: 500;
 }
