@@ -15,23 +15,21 @@
     }
     .accordion-button { 
       background-color: rgba(0, 0, 0, 0.2); 
-      color: #ffffff !important; /* Texte du bouton forcé en blanc */
+      color: #ffffff !important;
     }
     .accordion-button:not(.collapsed) { 
       background-color: rgba(139, 92, 246, 0.1); 
-      color: #8b5cf6 !important; /* Texte violet quand l'onglet est ouvert */
+      color: #8b5cf6 !important; 
       box-shadow: none; 
     }
-    /* Garde la flèche visible en blanc */
     .accordion-button::after { 
       filter: invert(1); 
     }
-    /* --- NOUVEAU : Rend le texte à l'intérieur lisible --- */
     .accordion-body {
-      color: rgba(255, 255, 255, 0.85) !important; /* Blanc légèrement adouci pour le confort de lecture */
+      color: rgba(255, 255, 255, 0.85) !important; 
     }
     .accordion-body strong {
-      color: #ffffff !important; /* Met les mots en gras en blanc pur pour les faire ressortir */
+      color: #ffffff !important; 
     }
   </style>
 </head>
@@ -85,12 +83,14 @@
 
         <div class="tab-content" id="competencesTabsContent">
           
+          <!-- PÔLE ADMINISTRER -->
           <div class="tab-pane fade show active" id="admin" role="tabpanel" aria-labelledby="admin-tab">
             <div class="card p-4 shadow-lg reveal">
               <h2 class="h3 border-start border-4 border-danger ps-3 mb-4">Compétence : Administrer les réseaux et l'Internet</h2>
               
               <div class="accordion" id="accordionAdmin">
                 
+                <!-- AC11.01 -->
                 <div class="accordion-item">
                   <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ac1101">
@@ -109,23 +109,24 @@
                       <p><strong>Ce que j'en ai appris :</strong> J'ai validé la théorie par la pratique et compris l'importance de l'atténuation du signal dans un support physique.</p>
                       <p><strong>Ce que je ferais autrement :</strong> Je prendrais le temps de modéliser systématiquement le circuit sur un simulateur (comme LTspice) avant de passer au câblage réel pour anticiper les résultats.</p>
 
-                      <div class="mt-4 p-4 border border-secondary rounded" <div class="mt-4 p-4 border border-secondary rounded" style="background-color: rgba(139, 92, 246, 0.03);">">
-                        <h5 class="h6 text-primary fw-bold mb-4">💻 Traces ciblées : Fichiers sources à télécharger</h5>
-                        <div class="d-grid gap-3">
-                          <a href="assets/TP3-R104-2025_v3.pdf" download class="btn btn-outline-light text-start d-flex justify-content-between align-items-center p-3">
-                            <span><strong>📄 TP3-R104-2025_v3.pdf</strong> TP3 : Compléments et Sensibilisation aux risques électriques</span>
-                            <span class="text-primary">📥 Télécharger</span>
-                          </a>
-                          <a href="assets/TP4-R104-2025_v4.pdf" download class="btn btn-outline-light text-start d-flex justify-content-between align-items-center p-3">
-                            <span><strong>📄 TP4-R104-2025_v4.pdf</strong> TP4 : Notion d‘impédance</span>
-                            <span class="text-primary">📥 Télécharger</span>
-                          </a>
+                      <div class="mt-4 p-3 border border-secondary rounded" style="background-color: rgba(139, 92, 246, 0.03);">
+                        <h5 class="h6 text-primary fw-bold mb-3">📸 Traces ciblées :</h5>
+                        <div class="row g-3">
+                          <div class="col-md-6 text-center">
+                            <p class="small text-muted mb-2"><em>Schéma de montage électrique</em></p>
+                            <img src="assets/ac1101_1.png" alt="Schéma électrique" class="img-fluid rounded border border-secondary zoomable-image" style="max-height: 200px; object-fit: cover;">
+                          </div>
+                          <div class="col-md-6 text-center">
+                            <p class="small text-muted mb-2"><em>Relevé de mesures et calculs</em></p>
+                            <img src="assets/ac1101_2.png" alt="Tableau de mesures" class="img-fluid rounded border border-secondary zoomable-image" style="max-height: 200px; object-fit: cover;">
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
 
+                <!-- AC11.02 -->
                 <div class="accordion-item">
                   <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ac1102">
@@ -145,23 +146,24 @@
                       <p><strong>Ce que j'en ai appris :</strong> J'ai une vision claire de la façon dont le code est traduit en impulsions électriques, ce qui m'aide énormément pour comprendre l'adressage IPv4 et IPv6.</p>
                       <p><strong>Ce que je ferais autrement :</strong> J'utiliserais des outils de visualisation en ligne plus souvent pour m'entraîner à la conversion binaire de tête de manière plus ludique.</p>
 
-                      <div class="mt-4 p-4 border border-secondary rounded" <div class="mt-4 p-4 border border-secondary rounded" style="background-color: rgba(139, 92, 246, 0.03);">">
-                        <h5 class="h6 text-primary fw-bold mb-4">💻 Traces ciblées : Fichiers sources à télécharger</h5>
-                        <div class="d-grid gap-3">
-                          <a href="assets/TP_binaire_solutions.ipynb.json" download class="btn btn-outline-light text-start d-flex justify-content-between align-items-center p-3">
-                            <span><strong>📄 TP_binaire_solutions.ipynb.json</strong> TP : Codage de l'information binaire</span>
-                            <span class="text-primary">📥 Télécharger</span>
-                          </a>
-                          <a href="assets/TP_logique_solutions.ipynb.json" download class="btn btn-outline-light text-start d-flex justify-content-between align-items-center p-3">
-                            <span><strong>📄 TP_logique_solutions.ipynb.json</strong> TP : Logique combinatoire</span>
-                            <span class="text-primary">📥 Télécharger</span>
-                          </a>
+                      <div class="mt-4 p-3 border border-secondary rounded" style="background-color: rgba(139, 92, 246, 0.03);">
+                        <h5 class="h6 text-primary fw-bold mb-3">📸 Traces ciblées :</h5>
+                        <div class="row g-3">
+                          <div class="col-md-6 text-center">
+                            <p class="small text-muted mb-2"><em>Simplification par tableau de Karnaugh</em></p>
+                            <img src="assets/ac1102_1.png" alt="Tableau de Karnaugh" class="img-fluid rounded border border-secondary zoomable-image" style="max-height: 200px; object-fit: cover;">
+                          </div>
+                          <div class="col-md-6 text-center">
+                            <p class="small text-muted mb-2"><em>Simulation de circuit sous Logisim</em></p>
+                            <img src="assets/ac1102_2.png" alt="Simulation Logisim" class="img-fluid rounded border border-secondary zoomable-image" style="max-height: 200px; object-fit: cover;">
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
 
+                <!-- AC11.03 -->
                 <div class="accordion-item">
                   <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ac1103">
@@ -181,19 +183,24 @@
                       <p><strong>Ce que j'en ai appris :</strong> Je maîtrise la logique d'acheminement des trames MAC (couche 2) et des paquets IP (couche 3), et l'importance cruciale de la documentation réseau.</p>
                       <p><strong>Ce que je ferais autrement :</strong> Je prendrais l'habitude de sauvegarder mes configurations (`copy run start`) beaucoup plus régulièrement lors de mes TP sur matériel réel pour éviter les pertes de données.</p>
 
-                      <div class="mt-4 p-4 border border-secondary rounded" <div class="mt-4 p-4 border border-secondary rounded" style="background-color: rgba(139, 92, 246, 0.03);">">
-                        <h5 class="h6 text-primary fw-bold mb-4">💻 Traces ciblées : Fichiers sources à télécharger</h5>
-                        <div class="d-grid gap-3">
-                          <a href="assets/R101_TP6_Jodry_Noa.pdf" download class="btn btn-outline-light text-start d-flex justify-content-between align-items-center p-3">
-                            <span><strong>📄 R101_TP6_Jodry_Noa.pdf</strong> R101 - TP6 : Découverte des services réseau</span>
-                            <span class="text-primary">📥 Télécharger</span>
-                          </a>
+                      <div class="mt-4 p-3 border border-secondary rounded" style="background-color: rgba(139, 92, 246, 0.03);">
+                        <h5 class="h6 text-primary fw-bold mb-3">📸 Traces ciblées :</h5>
+                        <div class="row g-3">
+                          <div class="col-md-6 text-center">
+                            <p class="small text-muted mb-2"><em>Topologie réseau sous Cisco Packet Tracer</em></p>
+                            <img src="assets/ac1103_1.png" alt="Cisco Packet Tracer" class="img-fluid rounded border border-secondary zoomable-image" style="max-height: 200px; object-fit: cover;">
+                          </div>
+                          <div class="col-md-6 text-center">
+                            <p class="small text-muted mb-2"><em>Configuration VLAN en CLI Cisco</em></p>
+                            <img src="assets/ac1103_2.png" alt="Terminal Cisco" class="img-fluid rounded border border-secondary zoomable-image" style="max-height: 200px; object-fit: cover;">
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
 
+                <!-- AC11.04 -->
                 <div class="accordion-item">
                   <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ac1104">
@@ -213,23 +220,24 @@
                       <p><strong>Ce que j'en ai appris :</strong> La différence fondamentale entre permissions réseau et locales. J'ai pris conscience de l'importance de l'automatisation pour l'industrialisation d'un SI.</p>
                       <p><strong>Ce que je ferais autrement :</strong> Mon script PowerShell pourrait être amélioré pour lire directement les données d'un fichier <code>.csv</code> fourni par les RH, afin d'importer toute une promotion d'un seul coup.</p>
                       
-                      <div class="mt-4 p-4 border border-secondary rounded" <div class="mt-4 p-4 border border-secondary rounded" style="background-color: rgba(139, 92, 246, 0.03);">">
-                        <h5 class="h6 text-primary fw-bold mb-4">💻 Traces ciblées : Fichiers sources à télécharger</h5>
-                        <div class="d-grid gap-3">
-                          <a href="assets/TP_binaire_solutions.ipynb.json" download class="btn btn-outline-light text-start d-flex justify-content-between align-items-center p-3">
-                            <span><strong>📄 TP_binaire_solutions.ipynb.json</strong> TP : Codage de l'information binaire</span>
-                            <span class="text-primary">📥 Télécharger</span>
-                          </a>
-                          <a href="assets/TP_logique_solutions.ipynb.json" download class="btn btn-outline-light text-start d-flex justify-content-between align-items-center p-3">
-                            <span><strong>📄 TP_logique_solutions.ipynb.json</strong> TP : Logique combinatoire</span>
-                            <span class="text-primary">📥 Télécharger</span>
-                          </a>
+                      <div class="mt-4 p-3 border border-secondary rounded" style="background-color: rgba(139, 92, 246, 0.03);">
+                        <h5 class="h6 text-primary fw-bold mb-3">📸 Traces ciblées :</h5>
+                        <div class="row g-3">
+                          <div class="col-md-6 text-center">
+                            <p class="small text-muted mb-2"><em>Organisation Active Directory</em></p>
+                            <img src="assets/ac1104_1.png" alt="Capture Active Directory" class="img-fluid rounded border border-secondary zoomable-image" style="max-height: 200px; object-fit: cover;">
+                          </div>
+                          <div class="col-md-6 text-center">
+                            <p class="small text-muted mb-2"><em>Script d'automatisation PowerShell</em></p>
+                            <img src="assets/ac1104_2.png" alt="Capture PowerShell" class="img-fluid rounded border border-secondary zoomable-image" style="max-height: 200px; object-fit: cover;">
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
 
+                <!-- AC11.05 -->
                 <div class="accordion-item">
                   <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ac1105">
@@ -243,25 +251,30 @@
                         <span class="badge bg-secondary">R2.03 - Base des services réseaux</span>
                       </div>
                       <p><strong>Ce que j'ai fait :</strong> J'ai utilisé l'analyseur de trames Wireshark pour capturer du trafic et identifier l'origine de pannes réseau (boucles de routage, requêtes DHCP sans réponse).</p>
-                      <p><strong>Pourquoi je l'ai fait :</strong> Le "troubleshooting" (dépannage) est le cœur du métier R&T. Il faut savoir isoler un problem plutôt que de deviner son origine.</p>
+                      <p><strong>Pourquoi je l'ai fait :</strong> Le "troubleshooting" (dépannage) est le cœur du métier R&T. Il faut savoir isoler un problème plutôt que de deviner son origine.</p>
                       <p><strong>Comment je l'ai fait :</strong> En appliquant une méthode "Bottom-Up" (de la couche physique 1 à la couche applicative 7). Utilisation des commandes <code>ping</code>, <code>tracert / traceroute</code>, et des filtres Wireshark (ex: <code>ip.addr == ...</code>).</p>
                       <p><strong>Mes difficultés :</strong> Lire et interpréter les paquets directement dans leurs formats bruts (hexadécimal) et comprendre la structure des entêtes (TCP, IP).</p>
                       <p><strong>Ce que j'en ai appris :</strong> Les commandes de diagnostic de base sont très puissantes. J'ai appris à ne jamais paniquer face à une panne et à procéder par élimination.</p>
                       <p><strong>Ce que je ferais autrement :</strong> Rédiger des fiches d'incidents plus détaillées ("tickets") lors des TP pour documenter la panne, ses causes, et la solution apportée, comme on le fait en entreprise.</p>
 
-                      <div class="mt-4 p-4 border border-secondary rounded" <div class="mt-4 p-4 border border-secondary rounded" style="background-color: rgba(139, 92, 246, 0.03);">">
-                        <h5 class="h6 text-primary fw-bold mb-4">💻 Traces ciblées : Fichiers sources à télécharger</h5>
-                        <div class="d-grid gap-3">
-                          <a href="assets/Compte-Rendu TP1 R203.pdf" download class="btn btn-outline-light text-start d-flex justify-content-between align-items-center p-3">
-                            <span><strong>📄 Compte-Rendu TP1 R203.pdf</strong> R2.03 - TP1 Serveur WEB Apache2 & Serveur WEB Nginx</span>
-                            <span class="text-primary">📥 Télécharger</span>
-                          </a>
+                      <div class="mt-4 p-3 border border-secondary rounded" style="background-color: rgba(139, 92, 246, 0.03);">
+                        <h5 class="h6 text-primary fw-bold mb-3">📸 Traces ciblées :</h5>
+                        <div class="row g-3">
+                          <div class="col-md-6 text-center">
+                            <p class="small text-muted mb-2"><em>Analyse de trames sous Wireshark</em></p>
+                            <img src="assets/ac1105_1.png" alt="Wireshark" class="img-fluid rounded border border-secondary zoomable-image" style="max-height: 200px; object-fit: cover;">
+                          </div>
+                          <div class="col-md-6 text-center">
+                            <p class="small text-muted mb-2"><em>Diagnostic réseau avec tracert</em></p>
+                            <img src="assets/ac1105_2.png" alt="Tracert cmd" class="img-fluid rounded border border-secondary zoomable-image" style="max-height: 200px; object-fit: cover;">
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
 
+                <!-- AC11.06 -->
                 <div class="accordion-item">
                   <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ac1106">
@@ -280,16 +293,16 @@
                       <p><strong>Ce que j'en ai appris :</strong> L'importance de la phase de post-installation (mises à jour de sécurité, configuration des pare-feux locaux, installation d'antivirus).</p>
                       <p><strong>Ce que je ferais autrement :</strong> Je m'intéresserais davantage aux outils de déploiement d'images réseau (comme WDS ou FOG) pour ne plus avoir à faire ces installations manuellement poste par poste.</p>
 
-                      <div class="mt-4 p-3 border border-secondary rounded" <div class="mt-4 p-4 border border-secondary rounded" style="background-color: rgba(139, 92, 246, 0.03);">">
+                      <div class="mt-4 p-3 border border-secondary rounded" style="background-color: rgba(139, 92, 246, 0.03);">
                         <h5 class="h6 text-primary fw-bold mb-3">📸 Traces ciblées :</h5>
                         <div class="row g-3">
                           <div class="col-md-6 text-center">
-                            <p class="small text-muted mb-2"><em>Organisation des groupes AD</em></p>
-                            <img src="assets/trace1.png" alt="Capture Active Directory" class="img-fluid rounded border border-secondary zoomable-image" style="max-height: 200px; object-fit: cover;">
+                            <p class="small text-muted mb-2"><em>Déploiement d'une VM sous VirtualBox</em></p>
+                            <img src="assets/ac1106_1.png" alt="VirtualBox" class="img-fluid rounded border border-secondary zoomable-image" style="max-height: 200px; object-fit: cover;">
                           </div>
                           <div class="col-md-6 text-center">
-                            <p class="small text-muted mb-2"><em>Script d'automatisation PowerShell</em></p>
-                            <img src="assets/trace2.png" alt="Capture PowerShell" class="img-fluid rounded border border-secondary zoomable-image" style="max-height: 200px; object-fit: cover;">
+                            <p class="small text-muted mb-2"><em>Configuration de l'adressage IP</em></p>
+                            <img src="assets/ac1106_2.png" alt="Paramètres IP" class="img-fluid rounded border border-secondary zoomable-image" style="max-height: 200px; object-fit: cover;">
                           </div>
                         </div>
                       </div>
@@ -297,15 +310,18 @@
                   </div>
                 </div>
 
-              </div> </div>
+              </div> 
+            </div>
           </div>
 
+          <!-- PÔLE CONNECTER -->
           <div class="tab-pane fade" id="connect" role="tabpanel" aria-labelledby="connect-tab">
             <div class="card p-4 shadow-lg reveal">
               <h2 class="h3 border-start border-4 border-danger ps-3 mb-4">Compétence : Connecter les entreprises et les usagers</h2>
               
               <div class="accordion" id="accordionConnect">
 
+                <!-- AC12.01 -->
                 <div class="accordion-item">
                   <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ac1201">
@@ -325,23 +341,24 @@
                       <p><strong>Ce que j'en ai appris :</strong> Un signal théorique carré n'est jamais parfait en réalité (temps de montée, de descente, dépassement), ce qui impacte la vitesse maximale de transmission des données (débit binaire).</p>
                       <p><strong>Ce que je ferais autrement :</strong> J'utiliserais les fonctionnalités d'export USB de l'oscilloscope pour intégrer de vraies courbes dans mes comptes rendus de TP au lieu de les dessiner schématiquement.</p>
 
-                      <div class="mt-4 p-4 border border-secondary rounded" <div class="mt-4 p-4 border border-secondary rounded" style="background-color: rgba(139, 92, 246, 0.03);">">
-                        <h5 class="h6 text-primary fw-bold mb-4">💻 Traces ciblées : Fichiers sources à télécharger</h5>
-                        <div class="d-grid gap-3">
-                          <a href="assets/AC1201_document1.pdf" download class="btn btn-outline-light text-start d-flex justify-content-between align-items-center p-3">
-                            <span><strong>📄 AC1201_document1.pdf</strong> Description du premier document</span>
-                            <span class="text-primary">📥 Télécharger</span>
-                          </a>
-                          <a href="assets/AC1201_document2.pdf" download class="btn btn-outline-light text-start d-flex justify-content-between align-items-center p-3">
-                            <span><strong>📄 AC1201_document2.pdf</strong> Description du deuxième document</span>
-                            <span class="text-primary">📥 Télécharger</span>
-                          </a>
+                      <div class="mt-4 p-3 border border-secondary rounded" style="background-color: rgba(139, 92, 246, 0.03);">
+                        <h5 class="h6 text-primary fw-bold mb-3">📸 Traces ciblées :</h5>
+                        <div class="row g-3">
+                          <div class="col-md-6 text-center">
+                            <p class="small text-muted mb-2"><em>Relevé de signal à l'oscilloscope</em></p>
+                            <img src="assets/ac1201_1.png" alt="Oscilloscope" class="img-fluid rounded border border-secondary zoomable-image" style="max-height: 200px; object-fit: cover;">
+                          </div>
+                          <div class="col-md-6 text-center">
+                            <p class="small text-muted mb-2"><em>Analyse fréquentielle et spectre</em></p>
+                            <img src="assets/ac1201_2.png" alt="Analyse fréquentielle" class="img-fluid rounded border border-secondary zoomable-image" style="max-height: 200px; object-fit: cover;">
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
 
+                <!-- AC12.02 -->
                 <div class="accordion-item">
                   <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ac1202">
@@ -361,23 +378,24 @@
                       <p><strong>Ce que j'en ai appris :</strong> J'ai visuellement compris pourquoi la longueur d'un câble Ethernet RJ45 est limitée à environ 100 mètres avant de subir une atténuation trop sévère nécessitant un répéteur.</p>
                       <p><strong>Ce que je ferais autrement :</strong> Je prendrais le temps d'explorer l'outil MATLAB/Simulink en parallèle pour obtenir des graphiques plus esthétiques pour mes rapports de projet.</p>
 
-                      <div class="mt-4 p-4 border border-secondary rounded" <div class="mt-4 p-4 border border-secondary rounded" style="background-color: rgba(139, 92, 246, 0.03);">">
-                        <h5 class="h6 text-primary fw-bold mb-4">💻 Traces ciblées : Fichiers sources à télécharger</h5>
-                        <div class="d-grid gap-3">
-                          <a href="assets/AC1202_document1.pdf" download class="btn btn-outline-light text-start d-flex justify-content-between align-items-center p-3">
-                            <span><strong>📄 AC1202_document1.pdf</strong> Description du premier document</span>
-                            <span class="text-primary">📥 Télécharger</span>
-                          </a>
-                          <a href="assets/AC1202_document2.pdf" download class="btn btn-outline-light text-start d-flex justify-content-between align-items-center p-3">
-                            <span><strong>📄 AC1202_document2.pdf</strong> Description du deuxième document</span>
-                            <span class="text-primary">📥 Télécharger</span>
-                          </a>
+                      <div class="mt-4 p-3 border border-secondary rounded" style="background-color: rgba(139, 92, 246, 0.03);">
+                        <h5 class="h6 text-primary fw-bold mb-3">📸 Traces ciblées :</h5>
+                        <div class="row g-3">
+                          <div class="col-md-6 text-center">
+                            <p class="small text-muted mb-2"><em>Modélisation de ligne sous LTspice</em></p>
+                            <img src="assets/ac1202_1.png" alt="Schéma LTspice" class="img-fluid rounded border border-secondary zoomable-image" style="max-height: 200px; object-fit: cover;">
+                          </div>
+                          <div class="col-md-6 text-center">
+                            <p class="small text-muted mb-2"><em>Simulation temporelle / Diagramme de Bode</em></p>
+                            <img src="assets/ac1202_2.png" alt="Diagramme de Bode" class="img-fluid rounded border border-secondary zoomable-image" style="max-height: 200px; object-fit: cover;">
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
 
+                <!-- AC12.03 -->
                 <div class="accordion-item">
                   <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ac1203">
@@ -396,23 +414,24 @@
                       <p><strong>Ce que j'en ai appris :</strong> La rigueur manuelle est aussi importante que la logique informatique. J'ai également compris le rôle du blindage (feuille d'aluminium) contre les interférences électromagnétiques (EMI).</p>
                       <p><strong>Ce que je ferais autrement :</strong> J'aimerais m'entraîner davantage sur les supports optiques (fibre) et utiliser une soudeuse à fibre optique, car c'est le standard de demain.</p>
 
-                      <div class="mt-4 p-4 border border-secondary rounded" <div class="mt-4 p-4 border border-secondary rounded" style="background-color: rgba(139, 92, 246, 0.03);">">
-                        <h5 class="h6 text-primary fw-bold mb-4">💻 Traces ciblées : Fichiers sources à télécharger</h5>
-                        <div class="d-grid gap-3">
-                          <a href="assets/AC1203_document1.pdf" download class="btn btn-outline-light text-start d-flex justify-content-between align-items-center p-3">
-                            <span><strong>📄 AC1203_document1.pdf</strong> Description du premier document</span>
-                            <span class="text-primary">📥 Télécharger</span>
-                          </a>
-                          <a href="assets/AC1203_document2.pdf" download class="btn btn-outline-light text-start d-flex justify-content-between align-items-center p-3">
-                            <span><strong>📄 AC1203_document2.pdf</strong> Description du deuxième document</span>
-                            <span class="text-primary">📥 Télécharger</span>
-                          </a>
+                      <div class="mt-4 p-3 border border-secondary rounded" style="background-color: rgba(139, 92, 246, 0.03);">
+                        <h5 class="h6 text-primary fw-bold mb-3">📸 Traces ciblées :</h5>
+                        <div class="row g-3">
+                          <div class="col-md-6 text-center">
+                            <p class="small text-muted mb-2"><em>Norme de câblage T568B</em></p>
+                            <img src="assets/ac1203_1.png" alt="Câble RJ45" class="img-fluid rounded border border-secondary zoomable-image" style="max-height: 200px; object-fit: cover;">
+                          </div>
+                          <div class="col-md-6 text-center">
+                            <p class="small text-muted mb-2"><em>Validation avec testeur de continuité</em></p>
+                            <img src="assets/ac1203_2.png" alt="Testeur réseau" class="img-fluid rounded border border-secondary zoomable-image" style="max-height: 200px; object-fit: cover;">
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
 
+                <!-- AC12.04 -->
                 <div class="accordion-item">
                   <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ac1204">
@@ -426,28 +445,29 @@
                       </div>
                       <p><strong>Ce que j'ai fait :</strong> J'ai déployé un serveur IPBX sous Asterisk (Linux Alpine), configuré des postes Fanvil (interface web) et des téléphones Cisco via auto-provisioning (serveur TFTP). J'ai paramétré le Dialplan (messagerie, serveur vocal interactif).</p>
                       <p><strong>Pourquoi je l'ai fait :</strong> Pour mettre en place une infrastructure de communication permettant aux collaborateurs de s'appeler, tout en garantissant l'interopérabilité entre différents constructeurs via le protocole SIP.</p>
-                      <p><strong>Comment je l'ai fait :</strong> Dans Asterisk, manipulation des fichiers <code>pjsip.conf</code> (endpoints, auth) et <code>extensions.conf</code> (le Dialplan). Pour les Cisco, installation d'un service <code>in.tftpd</code> et création de fichiers XML (ex: <code>SEP<MAC>.cnf.xml</code>).</p>
+                      <p><strong>Comment je l'ai fait :</strong> Dans Asterisk, manipulation des fichiers <code>pjsip.conf</code> (endpoints, auth) et <code>extensions.conf</code> (le Dialplan). Pour les Cisco, installation d'un service <code>in.tftpd</code> et création de fichiers XML (ex: <code>SEP&lt;MAC&gt;.cnf.xml</code>).</p>
                       <p><strong>Mes difficultés :</strong> La syntaxe stricte d'Asterisk. Des soucis d'enregistrement SIP (erreurs de bind ou d'identifiants). L'auto-provisioning Cisco exigeait que le nom du fichier XML contienne la bonne adresse MAC sans aucune erreur.</p>
                       <p><strong>Ce que j'en ai appris :</strong> Le fonctionnement du SIP (port UDP 5060) pour l'établissement des sessions. J'ai saisi l'avantage de l'auto-provisioning en milieu professionnel (déploiement de masse) face à la configuration manuelle.</p>
                       <p><strong>Ce que je ferais autrement :</strong> Plutôt que de copier manuellement les fichiers XML, je développerais un script Python prenant en entrée un fichier CSV (MAC et extensions) pour générer automatiquement tous les fichiers de configuration.</p>
                       
-                      <div class="mt-4 p-4 border border-secondary rounded" <div class="mt-4 p-4 border border-secondary rounded" style="background-color: rgba(139, 92, 246, 0.03);">">
-                        <h5 class="h6 text-primary fw-bold mb-4">💻 Traces ciblées : Fichiers sources à télécharger</h5>
-                        <div class="d-grid gap-3">
-                          <a href="assets/AC1204_document1.pdf" download class="btn btn-outline-light text-start d-flex justify-content-between align-items-center p-3">
-                            <span><strong>📄 AC1204_document1.pdf</strong> Description du premier document</span>
-                            <span class="text-primary">📥 Télécharger</span>
-                          </a>
-                          <a href="assets/AC1204_document2.pdf" download class="btn btn-outline-light text-start d-flex justify-content-between align-items-center p-3">
-                            <span><strong>📄 AC1204_document2.pdf</strong> Description du deuxième document</span>
-                            <span class="text-primary">📥 Télécharger</span>
-                          </a>
+                      <div class="mt-4 p-3 border border-secondary rounded" style="background-color: rgba(139, 92, 246, 0.03);">
+                        <h5 class="h6 text-primary fw-bold mb-3">📸 Traces ciblées :</h5>
+                        <div class="row g-3">
+                          <div class="col-md-6 text-center">
+                            <p class="small text-muted mb-2"><em>Configuration du Dialplan Asterisk</em></p>
+                            <img src="assets/ac1204_1.png" alt="Fichier de conf Asterisk" class="img-fluid rounded border border-secondary zoomable-image" style="max-height: 200px; object-fit: cover;">
+                          </div>
+                          <div class="col-md-6 text-center">
+                            <p class="small text-muted mb-2"><em>Provisioning de téléphone IP</em></p>
+                            <img src="assets/ac1204_2.png" alt="Interface téléphone IP" class="img-fluid rounded border border-secondary zoomable-image" style="max-height: 200px; object-fit: cover;">
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
 
+                <!-- AC12.05 -->
                 <div class="accordion-item">
                   <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ac1205">
@@ -466,32 +486,35 @@
                       <p><strong>Ce que j'en ai appris :</strong> Un bon schéma vaut parfois mieux qu'un long discours. J'ai appris à adapter mon vocabulaire technique selon mon interlocuteur (directeur financier vs ingénieur réseau).</p>
                       <p><strong>Ce que je ferais autrement :</strong> Je m'enregistrerais en vidéo lors de mes répétitions pour repérer mes tics de langage et améliorer la fluidité de mes présentations.</p>
 
-                      <div class="mt-4 p-4 border border-secondary rounded" <div class="mt-4 p-4 border border-secondary rounded" style="background-color: rgba(139, 92, 246, 0.03);">">
-                        <h5 class="h6 text-primary fw-bold mb-4">💻 Traces ciblées : Fichiers sources à télécharger</h5>
-                        <div class="d-grid gap-3">
-                          <a href="assets/AC1205_document1.pdf" download class="btn btn-outline-light text-start d-flex justify-content-between align-items-center p-3">
-                            <span><strong>📄 AC1205_document1.pdf</strong> Description du premier document</span>
-                            <span class="text-primary">📥 Télécharger</span>
-                          </a>
-                          <a href="assets/AC1205_document2.pdf" download class="btn btn-outline-light text-start d-flex justify-content-between align-items-center p-3">
-                            <span><strong>📄 AC1205_document2.pdf</strong> Description du deuxième document</span>
-                            <span class="text-primary">📥 Télécharger</span>
-                          </a>
+                      <div class="mt-4 p-3 border border-secondary rounded" style="background-color: rgba(139, 92, 246, 0.03);">
+                        <h5 class="h6 text-primary fw-bold mb-3">📸 Traces ciblées :</h5>
+                        <div class="row g-3">
+                          <div class="col-md-6 text-center">
+                            <p class="small text-muted mb-2"><em>Support de présentation de projet</em></p>
+                            <img src="assets/ac1205_1.png" alt="Diapositive" class="img-fluid rounded border border-secondary zoomable-image" style="max-height: 200px; object-fit: cover;">
+                          </div>
+                          <div class="col-md-6 text-center">
+                            <p class="small text-muted mb-2"><em>Extrait de compte-rendu technique</em></p>
+                            <img src="assets/ac1205_2.png" alt="Rapport" class="img-fluid rounded border border-secondary zoomable-image" style="max-height: 200px; object-fit: cover;">
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
 
-              </div> </div>
+              </div> 
+            </div>
           </div>
 
+          <!-- PÔLE PROGRAMMER -->
           <div class="tab-pane fade" id="prog" role="tabpanel" aria-labelledby="prog-tab">
             <div class="card p-4 shadow-lg reveal">
               <h2 class="h3 border-start border-4 border-danger ps-3 mb-4">Compétence : Créer des outils et applications informatiques</h2>
               
               <div class="accordion" id="accordionProg">
 
+                <!-- AC13.01 -->
                 <div class="accordion-item">
                   <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ac1301">
@@ -511,23 +534,24 @@
                       <p><strong>Ce que j'en ai appris :</strong> L'interface en ligne de commande est infiniment plus rapide et puissante qu'une interface graphique une fois qu'on la maîtrise. J'ai aussi appris à lire la documentation via la commande <code>man</code>.</p>
                       <p><strong>Ce que je ferais autrement :</strong> Créer un fichier "pense-bête" (cheat sheet) personnalisé dès les premiers cours pour centraliser les commandes utiles au lieu de les chercher à chaque fois sur Internet.</p>
 
-                      <div class="mt-4 p-4 border border-secondary rounded" <div class="mt-4 p-4 border border-secondary rounded" style="background-color: rgba(139, 92, 246, 0.03);">">
-                        <h5 class="h6 text-primary fw-bold mb-4">💻 Traces ciblées : Fichiers sources à télécharger</h5>
-                        <div class="d-grid gap-3">
-                          <a href="assets/AC1301_document1.pdf" download class="btn btn-outline-light text-start d-flex justify-content-between align-items-center p-3">
-                            <span><strong>📄 AC1301_document1.pdf</strong> Description du premier document</span>
-                            <span class="text-primary">📥 Télécharger</span>
-                          </a>
-                          <a href="assets/AC1301_document2.pdf" download class="btn btn-outline-light text-start d-flex justify-content-between align-items-center p-3">
-                            <span><strong>📄 AC1301_document2.pdf</strong> Description du deuxième document</span>
-                            <span class="text-primary">📥 Télécharger</span>
-                          </a>
+                      <div class="mt-4 p-3 border border-secondary rounded" style="background-color: rgba(139, 92, 246, 0.03);">
+                        <h5 class="h6 text-primary fw-bold mb-3">📸 Traces ciblées :</h5>
+                        <div class="row g-3">
+                          <div class="col-md-6 text-center">
+                            <p class="small text-muted mb-2"><em>Navigation et gestion des droits en CLI</em></p>
+                            <img src="assets/ac1301_1.png" alt="Terminal Linux" class="img-fluid rounded border border-secondary zoomable-image" style="max-height: 200px; object-fit: cover;">
+                          </div>
+                          <div class="col-md-6 text-center">
+                            <p class="small text-muted mb-2"><em>Édition de fichier système via Nano/Vim</em></p>
+                            <img src="assets/ac1301_2.png" alt="Éditeur texte Linux" class="img-fluid rounded border border-secondary zoomable-image" style="max-height: 200px; object-fit: cover;">
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
 
+                <!-- AC13.02 -->
                 <div class="accordion-item">
                   <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ac1302">
@@ -546,23 +570,24 @@
                       <p><strong>Ce que j'en ai appris :</strong> J'ai appris à ne plus avoir peur des grands messages d'erreurs (tracebacks) dans la console : ils indiquent précisément la ligne et la nature du problème.</p>
                       <p><strong>Ce que je ferais autrement :</strong> J'utiliserais des outils d'analyse statique de code (linters comme Pylint ou Flake8) pour détecter les erreurs de syntaxe automatiquement avant même l'exécution.</p>
 
-                      <div class="mt-4 p-4 border border-secondary rounded" <div class="mt-4 p-4 border border-secondary rounded" style="background-color: rgba(139, 92, 246, 0.03);">">
-                        <h5 class="h6 text-primary fw-bold mb-4">💻 Traces ciblées : Fichiers sources à télécharger</h5>
-                        <div class="d-grid gap-3">
-                          <a href="assets/AC1302_document1.pdf" download class="btn btn-outline-light text-start d-flex justify-content-between align-items-center p-3">
-                            <span><strong>📄 AC1302_document1.pdf</strong> Description du premier document</span>
-                            <span class="text-primary">📥 Télécharger</span>
-                          </a>
-                          <a href="assets/AC1302_document2.pdf" download class="btn btn-outline-light text-start d-flex justify-content-between align-items-center p-3">
-                            <span><strong>📄 AC1302_document2.pdf</strong> Description du deuxième document</span>
-                            <span class="text-primary">📥 Télécharger</span>
-                          </a>
+                      <div class="mt-4 p-3 border border-secondary rounded" style="background-color: rgba(139, 92, 246, 0.03);">
+                        <h5 class="h6 text-primary fw-bold mb-3">📸 Traces ciblées :</h5>
+                        <div class="row g-3">
+                          <div class="col-md-6 text-center">
+                            <p class="small text-muted mb-2"><em>Utilisation de breakpoints sur VS Code</em></p>
+                            <img src="assets/ac1302_1.png" alt="VS Code debug" class="img-fluid rounded border border-secondary zoomable-image" style="max-height: 200px; object-fit: cover;">
+                          </div>
+                          <div class="col-md-6 text-center">
+                            <p class="small text-muted mb-2"><em>Résolution d'erreurs d'exécution</em></p>
+                            <img src="assets/ac1302_2.png" alt="Traceback Python" class="img-fluid rounded border border-secondary zoomable-image" style="max-height: 200px; object-fit: cover;">
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
 
+                <!-- AC13.03 -->
                 <div class="accordion-item">
                   <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ac1303">
@@ -582,23 +607,24 @@
                       <p><strong>Ce que j'en ai appris :</strong> Le temps passé à réfléchir avec un stylo et du papier fait gagner énormément de temps de codage et évite de recommencer son programme à zéro.</p>
                       <p><strong>Ce que je ferais autrement :</strong> Implémenter le "Test Driven Development" (TDD) : écrire les tests qui vérifient mon algorithme avant même d'écrire la fonction elle-même.</p>
 
-                      <div class="mt-4 p-4 border border-secondary rounded" <div class="mt-4 p-4 border border-secondary rounded" style="background-color: rgba(139, 92, 246, 0.03);">">
-                        <h5 class="h6 text-primary fw-bold mb-4">💻 Traces ciblées : Fichiers sources à télécharger</h5>
-                        <div class="d-grid gap-3">
-                          <a href="assets/AC1303_document1.pdf" download class="btn btn-outline-light text-start d-flex justify-content-between align-items-center p-3">
-                            <span><strong>📄 AC1303_document1.pdf</strong> Description du premier document</span>
-                            <span class="text-primary">📥 Télécharger</span>
-                          </a>
-                          <a href="assets/AC1303_document2.pdf" download class="btn btn-outline-light text-start d-flex justify-content-between align-items-center p-3">
-                            <span><strong>📄 AC1303_document2.pdf</strong> Description du deuxième document</span>
-                            <span class="text-primary">📥 Télécharger</span>
-                          </a>
+                      <div class="mt-4 p-3 border border-secondary rounded" style="background-color: rgba(139, 92, 246, 0.03);">
+                        <h5 class="h6 text-primary fw-bold mb-3">📸 Traces ciblées :</h5>
+                        <div class="row g-3">
+                          <div class="col-md-6 text-center">
+                            <p class="small text-muted mb-2"><em>Conception d'algorithme (Logigramme)</em></p>
+                            <img src="assets/ac1303_1.png" alt="Logigramme" class="img-fluid rounded border border-secondary zoomable-image" style="max-height: 200px; object-fit: cover;">
+                          </div>
+                          <div class="col-md-6 text-center">
+                            <p class="small text-muted mb-2"><em>Traduction en langage Python</em></p>
+                            <img src="assets/ac1303_2.png" alt="Code Python" class="img-fluid rounded border border-secondary zoomable-image" style="max-height: 200px; object-fit: cover;">
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
 
+                <!-- AC13.04 -->
                 <div class="accordion-item">
                   <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ac1304">
@@ -618,23 +644,24 @@
                       <p><strong>Ce que j'en ai appris :</strong> J'ai compris la différence entre la structure sémantique (HTML) et la présentation visuelle (CSS), ainsi que le principe fondamental du "Mobile First".</p>
                       <p><strong>Ce que je ferais autrement :</strong> J'introduirais plus de JavaScript dynamique pour créer des interactions plus poussées, ou j'explorerais un préprocesseur CSS comme SASS pour mieux organiser mes styles.</p>
 
-                      <div class="mt-4 p-4 border border-secondary rounded" <div class="mt-4 p-4 border border-secondary rounded" style="background-color: rgba(139, 92, 246, 0.03);">">
-                        <h5 class="h6 text-primary fw-bold mb-4">💻 Traces ciblées : Fichiers sources à télécharger</h5>
-                        <div class="d-grid gap-3">
-                          <a href="assets/AC1304_document1.pdf" download class="btn btn-outline-light text-start d-flex justify-content-between align-items-center p-3">
-                            <span><strong>📄 AC1304_document1.pdf</strong> Description du premier document</span>
-                            <span class="text-primary">📥 Télécharger</span>
-                          </a>
-                          <a href="assets/AC1304_document2.pdf" download class="btn btn-outline-light text-start d-flex justify-content-between align-items-center p-3">
-                            <span><strong>📄 AC1304_document2.pdf</strong> Description du deuxième document</span>
-                            <span class="text-primary">📥 Télécharger</span>
-                          </a>
+                      <div class="mt-4 p-3 border border-secondary rounded" style="background-color: rgba(139, 92, 246, 0.03);">
+                        <h5 class="h6 text-primary fw-bold mb-3">📸 Traces ciblées :</h5>
+                        <div class="row g-3">
+                          <div class="col-md-6 text-center">
+                            <p class="small text-muted mb-2"><em>Structure HTML et stylisation CSS</em></p>
+                            <img src="assets/ac1304_1.png" alt="Code source HTML CSS" class="img-fluid rounded border border-secondary zoomable-image" style="max-height: 200px; object-fit: cover;">
+                          </div>
+                          <div class="col-md-6 text-center">
+                            <p class="small text-muted mb-2"><em>Adaptation Mobile First (Responsive)</em></p>
+                            <img src="assets/ac1304_2.png" alt="Vue mobile inspecteur web" class="img-fluid rounded border border-secondary zoomable-image" style="max-height: 200px; object-fit: cover;">
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
 
+                <!-- AC13.05 & 13.06 -->
                 <div class="accordion-item">
                   <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ac1305">
@@ -654,24 +681,25 @@
                       <p><strong>Ce que j'en ai appris :</strong> L'importance cruciale d'un code propre, commenté et séparé en modules. J'ai aussi appris que Git est une bouée de sauvetage indispensable en développement collaboratif.</p>
                       <p><strong>Ce que je ferais autrement :</strong> Au lieu de coder le traitement du CSV à la main, j'utiliserais à l'avenir la bibliothèque <strong>Pandas</strong> de Python. Pour Git, j'imposerais une norme de nommage stricte ("Conventional Commits") pour nos commits d'équipe.</p>
 
-                      <div class="mt-4 p-4 border border-secondary rounded" <div class="mt-4 p-4 border border-secondary rounded" style="background-color: rgba(139, 92, 246, 0.03);">">
-                        <h5 class="h6 text-primary fw-bold mb-4">💻 Traces ciblées : Fichiers sources à télécharger</h5>
-                        <div class="d-grid gap-3">
-                          <a href="assets/AC1305_document1.pdf" download class="btn btn-outline-light text-start d-flex justify-content-between align-items-center p-3">
-                            <span><strong>📄 AC1305_document1.pdf</strong> Description du premier document</span>
-                            <span class="text-primary">📥 Télécharger</span>
-                          </a>
-                          <a href="assets/AC1305_document2.pdf" download class="btn btn-outline-light text-start d-flex justify-content-between align-items-center p-3">
-                            <span><strong>📄 AC1305_document2.pdf</strong> Description du deuxième document</span>
-                            <span class="text-primary">📥 Télécharger</span>
-                          </a>
+                      <div class="mt-4 p-3 border border-secondary rounded" style="background-color: rgba(139, 92, 246, 0.03);">
+                        <h5 class="h6 text-primary fw-bold mb-3">📸 Traces ciblées :</h5>
+                        <div class="row g-3">
+                          <div class="col-md-6 text-center">
+                            <p class="small text-muted mb-2"><em>Traitement de données CSV et affichage ASCII</em></p>
+                            <img src="assets/ac1305_1.png" alt="Terminal Python Data" class="img-fluid rounded border border-secondary zoomable-image" style="max-height: 200px; object-fit: cover;">
+                          </div>
+                          <div class="col-md-6 text-center">
+                            <p class="small text-muted mb-2"><em>Travail collaboratif via Git</em></p>
+                            <img src="assets/ac1305_2.png" alt="Historique commits Git" class="img-fluid rounded border border-secondary zoomable-image" style="max-height: 200px; object-fit: cover;">
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
 
-              </div> </div>
+              </div> 
+            </div>
           </div>
 
         </div> 
