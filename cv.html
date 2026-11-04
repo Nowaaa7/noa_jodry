@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Noa Jodry — Mon CV</title>
+  <title>Noa Jodry — Mon CV (BUT 2 R&T Cybersécurité)</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
@@ -24,6 +24,7 @@
           <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
           <li class="nav-item"><a class="nav-link active" href="cv.html">CV</a></li>
           <li class="nav-item"><a class="nav-link" href="competences.html">Compétences & AC</a></li>
+          <li class="nav-item"><a class="nav-link" href="projets.html">Projets & Homelab</a></li>
           <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
             <a class="btn btn-outline-light btn-sm px-3" href="https://github.com/Nowaaa7" target="_blank" rel="noopener">
               <i class="bi bi-github me-1"></i> GitHub
@@ -44,19 +45,22 @@
       <!-- Colonne Latérale -->
       <div class="col-lg-4 reveal">
         <div class="sticky-card">
-          <h1 class="h2 fw-bold name-gradient mb-2">Noa Jodry</h1>
-          <p class="text-primary small fw-semibold mb-3">Étudiant en BUT R&T</p>
+          <div class="text-center mb-3">
+            <img src="assets/img/profile.png" alt="Noa Jodry" class="profile-img mb-3" style="width: 110px; height: 110px;">
+            <h1 class="h3 fw-bold name-gradient mb-1">Noa Jodry</h1>
+            <p class="text-primary small fw-semibold mb-0">BUT 2 R&T — Parcours Cybersécurité</p>
+          </div>
 
-          <div class="p-3 rounded-3 mb-4" style="background: rgba(139, 92, 246, 0.1); border: 1px solid rgba(139, 92, 246, 0.35);">
-            <p class="mb-1 fw-bold text-white small"><i class="bi bi-rocket-takeoff text-primary me-1"></i> RECHERCHE ALTERNANCE (2 ANS)</p>
+          <div class="p-3 rounded-3 mb-4" style="background: rgba(139, 92, 246, 0.12); border: 1px solid rgba(139, 92, 246, 0.35);">
+            <p class="mb-1 fw-bold text-white small"><i class="bi bi-shield-check text-primary me-1"></i> PROFIL & OBJECTIF PRO</p>
             <p class="mb-0 small text-muted">
-              <strong>Démarrage :</strong> Septembre 2026<br>
-              <strong>Contrat :</strong> Apprentissage (24 mois)
+              <strong>Formation :</strong> 2<sup>e</sup> année de BUT R&T<br>
+              <strong>Spécialité :</strong> Cybersécurité & Administration Systèmes/Réseaux
             </p>
           </div>
 
           <p class="text-muted small">
-            Actuellement en 1ère année de BUT R&T, je souhaite me spécialiser en Cybersécurité dès ma 2ème année. Je recherche une entreprise pour un contrat de 24 mois afin de monter en compétences sur l'administration sécurisée d'infrastructures.
+            Étudiant en 2<sup>e</sup> année de BUT Réseaux & Télécommunications à l'IUT de Béthune. Pragmatique et passionné d'infrastructures, j'expérimente quotidiennement sur mon propre serveur Homelab (Linux, Docker, bases de données, automatisation) en complément des SAÉ et TP réseaux/sécurité.
           </p>
 
           <hr class="border-secondary my-4">
@@ -68,17 +72,24 @@
             </li>
             <li class="mb-2 d-flex align-items-center gap-2">
               <i class="bi bi-geo-alt text-primary"></i>
-              <span>Douai / Béthune</span>
+              <span>Douai / Béthune / Lille</span>
             </li>
             <li class="mb-2 d-flex align-items-center gap-2">
               <i class="bi bi-car-front text-primary"></i>
               <span>Permis B (Véhiculé)</span>
             </li>
+            <li class="mb-2 d-flex align-items-center gap-2">
+              <i class="bi bi-github text-primary"></i>
+              <a href="https://github.com/Nowaaa7" target="_blank" rel="noopener" class="text-white text-decoration-none">github.com/Nowaaa7</a>
+            </li>
           </ul>
 
-          <div class="d-grid">
+          <div class="d-grid gap-2">
             <a href="assets/CV_Noa_Jodry_2026.pdf" class="btn btn-primary py-2" download="CV_Noa_Jodry_2026.pdf">
               <i class="bi bi-download me-2"></i>Télécharger mon CV (PDF)
+            </a>
+            <a href="competences.html" class="btn btn-outline-light py-2">
+              <i class="bi bi-journal-code me-2"></i>Voir mon Portfolio d'AC
             </a>
           </div>
         </div>
@@ -88,79 +99,153 @@
       <div class="col-lg-8 reveal delay-1">
         <div class="card p-4 p-md-5">
           
+          <!-- Formations -->
           <h2 class="h4 fw-bold text-white d-flex align-items-center gap-2 mb-4">
             <i class="bi bi-mortarboard text-primary"></i> Formations
           </h2>
           <div class="timeline mb-5">
             <div class="timeline-item">
-              <h3 class="h5 fw-bold mb-1">BUT Réseaux & Télécommunications</h3>
-              <p class="text-primary small fw-semibold mb-2">IUT de Béthune | 2025 - Présent</p>
-              <p class="text-muted small mb-0">Administration systèmes et réseaux, Cybersécurité, Développement, Télécommunications.</p>
+              <div class="d-flex flex-wrap justify-content-between align-items-center mb-1">
+                <h3 class="h5 fw-bold mb-0">BUT Réseaux & Télécommunications (2<sup>e</sup> année)</h3>
+                <span class="badge bg-primary">2025 — Présent</span>
+              </div>
+              <p class="text-primary small fw-semibold mb-2">IUT de Béthune — Université d'Artois | Parcours Cybersécurité</p>
+              <p class="text-muted small mb-0">
+                <strong>BUT 2 :</strong> Routage dynamique & redondance, sécurisation d'infrastructures, virtualisation (ESXi, Docker), supervision & analyse de vulnérabilités, développement d'applications communicantes.<br>
+                <strong>BUT 1 (Validé) :</strong> Fondamentaux des réseaux (CCNA 1), administration système Linux/Windows Server, téléphonie IP Asterisk, électronique et programmation Python/Web.
+              </p>
             </div>
             <div class="timeline-item">
-              <h3 class="h5 fw-bold mb-1">Baccalauréat Général (Spécialités NSI & SES)</h3>
-              <p class="text-primary small fw-semibold mb-2">Lycée Albert Châtelet, Douai | Obtenu en 2025</p>
-              <p class="text-muted small mb-0">Apprentissage approfondi de l'algorithmique, de la programmation Python et des enjeux économiques.</p>
+              <div class="d-flex flex-wrap justify-content-between align-items-center mb-1">
+                <h3 class="h5 fw-bold mb-0">Baccalauréat Général (Spécialités NSI & SES)</h3>
+                <span class="badge bg-secondary">Obtenu en 2025</span>
+              </div>
+              <p class="text-primary small fw-semibold mb-2">Lycée Albert Châtelet, Douai | Mention</p>
+              <p class="text-muted small mb-0">Spécialités Numérique et Sciences Informatiques (algorithmique, Python, bases de données SQL, architectures réseaux) et Sciences Économiques et Sociales.</p>
             </div>
           </div>
 
+          <!-- Certifications -->
           <h2 class="h4 fw-bold text-white d-flex align-items-center gap-2 mb-4">
-            <i class="bi bi-briefcase text-primary"></i> Expérience Professionnelle
+            <i class="bi bi-patch-check text-primary"></i> Certifications Académiques & Industrielles
+          </h2>
+          <div class="row g-3 mb-5">
+            <div class="col-md-4">
+              <div class="cert-card h-100">
+                <div class="cert-icon"><i class="bi bi-shield-lock"></i></div>
+                <div>
+                  <h4 class="h6 fw-bold mb-1">Introduction to Cybersecurity</h4>
+                  <p class="text-muted small mb-0">Cisco Networking Academy</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="cert-card h-100">
+                <div class="cert-icon"><i class="bi bi-terminal"></i></div>
+                <div>
+                  <h4 class="h6 fw-bold mb-1">NDG Linux Unhatched</h4>
+                  <p class="text-muted small mb-0">Cisco NetAcad / NDG</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="cert-card h-100">
+                <div class="cert-icon"><i class="bi bi-filetype-py"></i></div>
+                <div>
+                  <h4 class="h6 fw-bold mb-1">Python Essentials 1</h4>
+                  <p class="text-muted small mb-0">Python Institute / NetAcad</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Expériences & Projets Techniques -->
+          <h2 class="h4 fw-bold text-white d-flex align-items-center gap-2 mb-4">
+            <i class="bi bi-briefcase text-primary"></i> Expériences & Réalisations Marquantes
           </h2>
           <div class="timeline mb-5">
             <div class="timeline-item">
-              <h3 class="h5 fw-bold mb-1">Stage d'observation — Service Informatique</h3>
-              <p class="text-primary small fw-semibold mb-2">Centre Hélène Borel | 2021</p>
+              <h3 class="h5 fw-bold mb-1">Administration d'un Serveur Homelab & Automatisation NetDevOps</h3>
+              <p class="text-primary small fw-semibold mb-2">Projet Personnel continu | 2025 — 2026</p>
               <ul class="text-muted small mb-0 ps-3">
-                <li>Découverte de la gestion d'un parc informatique en milieu hospitalier.</li>
-                <li>Observation du traitement des incidents réseaux et support utilisateur.</li>
+                <li>Transformation d'un Lenovo ThinkPad sous Linux en serveur dédié auto-hébergé (gestion par SSH, pare-feu, conteneurisation Docker & Portainer).</li>
+                <li>Déploiement et administration d'une base de données PostgreSQL / Supabase locale pour l'hébergement d'applications Web full-stack (<em>Nos Escapades</em>).</li>
+                <li>Création de workflows d'automatisation sous <strong>n8n</strong> connectés à des flux RSS cyber/tech, API IA et bots Discord pour la veille technologique.</li>
+              </ul>
+            </div>
+            <div class="timeline-item">
+              <h3 class="h5 fw-bold mb-1">Stage d'observation — Service Informatique & Réseaux</h3>
+              <p class="text-primary small fw-semibold mb-2">Centre Hélène Borel, Raimbeaucourt | Décembre 2021</p>
+              <ul class="text-muted small mb-0 ps-3">
+                <li>Immersion aux côtés d'un administrateur réseau au sein d'un parc informatique critique en milieu médico-hospitalier.</li>
+                <li>Observation du traitement des tickets d'incidents, du brassage en baie et du support aux utilisateurs.</li>
               </ul>
             </div>
           </div>
 
+          <!-- Compétences Techniques -->
           <h2 class="h4 fw-bold text-white d-flex align-items-center gap-2 mb-4">
-            <i class="bi bi-cpu text-primary"></i> Compétences Techniques
+            <i class="bi bi-cpu text-primary"></i> Stack Technique (BUT 2)
           </h2>
-          <div class="row g-4">
+          <div class="row g-3">
             <div class="col-md-6">
               <div class="p-3 rounded-3 h-100" style="background: rgba(255,255,255,0.02); border: 1px solid var(--border-glass);">
-                <h4 class="h6 fw-bold text-primary mb-3"><i class="bi bi-router me-2"></i>Réseaux & Télécoms</h4>
+                <h4 class="h6 fw-bold text-primary mb-3"><i class="bi bi-router me-2"></i>Réseaux & Cybersécurité</h4>
                 <div>
                   <span class="skill-tag">Cisco IOS</span>
-                  <span class="skill-tag">Routage</span>
-                  <span class="skill-tag">VLANs</span>
-                  <span class="skill-tag">Modèle OSI / TCP-IP</span>
-                  <span class="skill-tag">IPv4 / IPv6</span>
+                  <span class="skill-tag">VLAN / Trunk / STP</span>
+                  <span class="skill-tag">Routage Statique & OSPF</span>
+                  <span class="skill-tag">ACLs & Filtrage</span>
                   <span class="skill-tag">Wireshark</span>
-                  <span class="skill-tag">LTspice</span>
+                  <span class="skill-tag">IPv4 / IPv6</span>
+                  <span class="skill-tag">Durcissement OS</span>
                 </div>
               </div>
             </div>
             <div class="col-md-6">
               <div class="p-3 rounded-3 h-100" style="background: rgba(255,255,255,0.02); border: 1px solid var(--border-glass);">
-                <h4 class="h6 fw-bold text-info mb-3"><i class="bi bi-server me-2"></i>Systèmes & Services</h4>
+                <h4 class="h6 fw-bold text-info mb-3"><i class="bi bi-server me-2"></i>Systèmes, Virtualisation & VoIP</h4>
                 <div>
-                  <span class="skill-tag">Linux (Debian/Ubuntu/Alpine)</span>
-                  <span class="skill-tag">Windows Server</span>
-                  <span class="skill-tag">Active Directory</span>
-                  <span class="skill-tag">DHCP / DNS</span>
-                  <span class="skill-tag">Asterisk (VoIP/SIP)</span>
-                  <span class="skill-tag">Apache</span>
+                  <span class="skill-tag">Linux (Debian, Ubuntu, Alpine, Mint)</span>
+                  <span class="skill-tag">Windows Server (AD DS, GPO, NTFS)</span>
+                  <span class="skill-tag">Docker & Docker Compose</span>
+                  <span class="skill-tag">Portainer</span>
+                  <span class="skill-tag">VMware ESXi & VirtualBox</span>
+                  <span class="skill-tag">Asterisk IPBX (SIP/TFTP)</span>
                 </div>
               </div>
             </div>
             <div class="col-12">
               <div class="p-3 rounded-3" style="background: rgba(255,255,255,0.02); border: 1px solid var(--border-glass);">
-                <h4 class="h6 fw-bold text-success mb-3"><i class="bi bi-code-slash me-2"></i>Développement & Scripting</h4>
+                <h4 class="h6 fw-bold text-success mb-3"><i class="bi bi-code-slash me-2"></i>Développement, Données & Automatisation</h4>
                 <div>
-                  <span class="skill-tag">Python</span>
+                  <span class="skill-tag">Python (Scripting, Flask)</span>
                   <span class="skill-tag">PowerShell</span>
                   <span class="skill-tag">Bash</span>
-                  <span class="skill-tag">HTML5 / CSS3</span>
-                  <span class="skill-tag">Bootstrap 5</span>
-                  <span class="skill-tag">Git / GitLab</span>
-                  <span class="skill-tag">JSON / CSV</span>
+                  <span class="skill-tag">PostgreSQL & Supabase</span>
+                  <span class="skill-tag">n8n (Workflows & API)</span>
+                  <span class="skill-tag">HTML5 / CSS3 / JS / Bootstrap 5</span>
+                  <span class="skill-tag">Git / GitLab / GitHub</span>
                 </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Disciplines & Centres d'intérêt -->
+          <h2 class="h4 fw-bold text-white d-flex align-items-center gap-2 mb-3 mt-5">
+            <i class="bi bi-lightning-charge text-primary"></i> Discipline Sportive & Centres d'intérêt
+          </h2>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <div class="p-3 rounded-3 h-100" style="background: rgba(255,255,255,0.02); border: 1px solid var(--border-glass);">
+                <h4 class="h6 fw-bold text-white mb-1"><i class="bi bi-trophy text-warning me-2"></i>Sport & Esprit d'équipe</h4>
+                <p class="text-muted small mb-0">Pratique régulière de la musculation (4-5x/semaine), de la course à pied (5 km / 10 km) et du basket-ball. Rigueur, constance et gestion de l'effort.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="p-3 rounded-3 h-100" style="background: rgba(255,255,255,0.02); border: 1px solid var(--border-glass);">
+                <h4 class="h6 fw-bold text-white mb-1"><i class="bi bi-music-note-beamed text-info me-2"></i>Création & Veille Tech</h4>
+                <p class="text-muted small mb-0">Auto-hébergement sur serveur personnel, veille cybersécurité automatisée et composition musicale assistée par ordinateur (MAO sous LMMS).</p>
               </div>
             </div>
           </div>
@@ -172,7 +257,7 @@
 
   <footer class="site-footer text-center mt-5">
     <div class="container">
-      <p class="mb-0 text-muted">© <span id="year"></span> Noa Jodry — Portfolio BUT R&T | <a href="mentions_legales.html">Mentions légales & crédits</a></p>
+      <p class="mb-0 text-muted">© <span id="year"></span> Noa Jodry — Portfolio BUT R&T (Parcours Cybersécurité) | <a href="mentions_legales.html">Mentions légales & crédits</a></p>
     </div>
   </footer>
 
