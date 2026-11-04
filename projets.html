@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Noa Jodry — Mes Projets & Homelab</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+</head>
+<body>
+
+  <nav id="mainNavbar" class="navbar navbar-expand-lg fixed-top navbar-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">
+        <span class="brand-dot"></span> Noa Jodry
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navCollapse">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
+          <li class="nav-item"><a class="nav-link" href="competences.html">Compétences & AC</a></li>
+          <li class="nav-item"><a class="nav-link active" href="projets.html">Projets & Homelab</a></li>
+          <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+            <a class="btn btn-outline-light btn-sm px-3" href="https://github.com/Nowaaa7" target="_blank" rel="noopener">
+              <i class="bi bi-github me-1"></i> GitHub
+            </a>
+          </li>
+          <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+            <a class="btn btn-primary btn-sm px-3" href="https://www.linkedin.com/in/noa-jodry-8a71953a7/" target="_blank" rel="noopener">
+              <i class="bi bi-linkedin me-1"></i> LinkedIn
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-5 mt-5">
+    <header class="text-center mb-5 reveal">
+      <span class="badge rounded-pill mb-2 px-3 py-2" style="background: rgba(139, 92, 246, 0.15); color: #c4b5fd; border: 1px solid rgba(139, 92, 246, 0.3);">
+        Réalisations SAÉ Académiques & Infrastructure Personnelle
+      </span>
+      <h1 class="display-5 fw-bold name-gradient">Mes Projets & Homelab</h1>
+      <p class="lead text-muted mx-auto" style="max-width: 720px;">
+        Découvrez les projets réseau, sécurité, développement et les expérimentations menées sur mon serveur personnel ThinkPad.
+      </p>
+
+      <!-- Filtres de Projets -->
+      <div class="d-flex flex-wrap justify-content-center gap-2 mt-4">
+        <button class="btn btn-primary btn-sm px-3 project-filter-btn" data-filter="all">Tous les projets</button>
+        <button class="btn btn-outline-light btn-sm px-3 project-filter-btn" data-filter="homelab">Homelab & DevOps</button>
+        <button class="btn btn-outline-light btn-sm px-3 project-filter-btn" data-filter="reseau">Réseaux & VoIP</button>
+        <button class="btn btn-outline-light btn-sm px-3 project-filter-btn" data-filter="cyber">Cybersécurité</button>
+        <button class="btn btn-outline-light btn-sm px-3 project-filter-btn" data-filter="dev">Développement & Data</button>
+      </div>
+    </header>
+
+    <div class="row g-4">
+      
+      <!-- Projet 1 : Homelab ThinkPad Server -->
+      <div class="col-lg-6 project-item" data-category="homelab dev cyber">
+        <div class="card p-4 h-100 hover-lift project-card" style="border-color: rgba(139, 92, 246, 0.4);">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <span class="badge project-badge-top" style="background: rgba(139, 92, 246, 0.2); color: #c4b5fd;">Serveur Personnel • Homelab</span>
+            <span class="text-muted small"><i class="bi bi-clock-history me-1"></i>2025 — 2026</span>
+          </div>
+          <h2 class="h4 fw-bold text-white mb-2">Serveur Homelab Linux Mint & Conteneurisation Docker</h2>
+          <p class="text-muted small mb-3">
+            Reconditionnement d'un ordinateur portable ThinkPad en serveur local headless sécurisé. Hébergement de microservices isolés avec Docker, gestion graphique via Portainer et reverse proxy pour la gestion des accès locaux.
+          </p>
+          <div class="mb-3">
+            <span class="skill-tag">Linux Mint Server</span>
+            <span class="skill-tag">Docker Compose</span>
+            <span class="skill-tag">Portainer</span>
+            <span class="skill-tag">SSH & UFW</span>
+            <span class="skill-tag">PostgreSQL</span>
+          </div>
+          <div class="p-3 rounded-3 mt-auto" style="background: rgba(255, 255, 255, 0.025); border: 1px solid var(--border-glass);">
+            <div class="small fw-semibold text-primary mb-1"><i class="bi bi-check-circle me-1"></i> Compétences mobilisées :</div>
+            <p class="small text-muted mb-0">Durcissement SSH, isolation de conteneurs, gestion des volumes persistants et monitoring matériel.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projet 2 : Nos Escapades -->
+      <div class="col-lg-6 project-item" data-category="dev homelab">
+        <div class="card p-4 h-100 hover-lift project-card" style="border-color: rgba(6, 182, 212, 0.4);">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <span class="badge project-badge-top" style="background: rgba(6, 182, 212, 0.2); color: #7dd3fc;">Application Web Full-Stack</span>
+            <span class="text-muted small"><i class="bi bi-database me-1"></i>Supabase & Local</span>
+          </div>
+          <h2 class="h4 fw-bold text-white mb-2">Application Web "Nos Escapades"</h2>
+          <p class="text-muted small mb-3">
+            Développement d'une application web complète pour consigner et cartographier des souvenirs de voyages. Conçue avec une interface responsive moderne connectée à une base de données PostgreSQL gérée via Supabase hébergée localement.
+          </p>
+          <div class="mb-3">
+            <span class="skill-tag">HTML5 / CSS3</span>
+            <span class="skill-tag">JavaScript ES6</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">Supabase API</span>
+            <span class="skill-tag">Self-Hosted</span>
+          </div>
+          <div class="p-3 rounded-3 mt-auto" style="background: rgba(255, 255, 255, 0.025); border: 1px solid var(--border-glass);">
+            <div class="small fw-semibold text-info mb-1"><i class="bi bi-check-circle me-1"></i> Compétences mobilisées :</div>
+            <p class="small text-muted mb-0">Requêtes SQL relationnelles, authentification, modélisation de tables et requêtes asynchrones en JS.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projet 3 : Veille Automatisée n8n & Discord Bot -->
+      <div class="col-lg-6 project-item" data-category="homelab dev cyber">
+        <div class="card p-4 h-100 hover-lift project-card" style="border-color: rgba(245, 158, 11, 0.4);">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <span class="badge project-badge-top" style="background: rgba(245, 158, 11, 0.2); color: #fde68a;">Automatisation & Veille</span>
+            <span class="text-muted small"><i class="bi bi-robot me-1"></i>NetDevOps</span>
+          </div>
+          <h2 class="h4 fw-bold text-white mb-2">Pipeline de Veille Cybersécurité avec n8n</h2>
+          <p class="text-muted small mb-3">
+            Automatisation d'un flux de curation d'alertes CERT-FR et vulnérabilités CVE critiques via des webhooks <strong>n8n</strong>, résumé synthétique par API IA et diffusion programmée dans un canal Discord dédié.
+          </p>
+          <div class="mb-3">
+            <span class="skill-tag">n8n Self-Hosted</span>
+            <span class="skill-tag">Webhooks & API REST</span>
+            <span class="skill-tag">Flux RSS Cyber</span>
+            <span class="skill-tag">Discord Bot API</span>
+          </div>
+          <div class="p-3 rounded-3 mt-auto" style="background: rgba(255, 255, 255, 0.025); border: 1px solid var(--border-glass);">
+            <div class="small fw-semibold text-warning mb-1"><i class="bi bi-check-circle me-1"></i> Compétences mobilisées :</div>
+            <p class="small text-muted mb-0">Gestion des flux JSON, transformation de données sans code/low-code et veille technologique active.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projet 4 : Téléphonie IP Asterisk -->
+      <div class="col-lg-6 project-item" data-category="reseau">
+        <div class="card p-4 h-100 hover-lift project-card" style="border-color: rgba(16, 185, 129, 0.4);">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <span class="badge project-badge-top" style="background: rgba(16, 185, 129, 0.2); color: #a7f3d0;">SAÉ Réseau & Télécoms</span>
+            <span class="text-muted small"><i class="bi bi-telephone-inbound me-1"></i>R2.04</span>
+          </div>
+          <h2 class="h4 fw-bold text-white mb-2">Déploiement d'un IPBX d'Entreprise Asterisk</h2>
+          <p class="text-muted small mb-3">
+            Installation d'un serveur VoIP sous Linux Alpine. Configuration du Dialplan pour les appels internes, messagerie vocale et provisionnement automatique de postes Cisco via serveur TFTP et fichiers XML.
+          </p>
+          <div class="mb-3">
+            <span class="skill-tag">Asterisk IPBX</span>
+            <span class="skill-tag">Protocole SIP (UDP 5060)</span>
+            <span class="skill-tag">TFTP Provisioning</span>
+            <span class="skill-tag">Linux Alpine</span>
+          </div>
+          <div class="p-3 rounded-3 mt-auto" style="background: rgba(255, 255, 255, 0.025); border: 1px solid var(--border-glass);">
+            <div class="small fw-semibold text-success mb-1"><i class="bi bi-check-circle me-1"></i> Compétences mobilisées :</div>
+            <p class="small text-muted mb-0">Interopérabilité SIP, architecture Dialplan et auto-provisioning matériel en volume.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer text-center mt-5">
+    <div class="container">
+      <p class="mb-0 text-muted">© <span id="year"></span> Noa Jodry — Portfolio BUT R&T (Parcours Cybersécurité) | <a href="mentions_legales.html">Mentions légales & crédits</a></p>
+    </div>
+  </footer>
+
+  <button id="backToTop" title="Remonter en haut"><i class="bi bi-arrow-up"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
