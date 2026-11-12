@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Noa Jodry — Mes Compétences & AC (BUT1 & BUT2)</title>
+  <title>Noa Jodry — Mes Compétences & AC (BUT 1 & BUT 2 Cybersécurité)</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
@@ -43,159 +43,135 @@
   <main class="container py-5 mt-5">
     <header class="text-center mb-5 reveal">
       <span class="badge rounded-pill mb-2 px-3 py-2" style="background: rgba(139, 92, 246, 0.15); color: #c4b5fd; border: 1px solid rgba(139, 92, 246, 0.3);">
-        Référentiel National BUT Réseaux & Télécommunications
+        B.U.T. Réseaux & Télécommunications — Parcours Cybersécurité
       </span>
       <h1 class="display-5 fw-bold name-gradient">Démarche Réflexive & Compétences</h1>
       <p class="lead text-muted mx-auto" style="max-width: 780px;">
-        Suivi et analyse de ma progression par Apprentissage Critique (AC) selon le niveau attendu au fil des années.
+        Suivi complet de mes 41 Apprentissages Critiques (AC) selon l'évolution de posture attendue entre la 1<sup>re</sup> année et la 2<sup>e</sup> année.
       </p>
 
-      <!-- SWITCHER DE NIVEAU BUT1 / BUT2 -->
+      <!-- SÉLECTEUR DE NIVEAU BUT 1 / BUT 2 -->
       <div class="mt-4">
         <div class="level-switcher">
           <button id="btnLevelBut2" class="level-btn active-but2">
             <i class="bi bi-lightning-charge-fill text-warning"></i>
-            BUT 2 — Niveau Analytique & Réflexif
+            BUT 2 — Niveau Analytique & Réflexif (24 AC)
           </button>
           <button id="btnLevelBut1" class="level-btn">
             <i class="bi bi-check2-all text-success"></i>
-            BUT 1 — Niveau Descriptif & Explicatif (Validé)
+            BUT 1 — Niveau Descriptif & Explicatif (17 AC)
           </button>
         </div>
       </div>
     </header>
 
-    <!-- BARRE DE RECHERCHE RAPIDE D'AC -->
+    <!-- BARRE DE RECHERCHE RAPIDE -->
     <div class="row justify-content-center mb-4">
       <div class="col-lg-8">
         <div class="input-group">
           <span class="input-group-text bg-dark border-0 text-muted ps-3"><i class="bi bi-search"></i></span>
-          <input type="text" id="acSearchInput" class="form-control search-ac-input" placeholder="Rechercher un code AC (ex: AC21.01, AC11.03), un outil (Cisco, Docker, Wireshark, Python)...">
+          <input type="text" id="acSearchInput" class="form-control search-ac-input" placeholder="Filtrer par code AC (ex: AC21.01, AC24.02Cyber, AC11.03) ou mot-clé (OSPF, BGP, Docker, Nmap, VPN)...">
         </div>
       </div>
     </div>
 
     <!-- ========================================================================= -->
-    <!-- SECTION NIVEAU 2 : BUT 2 (ANALYTIQUE & RÉFLEXIF)                          -->
+    <!-- SECTION BUT 2 : NIVEAU ANALYTIQUE / RÉFLEXIF (24 AC)                      -->
     <!-- ========================================================================= -->
     <div id="sectionLevelBut2">
-      <!-- Bannière explicative des attendus BUT2 -->
       <div class="methodo-banner mb-5 reveal">
         <div class="d-flex flex-wrap justify-content-between align-items-center mb-3">
           <div class="d-flex align-items-center gap-2">
             <i class="bi bi-shield-check text-primary fs-3"></i>
-            <h2 class="h5 fw-bold mb-0">Posture BUT 2 : Analytique & Réflexif</h2>
+            <h2 class="h5 fw-bold mb-0">BUT 2 — Niveau Analytique & Réflexif</h2>
           </div>
           <span class="badge" style="background: rgba(244, 114, 182, 0.2); color: #f9a8d4; border: 1px solid rgba(244, 114, 182, 0.4);">
-            Évaluation S4 : 10 min présentation + 5 min questions
+            Parcours Cybersécurité • 5 Compétences
           </span>
         </div>
-        <p class="text-muted small mb-3">
-          En 2<sup>e</sup> année, la posture évolue : il ne s'agit plus seulement de décrire la tâche réalisée, mais de <strong>justifier rationnellement ses choix techniques</strong>, <strong>analyser les erreurs rencontrées</strong> et <strong>démontrer sa progression</strong> vers l'autonomie et le profil d'administrateur / analyste en cybersécurité.
-        </p>
         <div class="row g-2">
           <div class="col-md-3"><div class="methodo-pill"><i class="bi bi-check-circle text-success"></i> Analyser ce qui a fonctionné ou non</div></div>
-          <div class="col-md-3"><div class="methodo-pill"><i class="bi bi-bug text-danger"></i> Identifier et disséquer ses erreurs</div></div>
-          <div class="col-md-3"><div class="methodo-pill"><i class="bi bi-diagram-3 text-info"></i> Justifier ses choix d'architecture</div></div>
-          <div class="col-md-3"><div class="methodo-pill"><i class="bi bi-graph-up-arrow text-warning"></i> Montrer sa progression technique</div></div>
+          <div class="col-md-3"><div class="methodo-pill"><i class="bi bi-bug text-danger"></i> Identifier mes erreurs</div></div>
+          <div class="col-md-3"><div class="methodo-pill"><i class="bi bi-diagram-3 text-info"></i> Expliquer mes choix</div></div>
+          <div class="col-md-3"><div class="methodo-pill"><i class="bi bi-graph-up-arrow text-warning"></i> Montrer ma progression</div></div>
         </div>
       </div>
 
-      <!-- ONGLETS DES COMPÉTENCES BUT2 -->
+      <!-- ONGLETS DES 5 COMPÉTENCES BUT 2 -->
       <ul class="nav nav-pills nav-fill mb-4 reveal delay-1" id="but2Tabs" role="tablist">
         <li class="nav-item" role="presentation">
           <button class="nav-link active" id="b2-admin-tab" data-bs-toggle="tab" data-bs-target="#b2-admin" type="button" role="tab">
-            <i class="bi bi-hdd-network me-1"></i> Administrer
+            <i class="bi bi-hdd-network me-1"></i> Administrer (6)
           </button>
         </li>
         <li class="nav-item" role="presentation">
           <button class="nav-link" id="b2-connect-tab" data-bs-toggle="tab" data-bs-target="#b2-connect" type="button" role="tab">
-            <i class="bi bi-broadcast-pin me-1"></i> Connecter
+            <i class="bi bi-broadcast-pin me-1"></i> Connecter (5)
           </button>
         </li>
         <li class="nav-item" role="presentation">
           <button class="nav-link" id="b2-prog-tab" data-bs-toggle="tab" data-bs-target="#b2-prog" type="button" role="tab">
-            <i class="bi bi-terminal me-1"></i> Programmer
+            <i class="bi bi-terminal me-1"></i> Programmer (5)
           </button>
         </li>
         <li class="nav-item" role="presentation">
           <button class="nav-link" id="b2-sec-tab" data-bs-toggle="tab" data-bs-target="#b2-sec" type="button" role="tab">
-            <i class="bi bi-shield-lock me-1"></i> Sécuriser
+            <i class="bi bi-shield-lock me-1"></i> Sécuriser (6)
           </button>
         </li>
         <li class="nav-item" role="presentation">
           <button class="nav-link" id="b2-surv-tab" data-bs-toggle="tab" data-bs-target="#b2-surv" type="button" role="tab">
-            <i class="bi bi-eye me-1"></i> Surveiller
+            <i class="bi bi-eye me-1"></i> Surveiller (2)
           </button>
         </li>
       </ul>
 
       <div class="tab-content" id="but2TabsContent">
-        
-        <!-- PÔLE 1 : ADMINISTRER (BUT2) -->
+
+        <!-- ==================== PÔLE 1 : ADMINISTRER (NIVEAU 2) ==================== -->
         <div class="tab-pane fade show active" id="b2-admin" role="tabpanel">
           <div class="card p-4 p-md-5 reveal">
-            <h3 class="h5 fw-bold mb-3 border-start border-4 border-primary ps-3">Compétence : Administrer les réseaux et l'Internet — Niveau 2</h3>
-            
+            <div class="mb-4 border-start border-4 border-primary ps-3">
+              <h3 class="h5 fw-bold mb-1">Compétence Administrer — Niveau 2 : Administrer un réseau</h3>
+              <p class="text-muted small mb-0">CE1.01 à CE1.05 • Conception d'infrastructures, virtualisation, services avancés et réseaux opérateurs</p>
+            </div>
+
             <div class="accordion" id="accBut2Admin">
+
               <!-- AC21.01 -->
               <div class="accordion-item">
                 <h4 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ac2101">
-                    <span class="ac-code ac-code-but2">AC21.01</span> Déployer une architecture réseau complexe avec routage dynamique et redondance
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#b2_ac2101">
+                    <span class="ac-code ac-code-but2">AC21.01</span> Configurer et dépanner le routage dynamique dans un réseau
                   </button>
                 </h4>
-                <div id="ac2101" class="accordion-collapse collapse" data-bs-parent="#accBut2Admin">
+                <div id="b2_ac2101" class="accordion-collapse collapse" data-bs-parent="#accBut2Admin">
                   <div class="accordion-body">
                     <div class="mb-3 d-flex flex-wrap gap-2">
-                      <span class="badge bg-primary">R3.01 - Réseaux d'opérateurs & Entreprise</span>
-                      <span class="badge bg-secondary">SAÉ 3.01 - Concevoir un réseau d'entreprise</span>
+                      <span class="badge bg-primary">R3.01 - Réseaux d'entreprise & opérateurs</span>
+                      <span class="badge bg-secondary">SAÉ 3.01 - Infrastructure réseau</span>
                     </div>
-
                     <div class="reflexive-grid">
                       <div class="reflexive-box">
-                        <div class="reflexive-title"><i class="bi bi-cpu text-primary"></i> Action & Démarche</div>
-                        <p>Déploiement d'une topologie multi-commutateurs avec routage dynamique <strong>OSPF multi-aires</strong> et redondance de passerelle par défaut via le protocole <strong>HSRP/VRRP</strong>.</p>
-                      </div>
-                      <div class="reflexive-box box-why">
-                        <div class="reflexive-title"><i class="bi bi-diagram-3 text-info"></i> Justification des choix</div>
-                        <p>Le routage statique du BUT1 montrait ses limites face à la panne d'un lien physique. OSPF permet une convergence automatique en cas de rupture de boucle sans intervention humaine.</p>
+                        <div class="reflexive-title"><i class="bi bi-check2-circle text-success"></i> Ce qui a fonctionné ou non</div>
+                        <p><strong>Fonctionné :</strong> Convergence automatique des tables de routage sous OSPF multi-aires et bascule redondante HSRP en moins de 3 secondes lors d'une coupure de lien.<br><strong>Non fonctionné initialement :</strong> Redistribution des routes entre OSPF et BGP incomplète sur le routeur de bordure.</p>
                       </div>
                       <div class="reflexive-box box-diff">
-                        <div class="reflexive-title"><i class="bi bi-bug text-warning"></i> Analyse des erreurs & pannes</div>
-                        <p>Une mauvaise configuration de l'aire de transit (Area 0 manquante sur un routeur périphérique) a empêché la propagation des LSA. Diagnostiqué via <code>show ip ospf neighbor</code>.</p>
+                        <div class="reflexive-title"><i class="bi bi-bug text-warning"></i> Identification de mes erreurs</div>
+                        <p>J'avais oublié le mot-clé <code>subnets</code> lors de la redistribution vers OSPF (ce qui ne redistribuait que les réseaux classful) ainsi que l'aire de transit <code>Area 0</code> sur un routeur intermédiaire. Diagnostiqué via <code>show ip ospf neighbor</code> et <code>show ip route</code>.</p>
                       </div>
-                      <div class="reflexive-box box-learn">
-                        <div class="reflexive-title"><i class="bi bi-graph-up-arrow text-success"></i> Bilan critique & Recul</div>
-                        <p>Compréhension de la métrique OSPF basée sur le coût (bande passante) plutôt que le nombre de sauts. Importance d'un plan d'adressage IP hiérarchisé pour faciliter la récapitulation de routes.</p>
+                      <div class="reflexive-box box-why">
+                        <div class="reflexive-title"><i class="bi bi-diagram-3 text-info"></i> Explication de mes choix</div>
+                        <p>J'ai privilégié OSPF à RIPv2 car OSPF s'appuie sur le coût réel des liens (bande passante) et non sur le simple nombre de sauts, évitant ainsi d'emprunter un lien lent en cas de topologie maillée.</p>
                       </div>
                     </div>
-
                     <div class="but2-analysis-panel">
-                      <div class="d-flex justify-content-between align-items-center mb-2">
-                        <span class="progression-badge"><i class="bi bi-arrow-up-right"></i> Progression BUT1 ➔ BUT2</span>
-                        <span class="small text-muted">Passage du routage statique au dynamique tolérant aux pannes</span>
+                      <div class="d-flex flex-wrap justify-content-between align-items-center mb-2 gap-2">
+                        <span class="progression-badge"><i class="bi bi-graph-up-arrow"></i> Progression BUT 1 ➔ BUT 2</span>
+                        <span class="small text-muted">Du routage statique manuel au routage dynamique tolérant aux pannes</span>
                       </div>
-                      <p class="small text-muted mb-0">
-                        <strong>Ce qui a fonctionné :</strong> Bascule HSRP validée en moins de 3 secondes lors d'une coupure simulée sur le lien actif.<br>
-                        <strong>Ce qui sera amélioré :</strong> Mettre en œuvre l'authentification MD5/SHA sur les paquets OSPF pour contrer l'injection de fausses routes dans le domaine.
-                      </p>
+                      <p class="small text-muted mb-0">En BUT 1 (AC11.03), je saisissais des routes statiques une à une. En BUT 2, je conçois des domaines de routage scalables capables de s'auto-réparer sans intervention humaine, tout en sécurisant les adjacences par authentification MD5/SHA.</p>
                     </div>
-
-                    <div class="traces-container">
-                      <h5 class="h6 text-primary fw-bold mb-3"><i class="bi bi-images me-2"></i>Traces ciblées :</h5>
-                      <div class="row g-3">
-                        <div class="col-md-6 text-center">
-                          <p class="small text-muted mb-2"><em>Topologie OSPF multi-aires sous Packet Tracer / GNS3</em></p>
-                          <img src="assets/ac1103_1.png" alt="Topologie OSPF" class="zoomable-image">
-                        </div>
-                        <div class="col-md-6 text-center">
-                          <p class="small text-muted mb-2"><em>Table de routage et adjacence des voisins CLI Cisco</em></p>
-                          <img src="assets/ac1103_2.png" alt="CLI OSPF" class="zoomable-image">
-                        </div>
-                      </div>
-                    </div>
-
                   </div>
                 </div>
               </div>
@@ -203,303 +179,933 @@
               <!-- AC21.02 -->
               <div class="accordion-item">
                 <h4 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ac2102">
-                    <span class="ac-code ac-code-but2">AC21.02</span> Virtualiser des environnements de serveurs et conteneurs (Docker, ESXi)
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#b2_ac2102">
+                    <span class="ac-code ac-code-but2">AC21.02</span> Configurer et expliquer une politique simple de QoS et les fonctions de base de la sécurité d'un réseau
                   </button>
                 </h4>
-                <div id="ac2102" class="accordion-collapse collapse" data-bs-parent="#accBut2Admin">
+                <div id="b2_ac2102" class="accordion-collapse collapse" data-bs-parent="#accBut2Admin">
                   <div class="accordion-body">
                     <div class="mb-3 d-flex flex-wrap gap-2">
-                      <span class="badge bg-primary">R3.02 - Administration système avancée</span>
-                      <span class="badge bg-secondary">Projet Homelab</span>
+                      <span class="badge bg-primary">R3.01 / R3.03 - Réseaux & Sécurité LAN</span>
+                      <span class="badge bg-secondary">ToIP & Commutation</span>
                     </div>
-
                     <div class="reflexive-grid">
                       <div class="reflexive-box">
-                        <div class="reflexive-title"><i class="bi bi-cpu text-primary"></i> Action & Démarche</div>
-                        <p>Déploiement de microservices conteneurisés via <strong>Docker & Docker Compose</strong> (reverse proxy Nginx, PostgreSQL, Portainer) et gestion de machines virtuelles sous <strong>VMware ESXi</strong>.</p>
-                      </div>
-                      <div class="reflexive-box box-why">
-                        <div class="reflexive-title"><i class="bi bi-diagram-3 text-info"></i> Justification des choix</div>
-                        <p>La conteneurisation isole les dépendances applicatives sans consommer les ressources lourdes d'un hyperviseur complet, garantissant une reproductibilité parfaite des environnements.</p>
+                        <div class="reflexive-title"><i class="bi bi-check2-circle text-success"></i> Ce qui a fonctionné ou non</div>
+                        <p><strong>Fonctionné :</strong> Priorisation des flux voix RTP (marquage DSCP EF) éliminant la gigue lors d'une saturation simulée du lien par transfert FTP, et blocage d'équipements non autorisés via Port-Security.<br><strong>Non fonctionné initialement :</strong> Perte d'accès des postes légitimes sur un port commutateur.</p>
                       </div>
                       <div class="reflexive-box box-diff">
-                        <div class="reflexive-title"><i class="bi bi-bug text-warning"></i> Analyse des erreurs & pannes</div>
-                        <p>Problème de persistance des données sur un conteneur PostgreSQL lors d'un <code>docker compose down</code> : absence de volume nommé. Corrigé par la déclaration explicite d'un volume managé.</p>
+                        <div class="reflexive-title"><i class="bi bi-bug text-warning"></i> Identification de mes erreurs</div>
+                        <p>J'avais limité le <code>switchport port-security maximum 1</code> sur un port raccordant un téléphone IP Cisco chaîné à un PC (qui nécessite 2 adresses MAC distinctes : VLAN Voice et VLAN Data), déclenchant la mise en état <code>err-disabled</code> du port.</p>
                       </div>
-                      <div class="reflexive-box box-learn">
-                        <div class="reflexive-title"><i class="bi bi-graph-up-arrow text-success"></i> Bilan critique & Recul</div>
-                        <p>Maîtrise des réseaux internes Docker (bridge, host, overlay) et de la gestion fine des secrets et variables d'environnement (fichiers <code>.env</code> hors Git).</p>
+                      <div class="reflexive-box box-why">
+                        <div class="reflexive-title"><i class="bi bi-diagram-3 text-info"></i> Explication de mes choix</div>
+                        <p>J'ai combiné une file prioritaire stricte (LLQ) pour la ToIP et activé <code>DHCP Snooping</code> + <code>Dynamic ARP Inspection</code> afin de bloquer les attaques par usurpation de serveur DHCP ou ARP Spoofing dès la couche 2.</p>
                       </div>
                     </div>
-
                     <div class="but2-analysis-panel">
-                      <div class="d-flex justify-content-between align-items-center mb-2">
-                        <span class="progression-badge"><i class="bi bi-arrow-up-right"></i> Progression BUT1 ➔ BUT2</span>
-                        <span class="small text-muted">Passage de VMs manuelles (VirtualBox) à l'orchestration déclarative de conteneurs</span>
+                      <div class="d-flex flex-wrap justify-content-between align-items-center mb-2 gap-2">
+                        <span class="progression-badge"><i class="bi bi-graph-up-arrow"></i> Progression BUT 1 ➔ BUT 2</span>
+                        <span class="small text-muted">De la simple connectivité VLAN au contrôle fin des flux et de la couche 2</span>
                       </div>
-                      <p class="small text-muted mb-0">
-                        <strong>Transposition pro :</strong> Les principes de conteneurisation appris sur mon serveur personnel me permettent d'automatiser le déploiement d'infrastructures selon les pratiques DevOps.
-                      </p>
+                      <p class="small text-muted mb-0">Alors qu'en BUT 1 mon objectif était uniquement que les trames circulent entre VLANs, j'intègre désormais la qualité de service (bande passante garantie) et la défense contre les menaces internes sur les ports d'accès.</p>
                     </div>
-
-                    <div class="traces-container">
-                      <h5 class="h6 text-primary fw-bold mb-3"><i class="bi bi-images me-2"></i>Traces ciblées :</h5>
-                      <div class="row g-3">
-                        <div class="col-md-6 text-center">
-                          <p class="small text-muted mb-2"><em>Fichier docker-compose.yml multi-services</em></p>
-                          <img src="assets/ac1301_2.png" alt="Docker Compose" class="zoomable-image">
-                        </div>
-                        <div class="col-md-6 text-center">
-                          <p class="small text-muted mb-2"><em>Tableau de bord Portainer & conteneurs actifs</em></p>
-                          <img src="assets/ac1106_1.png" alt="Portainer VM" class="zoomable-image">
-                        </div>
-                      </div>
-                    </div>
-
                   </div>
                 </div>
               </div>
+
+              <!-- AC21.03 -->
+              <div class="accordion-item">
+                <h4 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#b2_ac2103">
+                    <span class="ac-code ac-code-but2">AC21.03</span> Déployer des postes clients et des solutions virtualisées adaptées à une situation donnée
+                  </button>
+                </h4>
+                <div id="b2_ac2103" class="accordion-collapse collapse" data-bs-parent="#accBut2Admin">
+                  <div class="accordion-body">
+                    <div class="mb-3 d-flex flex-wrap gap-2">
+                      <span class="badge bg-primary">R3.02 - Virtualisation & Systèmes</span>
+                      <span class="badge bg-secondary">Homelab ThinkPad & ESXi</span>
+                    </div>
+                    <div class="reflexive-grid">
+                      <div class="reflexive-box">
+                        <div class="reflexive-title"><i class="bi bi-check2-circle text-success"></i> Ce qui a fonctionné ou non</div>
+                        <p><strong>Fonctionné :</strong> Déploiement rapide de microservices (Nginx, PostgreSQL, Portainer, n8n) via Docker Compose sur mon serveur Linux, et hébergement de VMs isolées sous VMware ESXi.<br><strong>Non fonctionné initialement :</strong> Réinitialisation d'une base de données après mise à jour d'un conteneur.</p>
+                      </div>
+                      <div class="reflexive-box box-diff">
+                        <div class="reflexive-title"><i class="bi bi-bug text-warning"></i> Identification de mes erreurs</div>
+                        <p>Oubli de la déclaration d'un volume persistant dans le fichier <code>docker-compose.yml</code> : les données étaient stockées dans la couche éphémère du conteneur et ont été effacées lors du <code>docker compose down</code>.</p>
+                      </div>
+                      <div class="reflexive-box box-why">
+                        <div class="reflexive-title"><i class="bi bi-diagram-3 text-info"></i> Explication de mes choix</div>
+                        <p>J'ai choisi la conteneurisation Docker pour les services applicatifs légers (faible empreinte RAM/CPU sur mon serveur) et réservé l'hyperviseur ESXi aux environnements nécessitant un noyau OS distinct (ex: Windows Server AD).</p>
+                      </div>
+                    </div>
+                    <div class="but2-analysis-panel">
+                      <div class="d-flex flex-wrap justify-content-between align-items-center mb-2 gap-2">
+                        <span class="progression-badge"><i class="bi bi-graph-up-arrow"></i> Progression BUT 1 ➔ BUT 2</span>
+                        <span class="small text-muted">De l'installation manuelle poste par poste à l'infrastructure déclarative</span>
+                      </div>
+                      <p class="small text-muted mb-0">En BUT 1 (AC11.06), j'installais manuellement des OS via ISO sous VirtualBox. En BUT 2, je déploie des environnements reproductibles en quelques secondes grâce à des fichiers déclaratifs YAML et des modèles de machines virtuelles.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- AC21.04 -->
+              <div class="accordion-item">
+                <h4 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#b2_ac2104">
+                    <span class="ac-code ac-code-but2">AC21.04</span> Déployer des services réseaux avancés
+                  </button>
+                </h4>
+                <div id="b2_ac2104" class="accordion-collapse collapse" data-bs-parent="#accBut2Admin">
+                  <div class="accordion-body">
+                    <div class="mb-3 d-flex flex-wrap gap-2">
+                      <span class="badge bg-primary">R3.02 - Services Réseaux Avancés</span>
+                      <span class="badge bg-secondary">DNS, DHCP Failover, Reverse Proxy</span>
+                    </div>
+                    <div class="reflexive-grid">
+                      <div class="reflexive-box">
+                        <div class="reflexive-title"><i class="bi bi-check2-circle text-success"></i> Ce qui a fonctionné ou non</div>
+                        <p><strong>Fonctionné :</strong> Mise en place d'un couple DNS Primaire/Secondaire (Bind9), d'un relais DHCP inter-VLAN (<code>ip helper-address</code>) et d'un reverse proxy HTTPS centralisé.<br><strong>Non fonctionné initialement :</strong> Non-réplication des nouveaux enregistrements DNS vers le serveur secondaire.</p>
+                      </div>
+                      <div class="reflexive-box box-diff">
+                        <div class="reflexive-title"><i class="bi bi-bug text-warning"></i> Identification de mes erreurs</div>
+                        <p>J'avais modifié les enregistrements A dans le fichier de zone du serveur primaire sans incrémenter le numéro de série (<code>Serial</code>) dans l'enregistrement SOA : le serveur secondaire considérait sa zone toujours à jour.</p>
+                      </div>
+                      <div class="reflexive-box box-why">
+                        <div class="reflexive-title"><i class="bi bi-diagram-3 text-info"></i> Explication de mes choix</div>
+                        <p>J'ai centralisé les services DHCP et DNS sur des serveurs dédiés plutôt que sur les routeurs, et sécurisé les transferts de zone (AXFR) avec une clé cryptographique TSIG pour éviter l'espionnage de la cartographie interne.</p>
+                      </div>
+                    </div>
+                    <div class="but2-analysis-panel">
+                      <div class="d-flex flex-wrap justify-content-between align-items-center mb-2 gap-2">
+                        <span class="progression-badge"><i class="bi bi-graph-up-arrow"></i> Progression BUT 1 ➔ BUT 2</span>
+                        <span class="small text-muted">De services isolés à une architecture résiliente sans point de défaillance unique</span>
+                      </div>
+                      <p class="small text-muted mb-0">Contrairement au BUT 1 où chaque service fonctionnait sur une machine unique, j'applique désormais le principe de haute disponibilité (redondance DNS/DHCP) indispensable en production.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- AC21.05 -->
+              <div class="accordion-item">
+                <h4 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#b2_ac2105">
+                    <span class="ac-code ac-code-but2">AC21.05</span> Identifier les réseaux opérateurs et l'architecture d'Internet
+                  </button>
+                </h4>
+                <div id="b2_ac2105" class="accordion-collapse collapse" data-bs-parent="#accBut2Admin">
+                  <div class="accordion-body">
+                    <div class="mb-3 d-flex flex-wrap gap-2">
+                      <span class="badge bg-primary">R3.01 - Réseaux d'opérateurs</span>
+                      <span class="badge bg-secondary">BGP (eBGP / iBGP) & Autonomous Systems</span>
+                    </div>
+                    <div class="reflexive-grid">
+                      <div class="reflexive-box">
+                        <div class="reflexive-title"><i class="bi bi-check2-circle text-success"></i> Ce qui a fonctionné ou non</div>
+                        <p><strong>Fonctionné :</strong> Interconnexion de 4 Systèmes Autonomes (AS) distincts via <strong>eBGP</strong>, transit interne via <strong>iBGP</strong> et ingénierie de trafic par manipulation de l'attribut <code>local-preference</code>.<br><strong>Non fonctionné initialement :</strong> Paquets routés vers un prochain saut (Next-Hop) inaccessible en iBGP.</p>
+                      </div>
+                      <div class="reflexive-box box-diff">
+                        <div class="reflexive-title"><i class="bi bi-bug text-warning"></i> Identification de mes erreurs</div>
+                        <p>En iBGP, l'adresse IP du prochain saut n'est pas modifiée par défaut lors de l'annonce d'un préfixe externe. J'ai corrigé cette erreur en configurant la commande <code>neighbor ... next-hop-self</code> sur les routeurs de bordure et en validant les <code>route-maps</code>.</p>
+                      </div>
+                      <div class="reflexive-box box-why">
+                        <div class="reflexive-title"><i class="bi bi-diagram-3 text-info"></i> Explication de mes choix</div>
+                        <p>J'ai utilisé l'attribut <code>local-preference</code> (attribut bien connu discrétionnaire) plutôt que le MED pour influencer de manière déterministe le chemin de sortie préférentiel de tout mon AS vers un opérateur de transit.</p>
+                      </div>
+                    </div>
+                    <div class="but2-analysis-panel">
+                      <div class="d-flex flex-wrap justify-content-between align-items-center mb-2 gap-2">
+                        <span class="progression-badge"><i class="bi bi-graph-up-arrow"></i> Progression BUT 1 ➔ BUT 2</span>
+                        <span class="small text-muted">Du réseau local d'entreprise (LAN) au cœur d'Internet inter-opérateurs</span>
+                      </div>
+                      <p class="small text-muted mb-0">Cette compétence m'a fait changer d'échelle : je comprends désormais comment les opérateurs (Tier 1/2/3), les points d'échange (IXP) et le protocole BGP acheminent le trafic mondial selon des politiques économiques et techniques.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- AC21.06 -->
+              <div class="accordion-item">
+                <h4 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#b2_ac2106">
+                    <span class="ac-code ac-code-but2">AC21.06</span> Travailler en équipe pour développer ses compétences professionnelles
+                  </button>
+                </h4>
+                <div id="b2_ac2106" class="accordion-collapse collapse" data-bs-parent="#accBut2Admin">
+                  <div class="accordion-body">
+                    <div class="mb-3 d-flex flex-wrap gap-2">
+                      <span class="badge bg-primary">SAÉ 3.01 / SAÉ 3.03 - Projets collaboratifs</span>
+                      <span class="badge bg-secondary">GitLab & Méthodologie Agile</span>
+                    </div>
+                    <div class="reflexive-grid">
+                      <div class="reflexive-box">
+                        <div class="reflexive-title"><i class="bi bi-check2-circle text-success"></i> Ce qui a fonctionné ou non</div>
+                        <p><strong>Fonctionné :</strong> Livraison dans les temps d'une maquette d'infrastructure complète grâce à une répartition claire des pôles (cœur réseau, serveurs Linux/AD, sécurité/filtrage).<br><strong>Non fonctionné initialement :</strong> Chevauchement de plages IP entre deux sous-groupes lors de l'intégration finale.</p>
+                      </div>
+                      <div class="reflexive-box box-diff">
+                        <div class="reflexive-title"><i class="bi bi-bug text-warning"></i> Identification de mes erreurs</div>
+                        <p>Nous avions commencé les configurations en parallèle avant d'avoir figé un document unique de plan d'adressage IP et de nommage des équipements, ce qui a imposé une reprise de plusieurs fichiers de configuration.</p>
+                      </div>
+                      <div class="reflexive-box box-why">
+                        <div class="reflexive-title"><i class="bi bi-diagram-3 text-info"></i> Explication de mes choix</div>
+                        <p>Nous avons mis en place un dépôt GitLab centralisé avec une branche par fonctionnalité et un fichier de spécifications d'architecture validé collectivement avant toute phase de déploiement.</p>
+                      </div>
+                    </div>
+                    <div class="but2-analysis-panel">
+                      <div class="d-flex flex-wrap justify-content-between align-items-center mb-2 gap-2">
+                        <span class="progression-badge"><i class="bi bi-graph-up-arrow"></i> Progression BUT 1 ➔ BUT 2</span>
+                        <span class="small text-muted">De la juxtaposition de tâches individuelles à une véritable ingénierie collaborative</span>
+                      </div>
+                      <p class="small text-muted mb-0">J'ai développé une posture professionnelle : savoir communiquer mes blocages techniques tôt, documenter mes configurations pour mes coéquipiers et intégrer les briques de chacun dans un système cohérent.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
 
-        <!-- PÔLE 2 : CONNECTER (BUT2) -->
+        <!-- ==================== PÔLE 2 : CONNECTER (NIVEAU 2) ==================== -->
         <div class="tab-pane fade" id="b2-connect" role="tabpanel">
           <div class="card p-4 p-md-5 reveal">
-            <h3 class="h5 fw-bold mb-3 border-start border-4 border-info ps-3">Compétence : Connecter les entreprises et les usagers — Niveau 2</h3>
-            
+            <div class="mb-4 border-start border-4 border-info ps-3">
+              <h3 class="h5 fw-bold mb-1">Compétence Connecter — Niveau 2 : Maîtriser les solutions de connexion</h3>
+              <p class="text-muted small mb-0">CE2.01 à CE2.04 • Transmissions complexes, accès distants, réseaux opérateurs et cahier des charges RT</p>
+            </div>
+
             <div class="accordion" id="accBut2Connect">
+
+              <!-- AC22.01 -->
               <div class="accordion-item">
                 <h4 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ac2201">
-                    <span class="ac-code ac-code-but2">AC22.01</span> Concevoir et interconnecter des infrastructures multisites (VPN IPsec / GRE)
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#b2_ac2201">
+                    <span class="ac-code ac-code-but2">AC22.01</span> Déployer et caractériser des systèmes de transmissions complexes
                   </button>
                 </h4>
-                <div id="ac2201" class="accordion-collapse collapse" data-bs-parent="#accBut2Connect">
+                <div id="b2_ac2201" class="accordion-collapse collapse" data-bs-parent="#accBut2Connect">
                   <div class="accordion-body">
                     <div class="mb-3 d-flex flex-wrap gap-2">
-                      <span class="badge bg-primary">R3.04 - Télécoms d'entreprise</span>
-                      <span class="badge bg-secondary">Sécurité des liaisons distantes</span>
+                      <span class="badge bg-primary">R3.04 / R3.05 - Transmissions numériques & Antennes</span>
+                      <span class="badge bg-secondary">Codages en ligne & Analyse spectrale</span>
                     </div>
-
                     <div class="reflexive-grid">
                       <div class="reflexive-box">
-                        <div class="reflexive-title"><i class="bi bi-cpu text-primary"></i> Action & Démarche</div>
-                        <p>Configuration de tunnels chiffrés <strong>VPN IPsec site-à-site</strong> (Phase 1 IKEv2, Phase 2 Transform-set ESP-AES-256) entre deux agences d'entreprise distantes.</p>
-                      </div>
-                      <div class="reflexive-box box-why">
-                        <div class="reflexive-title"><i class="bi bi-diagram-3 text-info"></i> Justification des choix</div>
-                        <p>Garantir l'intégrité, la confidentialité et l'authentification des flux sensibles transitant sur le réseau public Internet sans louer de liaisons spécialisées coûteuses.</p>
+                        <div class="reflexive-title"><i class="bi bi-check2-circle text-success"></i> Ce qui a fonctionné ou non</div>
+                        <p><strong>Fonctionné :</strong> Simulation et caractérisation spectrale des codages en ligne (NRZ, RZ, Manchester) ainsi que des modulations numériques (ASK, PSK, QAM) avec mesure du rapport signal sur bruit (SNR).<br><strong>Non fonctionné initialement :</strong> Spectre fréquentiel illisible sur l'analyseur.</p>
                       </div>
                       <div class="reflexive-box box-diff">
-                        <div class="reflexive-title"><i class="bi bi-bug text-warning"></i> Analyse des erreurs & pannes</div>
-                        <p>Échec d'établissement de la Phase 1 causé par un désaccord sur la clé prépartagée (PSK) et le temps de vie (Lifetime). Débogué via <code>debug crypto isakmp</code> en CLI.</p>
+                        <div class="reflexive-title"><i class="bi bi-bug text-warning"></i> Identification de mes erreurs</div>
+                        <p>Mauvais réglage du temps d'échantillonnage (<code>Sample Time</code>) et de la résolution fréquentielle sur le bloc Spectrum Analyzer en simulation, masquant les raies discrètes caractéristiques du code RZ.</p>
                       </div>
-                      <div class="reflexive-box box-learn">
-                        <div class="reflexive-title"><i class="bi bi-graph-up-arrow text-success"></i> Bilan critique & Recul</div>
-                        <p>Compréhension de l'impact de l'encapsulation IPsec sur le MTU (fragmentation de paquets) et nécessité d'ajuster le <code>ip tcp adjust-mss</code> sur les interfaces de tunnel.</p>
-                      </div>
-                    </div>
-
-                    <div class="traces-container">
-                      <h5 class="h6 text-primary fw-bold mb-3"><i class="bi bi-images me-2"></i>Traces ciblées :</h5>
-                      <div class="row g-3">
-                        <div class="col-md-6 text-center">
-                          <p class="small text-muted mb-2"><em>Configuration Crypto Map & IPsec Cisco</em></p>
-                          <img src="assets/ac1103_2.png" alt="Crypto IPsec" class="zoomable-image">
-                        </div>
-                        <div class="col-md-6 text-center">
-                          <p class="small text-muted mb-2"><em>Capture Wireshark validant le chiffrement ESP (paquets illisibles)</em></p>
-                          <img src="assets/ac1105_1.png" alt="ESP Wireshark" class="zoomable-image">
-                        </div>
+                      <div class="reflexive-box box-why">
+                        <div class="reflexive-title"><i class="bi bi-diagram-3 text-info"></i> Explication de mes choix</div>
+                        <p>J'ai retenu le codage Manchester pour la liaison étudiée car, bien qu'il exige une bande passante double par rapport au NRZ, il supprime la composante continue (DC) et garantit une transition à chaque bit pour synchroniser l'horloge du récepteur.</p>
                       </div>
                     </div>
-
+                    <div class="but2-analysis-panel">
+                      <div class="d-flex flex-wrap justify-content-between align-items-center mb-2 gap-2">
+                        <span class="progression-badge"><i class="bi bi-graph-up-arrow"></i> Progression BUT 1 ➔ BUT 2</span>
+                        <span class="small text-muted">De la mesure temporelle simple à l'analyse spectrale et numérique</span>
+                      </div>
+                      <p class="small text-muted mb-0">En BUT 1 (AC12.01), je relevais l'amplitude d'un signal sinusoïdal à l'oscilloscope. En BUT 2, je maîtrise le compromis débit / bande passante / immunité au bruit propre aux systèmes de télécommunications modernes.</p>
+                    </div>
                   </div>
                 </div>
               </div>
+
+              <!-- AC22.02 -->
+              <div class="accordion-item">
+                <h4 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#b2_ac2202">
+                    <span class="ac-code ac-code-but2">AC22.02</span> Mettre en place un accès distant sécurisé
+                  </button>
+                </h4>
+                <div id="b2_ac2202" class="accordion-collapse collapse" data-bs-parent="#accBut2Connect">
+                  <div class="accordion-body">
+                    <div class="mb-3 d-flex flex-wrap gap-2">
+                      <span class="badge bg-primary">R3.03 / R3.04 - Accès nomade & VPN</span>
+                      <span class="badge bg-secondary">OpenVPN / WireGuard / SSH</span>
+                    </div>
+                    <div class="reflexive-grid">
+                      <div class="reflexive-box">
+                        <div class="reflexive-title"><i class="bi bi-check2-circle text-success"></i> Ce qui a fonctionné ou non</div>
+                        <p><strong>Fonctionné :</strong> Déploiement d'un serveur VPN d'accès distant (OpenVPN avec authentification par certificats TLS et WireGuard) permettant l'administration sécurisée de mon Homelab et des ressources internes.<br><strong>Non fonctionné initialement :</strong> Échec de la poignée de main TLS client/serveur.</p>
+                      </div>
+                      <div class="reflexive-box box-diff">
+                        <div class="reflexive-title"><i class="bi bi-bug text-warning"></i> Identification de mes erreurs</div>
+                        <p>L'horloge système du serveur n'était pas synchronisée via NTP, ce qui rendait la date de début de validité du certificat X.509 généré « dans le futur » aux yeux du client VPN. Corrigé par l'activation de <code>systemd-timesyncd</code>.</p>
+                      </div>
+                      <div class="reflexive-box box-why">
+                        <div class="reflexive-title"><i class="bi bi-diagram-3 text-info"></i> Explication de mes choix</div>
+                        <p>J'ai banni toute exposition directe des ports d'administration (SSH, Portainer, PostgreSQL) sur Internet au profit d'un point d'entrée unique VPN chiffré avec authentification mutuelle par clés asymétriques.</p>
+                      </div>
+                    </div>
+                    <div class="but2-analysis-panel">
+                      <div class="d-flex flex-wrap justify-content-between align-items-center mb-2 gap-2">
+                        <span class="progression-badge"><i class="bi bi-graph-up-arrow"></i> Progression BUT 1 ➔ BUT 2</span>
+                        <span class="small text-muted">Du réseau local fermé à la mobilité sécurisée des utilisateurs</span>
+                      </div>
+                      <p class="small text-muted mb-0">J'ai compris comment étendre le périmètre de confiance d'un réseau d'entreprise à des télétravailleurs ou administrateurs nomades sans compromettre l'intégrité des flux.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- AC22.03 -->
+              <div class="accordion-item">
+                <h4 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#b2_ac2203">
+                    <span class="ac-code ac-code-but2">AC22.03</span> Mettre en place une connexion multi-site via un réseau opérateur
+                  </button>
+                </h4>
+                <div id="b2_ac2203" class="accordion-collapse collapse" data-bs-parent="#accBut2Connect">
+                  <div class="accordion-body">
+                    <div class="mb-3 d-flex flex-wrap gap-2">
+                      <span class="badge bg-primary">R3.01 / R3.04 - Interconnexion WAN</span>
+                      <span class="badge bg-secondary">VPN IPsec Site-à-Site & GRE</span>
+                    </div>
+                    <div class="reflexive-grid">
+                      <div class="reflexive-box">
+                        <div class="reflexive-title"><i class="bi bi-check2-circle text-success"></i> Ce qui a fonctionné ou non</div>
+                        <p><strong>Fonctionné :</strong> Interconnexion chiffrée entre deux sites distants (siège et agence) via un tunnel <strong>GRE over IPsec</strong> (IKEv2, ESP AES-256) transportant le routage dynamique OSPF.<br><strong>Non fonctionné initialement :</strong> Lenteurs extrêmes et blocage des pages Web à travers le tunnel.</p>
+                      </div>
+                      <div class="reflexive-box box-diff">
+                        <div class="reflexive-title"><i class="bi bi-bug text-warning"></i> Identification de mes erreurs</div>
+                        <p>L'ajout des en-têtes GRE + IPsec dépassait le MTU standard de 1500 octets, provoquant une fragmentation IP massive et la perte des paquets ayant le bit DF (Don't Fragment) actif. Résolu via <code>ip mtu 1400</code> et <code>ip tcp adjust-mss 1360</code>.</p>
+                      </div>
+                      <div class="reflexive-box box-why">
+                        <div class="reflexive-title"><i class="bi bi-diagram-3 text-info"></i> Explication de mes choix</div>
+                        <p>J'ai encapsulé GRE dans IPsec car IPsec natif ne supporte pas le trafic multicast nécessaire aux paquets Hello d'OSPF, tandis que GRE seul ne chiffre pas les données.</p>
+                      </div>
+                    </div>
+                    <div class="but2-analysis-panel">
+                      <div class="d-flex flex-wrap justify-content-between align-items-center mb-2 gap-2">
+                        <span class="progression-badge"><i class="bi bi-graph-up-arrow"></i> Progression BUT 1 ➔ BUT 2</span>
+                        <span class="small text-muted">De l'interconnexion locale à la fédération sécurisée de sites distants</span>
+                      </div>
+                      <p class="small text-muted mb-0">Cette mise en œuvre m'a permis d'appréhender les problématiques réelles de transport WAN : coût des liaisons opérateurs, surcharge protocolaire (overhead) et chiffrement de bout en bout.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- AC22.04 -->
+              <div class="accordion-item">
+                <h4 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#b2_ac2204">
+                    <span class="ac-code ac-code-but2">AC22.04</span> Déployer des réseaux d'accès des opérateurs
+                  </button>
+                </h4>
+                <div id="b2_ac2204" class="accordion-collapse collapse" data-bs-parent="#accBut2Connect">
+                  <div class="accordion-body">
+                    <div class="mb-3 d-flex flex-wrap gap-2">
+                      <span class="badge bg-primary">R3.04 - Boucle locale & Réseaux d'accès</span>
+                      <span class="badge bg-secondary">FTTH GPON & Réseaux Mobiles 4G/5G</span>
+                    </div>
+                    <div class="reflexive-grid">
+                      <div class="reflexive-box">
+                        <div class="reflexive-title"><i class="bi bi-check2-circle text-success"></i> Ce qui a fonctionné ou non</div>
+                        <p><strong>Fonctionné :</strong> Dimensionnement d'une architecture FTTH GPON (OLT, coupleurs optiques passifs, ONT), réalisation de soudures optiques et mesures de réflectométrie (OTDR).<br><strong>Non fonctionné initialement :</strong> Atténuation excessive mesurée sur un brin monomode.</p>
+                      </div>
+                      <div class="reflexive-box box-diff">
+                        <div class="reflexive-title"><i class="bi bi-bug text-warning"></i> Identification de mes erreurs</div>
+                        <p>Un clivage imparfait de la fibre avant l'épissure par fusion et une poussière sur le connecteur SC/APC avaient généré une perte d'insertion de 3,5 dB au lieu de 0,1 dB. Corrigé par nettoyage systématique au stylo optique et reprise de la soudure.</p>
+                      </div>
+                      <div class="reflexive-box box-why">
+                        <div class="reflexive-title"><i class="bi bi-diagram-3 text-info"></i> Explication de mes choix</div>
+                        <p>J'ai sélectionné des connecteurs APC (polissage incliné à 8°) plutôt que UPC afin de minimiser la réflexion arrière (Return Loss) indispensable au bon fonctionnement des lasers GPON en multiplexage bidirectionnel (WDM).</p>
+                      </div>
+                    </div>
+                    <div class="but2-analysis-panel">
+                      <div class="d-flex flex-wrap justify-content-between align-items-center mb-2 gap-2">
+                        <span class="progression-badge"><i class="bi bi-graph-up-arrow"></i> Progression BUT 1 ➔ BUT 2</span>
+                        <span class="small text-muted">Du câblage cuivre RJ45 (BUT1) au déploiement optique opérateur</span>
+                      </div>
+                      <p class="small text-muted mb-0">En BUT 1 (AC12.03), je sertissais des câbles Ethernet RJ45 sur 100 mètres maximum. En BUT 2, je maîtrise les contraintes physiques et optiques des réseaux d'accès très haut débit à l'échelle d'une ville.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- AC22.05 -->
+              <div class="accordion-item">
+                <h4 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#b2_ac2205">
+                    <span class="ac-code ac-code-but2">AC22.05</span> Capacité à questionner un cahier des charges RT
+                  </button>
+                </h4>
+                <div id="b2_ac2205" class="accordion-collapse collapse" data-bs-parent="#accBut2Connect">
+                  <div class="accordion-body">
+                    <div class="mb-3 d-flex flex-wrap gap-2">
+                      <span class="badge bg-primary">R3.11 / SAÉ 3.01 - Ingénierie & Expression de besoin</span>
+                      <span class="badge bg-secondary">Dossier d'Architecture Technique (DAT)</span>
+                    </div>
+                    <div class="reflexive-grid">
+                      <div class="reflexive-box">
+                        <div class="reflexive-title"><i class="bi bi-check2-circle text-success"></i> Ce qui a fonctionné ou non</div>
+                        <p><strong>Fonctionné :</strong> Reformulation des besoins d'une PME fictive, levée des ambiguïtés techniques (volumétrie de flux, RTO/RPO souhaités, contraintes de mobilité) et rédaction d'une proposition d'architecture argumentée.<br><strong>Non fonctionné initialement :</strong> Architecture proposée trop coûteuse.</p>
+                      </div>
+                      <div class="reflexive-box box-diff">
+                        <div class="reflexive-title"><i class="bi bi-bug text-warning"></i> Identification de mes erreurs</div>
+                        <p>J'avais dimensionné des commutateurs de cœur redondants de gamme entreprise sur l'ensemble des étages sans avoir questionné le client sur la criticité réelle des postes administratifs standards, faisant exploser le budget matériel.</p>
+                      </div>
+                      <div class="reflexive-box box-why">
+                        <div class="reflexive-title"><i class="bi bi-diagram-3 text-info"></i> Explication de mes choix</div>
+                        <p>J'ai restructuré l'offre en deux scénarios (Nominal vs Haute Disponibilité) afin d'éclairer le décideur sur le compromis entre coût d'investissement (CAPEX) et continuité d'activité.</p>
+                      </div>
+                    </div>
+                    <div class="but2-analysis-panel">
+                      <div class="d-flex flex-wrap justify-content-between align-items-center mb-2 gap-2">
+                        <span class="progression-badge"><i class="bi bi-graph-up-arrow"></i> Progression BUT 1 ➔ BUT 2</span>
+                        <span class="small text-muted">De l'application d'un énoncé de TP à l'analyse critique d'un besoin client</span>
+                      </div>
+                      <p class="small text-muted mb-0">En BUT 1, je suivais des consignes pas à pas. En BUT 2, j'ai acquis le recul nécessaire pour challenger un cahier des charges incomplet et traduire des objectifs métiers en spécifications techniques précises.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
 
-        <!-- PÔLE 3 : PROGRAMMER (BUT2) -->
+        <!-- ==================== PÔLE 3 : PROGRAMMER (NIVEAU 2) ==================== -->
         <div class="tab-pane fade" id="b2-prog" role="tabpanel">
           <div class="card p-4 p-md-5 reveal">
-            <h3 class="h5 fw-bold mb-3 border-start border-4 border-success ps-3">Compétence : Créer des outils et applications informatiques — Niveau 2</h3>
-            
+            <div class="mb-4 border-start border-4 border-success ps-3">
+              <h3 class="h5 fw-bold mb-1">Compétence Programmer — Niveau 2 : Développer une application R&T</h3>
+              <p class="text-muted small mb-0">CE3.01 à CE3.05 • Automatisation NetDevOps, applications communicantes client/serveur et bases de données</p>
+            </div>
+
             <div class="accordion" id="accBut2Prog">
+
+              <!-- AC23.01 -->
               <div class="accordion-item">
                 <h4 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ac2301">
-                    <span class="ac-code ac-code-but2">AC23.01</span> Développer des scripts d'automatisation NetDevOps et pipelines d'orchestration (API, Python, n8n)
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#b2_ac2301">
+                    <span class="ac-code ac-code-but2">AC23.01</span> Automatiser l'administration système avec des scripts
                   </button>
                 </h4>
-                <div id="ac2301" class="accordion-collapse collapse" data-bs-parent="#accBut2Prog">
+                <div id="b2_ac2301" class="accordion-collapse collapse" data-bs-parent="#accBut2Prog">
                   <div class="accordion-body">
                     <div class="mb-3 d-flex flex-wrap gap-2">
-                      <span class="badge bg-primary">R3.08 - Programmation réseau & DevOps</span>
-                      <span class="badge bg-secondary">Automatisation & Supabase</span>
+                      <span class="badge bg-primary">R3.08 - Automatisation & Scripting</span>
+                      <span class="badge bg-secondary">Python, PowerShell, Bash & n8n</span>
                     </div>
-
                     <div class="reflexive-grid">
                       <div class="reflexive-box">
-                        <div class="reflexive-title"><i class="bi bi-cpu text-primary"></i> Action & Démarche</div>
-                        <p>Développement de scripts d'automatisation exploitant des <strong>API REST</strong>, des bases relationnelles PostgreSQL/Supabase et des pipelines événementiels avec <strong>n8n</strong>.</p>
-                      </div>
-                      <div class="reflexive-box box-why">
-                        <div class="reflexive-title"><i class="bi bi-diagram-3 text-info"></i> Justification des choix</div>
-                        <p>Remplacer les actions manuelles chronophages par des processus automatisés robustes, réduisant le facteur d'erreur humaine dans l'exploitation courante du SI.</p>
+                        <div class="reflexive-title"><i class="bi bi-check2-circle text-success"></i> Ce qui a fonctionné ou non</div>
+                        <p><strong>Fonctionné :</strong> Développement de scripts Python (Paramiko/Netmiko) pour sauvegarder automatiquement les configurations Cisco via SSH et création de workflows <strong>n8n</strong> pour la veille sécurité et les notifications Discord.<br><strong>Non fonctionné initialement :</strong> Arrêt brutal du script dès qu'un équipement ne répondait pas.</p>
                       </div>
                       <div class="reflexive-box box-diff">
-                        <div class="reflexive-title"><i class="bi bi-bug text-warning"></i> Analyse des erreurs & pannes</div>
-                        <p>Gestion des quotas d'appels API (rate-limiting) et des exceptions HTTP 429. Mise en place de boucles de réessai avec temporisation exponentielle (exponential backoff) en Python.</p>
+                        <div class="reflexive-title"><i class="bi bi-bug text-warning"></i> Identification de mes erreurs</div>
+                        <p>Absence de gestion d'exceptions réseau (<code>TimeoutError</code>, <code>AuthenticationException</code>) et stockage initial de jetons API en dur dans le code. Corrigé par des blocs <code>try/except</code>, la journalisation dans un fichier log et l'usage de variables d'environnement <code>.env</code>.</p>
                       </div>
-                      <div class="reflexive-box box-learn">
-                        <div class="reflexive-title"><i class="bi bi-graph-up-arrow text-success"></i> Bilan critique & Recul</div>
-                        <p>L'automatisation exige une gestion irréprochable des logs et de l'idempotence des scripts pour éviter les effets de bord indésirables en production.</p>
-                      </div>
-                    </div>
-
-                    <div class="traces-container">
-                      <h5 class="h6 text-primary fw-bold mb-3"><i class="bi bi-images me-2"></i>Traces ciblées :</h5>
-                      <div class="row g-3">
-                        <div class="col-md-6 text-center">
-                          <p class="small text-muted mb-2"><em>Workflow n8n avec parsing JSON et webhooks</em></p>
-                          <img src="assets/ac1305_1.png" alt="n8n workflow" class="zoomable-image">
-                        </div>
-                        <div class="col-md-6 text-center">
-                          <p class="small text-muted mb-2"><em>Code source Python et interactions Supabase</em></p>
-                          <img src="assets/ac1303_2.png" alt="Python Supabase" class="zoomable-image">
-                        </div>
+                      <div class="reflexive-box box-why">
+                        <div class="reflexive-title"><i class="bi bi-diagram-3 text-info"></i> Explication de mes choix</div>
+                        <p>J'ai choisi Python pour l'interaction multi-plateforme avec les équipements réseau via SSH/API REST, et Bash/Cron pour les tâches locales de maintenance et de sauvegarde sur mon serveur Linux.</p>
                       </div>
                     </div>
-
+                    <div class="but2-analysis-panel">
+                      <div class="d-flex flex-wrap justify-content-between align-items-center mb-2 gap-2">
+                        <span class="progression-badge"><i class="bi bi-graph-up-arrow"></i> Progression BUT 1 ➔ BUT 2</span>
+                        <span class="small text-muted">De petits scripts algorithmiques isolés à l'automatisation d'exploitation (NetDevOps)</span>
+                      </div>
+                      <p class="small text-muted mb-0">En BUT 1 (AC13.03), mes programmes résolvaient des exercices mathématiques. En BUT 2, mes scripts interagissent directement avec le système d'exploitation et les équipements réseau pour éliminer les tâches répétitives.</p>
+                    </div>
                   </div>
                 </div>
               </div>
+
+              <!-- AC23.02 -->
+              <div class="accordion-item">
+                <h4 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#b2_ac2302">
+                    <span class="ac-code ac-code-but2">AC23.02</span> Développer une application à partir d'un cahier des charges donné, pour le Web ou les périphériques mobiles
+                  </button>
+                </h4>
+                <div id="b2_ac2302" class="accordion-collapse collapse" data-bs-parent="#accBut2Prog">
+                  <div class="accordion-body">
+                    <div class="mb-3 d-flex flex-wrap gap-2">
+                      <span class="badge bg-primary">R3.09 / SAÉ 3.02 - Développement Web Full-Stack</span>
+                      <span class="badge bg-secondary">Python Flask & Application "Nos Escapades"</span>
+                    </div>
+                    <div class="reflexive-grid">
+                      <div class="reflexive-box">
+                        <div class="reflexive-title"><i class="bi bi-check2-circle text-success"></i> Ce qui a fonctionné ou non</div>
+                        <p><strong>Fonctionné :</strong> Conception et développement d'applications Web complètes (backend <strong>Flask</strong> en Python et interface responsive pour mon projet <em>Nos Escapades</em> et ce portfolio) respectant le cahier des charges fonctionnel.<br><strong>Non fonctionné initialement :</strong> Fichier principal Python monolithique difficile à maintenir.</p>
+                      </div>
+                      <div class="reflexive-box box-diff">
+                        <div class="reflexive-title"><i class="bi bi-bug text-warning"></i> Identification de mes erreurs</div>
+                        <p>J'avais regroupé toutes les routes, requêtes SQL et traitements dans un seul fichier <code>app.py</code>, rendant le débogage complexe. J'ai refactorisé l'architecture en séparant les Blueprints, les modèles de données et les vues Jinja2.</p>
+                      </div>
+                      <div class="reflexive-box box-why">
+                        <div class="reflexive-title"><i class="bi bi-diagram-3 text-info"></i> Explication de mes choix</div>
+                        <p>J'ai sélectionné le micro-framework Flask pour sa légèreté et sa parfaite intégration avec mes scripts Python d'administration et mes conteneurs Docker.</p>
+                      </div>
+                    </div>
+                    <div class="but2-analysis-panel">
+                      <div class="d-flex flex-wrap justify-content-between align-items-center mb-2 gap-2">
+                        <span class="progression-badge"><i class="bi bi-graph-up-arrow"></i> Progression BUT 1 ➔ BUT 2</span>
+                        <span class="small text-muted">Des pages HTML/CSS statiques (BUT1) aux applications Web dynamiques complètes</span>
+                      </div>
+                      <p class="small text-muted mb-0">En BUT 1 (AC13.04), je maîtrisais uniquement l'intégration Front-End statique. En BUT 2, je conçois l'architecture complète (routage serveur, gestion de sessions, API et interface responsive).</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- AC23.03 -->
+              <div class="accordion-item">
+                <h4 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#b2_ac2303">
+                    <span class="ac-code ac-code-but2">AC23.03</span> Utiliser un protocole réseau pour programmer une application client/serveur
+                  </button>
+                </h4>
+                <div id="b2_ac2303" class="accordion-collapse collapse" data-bs-parent="#accBut2Prog">
+                  <div class="accordion-body">
+                    <div class="mb-3 d-flex flex-wrap gap-2">
+                      <span class="badge bg-primary">R3.09 / SAÉ 3.02 - Applications communicantes</span>
+                      <span class="badge bg-secondary">Sockets TCP/UDP & API REST</span>
+                    </div>
+                    <div class="reflexive-grid">
+                      <div class="reflexive-box">
+                        <div class="reflexive-title"><i class="bi bi-check2-circle text-success"></i> Ce qui a fonctionné ou non</div>
+                        <p><strong>Fonctionné :</strong> Programmation d'une architecture client/serveur en Python via le module <code>socket</code> (TCP) capable de gérer plusieurs clients simultanés pour l'échange de commandes de supervision.<br><strong>Non fonctionné initialement :</strong> Blocage du serveur dès qu'un premier client restait connecté.</p>
+                      </div>
+                      <div class="reflexive-box box-diff">
+                        <div class="reflexive-title"><i class="bi bi-bug text-warning"></i> Identification de mes erreurs</div>
+                        <p>L'appel <code>conn.accept()</code> et <code>conn.recv()</code> s'exécutait dans un thread unique séquentiel, et les messages longs étaient parfois tronqués. J'ai résolu ce problème en dédiant un thread (<code>threading.Thread</code>) par client et en définissant un délimiteur de trame JSON.</p>
+                      </div>
+                      <div class="reflexive-box box-why">
+                        <div class="reflexive-title"><i class="bi bi-diagram-3 text-info"></i> Explication de mes choix</div>
+                        <p>J'ai opté pour le protocole TCP (mode connecté) plutôt qu'UDP afin de garantir l'acquittement, l'ordre d'arrivée et l'intégrité des commandes d'administration transmises.</p>
+                      </div>
+                    </div>
+                    <div class="but2-analysis-panel">
+                      <div class="d-flex flex-wrap justify-content-between align-items-center mb-2 gap-2">
+                        <span class="progression-badge"><i class="bi bi-graph-up-arrow"></i> Progression BUT 1 ➔ BUT 2</span>
+                        <span class="small text-muted">De la simple utilisation d'outils réseau à la création de mes propres protocoles</span>
+                      </div>
+                      <p class="small text-muted mb-0">Cette compétence fait le lien direct entre le réseau et le code : je sais désormais ouvrir des sockets, sérialiser des données en JSON/octets et gérer les états de connexion au niveau applicatif.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- AC23.04 -->
+              <div class="accordion-item">
+                <h4 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#b2_ac2304">
+                    <span class="ac-code ac-code-but2">AC23.04</span> Installer, administrer un système de gestion de données
+                  </button>
+                </h4>
+                <div id="b2_ac2304" class="accordion-collapse collapse" data-bs-parent="#accBut2Prog">
+                  <div class="accordion-body">
+                    <div class="mb-3 d-flex flex-wrap gap-2">
+                      <span class="badge bg-primary">R3.07 - Bases de données relationnelles</span>
+                      <span class="badge bg-secondary">PostgreSQL & Supabase Self-Hosted</span>
+                    </div>
+                    <div class="reflexive-grid">
+                      <div class="reflexive-box">
+                        <div class="reflexive-title"><i class="bi bi-check2-circle text-success"></i> Ce qui a fonctionné ou non</div>
+                        <p><strong>Fonctionné :</strong> Installation, configuration et administration d'un SGBD <strong>PostgreSQL</strong> et d'une stack <strong>Supabase</strong> auto-hébergée sur mon serveur Linux, avec gestion des rôles, schémas relationnels et sauvegardes automatisées.<br><strong>Non fonctionné initialement :</strong> Connexions distantes refusées par le serveur de base de données.</p>
+                      </div>
+                      <div class="reflexive-box box-diff">
+                        <div class="reflexive-title"><i class="bi bi-bug text-warning"></i> Identification de mes erreurs</div>
+                        <p>Par défaut, PostgreSQL n'écoutait que sur <code>localhost</code> et le fichier <code>pg_hba.conf</code> n'autorisait pas le sous-réseau Docker interne. J'ai ajusté <code>listen_addresses</code> et restreint <code>pg_hba.conf</code> aux seules IP des conteneurs applicatifs.</p>
+                      </div>
+                      <div class="reflexive-box box-why">
+                        <div class="reflexive-title"><i class="bi bi-diagram-3 text-info"></i> Explication de mes choix</div>
+                        <p>J'ai choisi PostgreSQL pour sa robustesse ACID, le support natif des types JSONB et la possibilité d'automatiser des sauvegardes logiques quotidiennes via <code>pg_dump</code>.</p>
+                      </div>
+                    </div>
+                    <div class="but2-analysis-panel">
+                      <div class="d-flex flex-wrap justify-content-between align-items-center mb-2 gap-2">
+                        <span class="progression-badge"><i class="bi bi-graph-up-arrow"></i> Progression BUT 1 ➔ BUT 2</span>
+                        <span class="small text-muted">Du traitement de fichiers plats CSV (BUT1) à l'administration d'un SGBD complet</span>
+                      </div>
+                      <p class="small text-muted mb-0">En BUT 1 (AC13.05), je manipulais des fichiers CSV en mémoire avec Python. En BUT 2, j'administre un moteur de base de données relationnel sécurisé, pérenne et multi-utilisateurs.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- AC23.05 -->
+              <div class="accordion-item">
+                <h4 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#b2_ac2305">
+                    <span class="ac-code ac-code-but2">AC23.05</span> Accéder à un ensemble de données depuis une application et/ou un site web
+                  </button>
+                </h4>
+                <div id="b2_ac2305" class="accordion-collapse collapse" data-bs-parent="#accBut2Prog">
+                  <div class="accordion-body">
+                    <div class="mb-3 d-flex flex-wrap gap-2">
+                      <span class="badge bg-primary">R3.07 / R3.09 - Persistance & Sécurité des requêtes</span>
+                      <span class="badge bg-secondary">SQL Paramétré, API REST & JSON</span>
+                    </div>
+                    <div class="reflexive-grid">
+                      <div class="reflexive-box">
+                        <div class="reflexive-title"><i class="bi bi-check2-circle text-success"></i> Ce qui a fonctionné ou non</div>
+                        <p><strong>Fonctionné :</strong> Interfaçage dynamique entre mes applications Web (Flask / JS) et PostgreSQL/Supabase via opérations CRUD sécurisées et consommation d'API REST externes.<br><strong>Non fonctionné initialement :</strong> Erreurs de politique CORS lors des appels JavaScript asynchrones.</p>
+                      </div>
+                      <div class="reflexive-box box-diff">
+                        <div class="reflexive-title"><i class="bi bi-bug text-warning"></i> Identification de mes erreurs</div>
+                        <p>Les requêtes <code>fetch()</code> depuis le navigateur étaient bloquées par l'API car l'en-tête <code>Access-Control-Allow-Origin</code> n'était pas configuré. J'ai également remplacé toutes les concaténations de chaînes SQL par des requêtes paramétrées pour éliminer tout risque d'injection SQL.</p>
+                      </div>
+                      <div class="reflexive-box box-why">
+                        <div class="reflexive-title"><i class="bi bi-diagram-3 text-info"></i> Explication de mes choix</div>
+                        <p>J'ai implémenté des politiques de sécurité au niveau des lignes (Row Level Security sur Supabase) et des jetons JWT afin de contrôler strictement quelles données un utilisateur authentifié peut lire ou modifier.</p>
+                      </div>
+                    </div>
+                    <div class="but2-analysis-panel">
+                      <div class="d-flex flex-wrap justify-content-between align-items-center mb-2 gap-2">
+                        <span class="progression-badge"><i class="bi bi-graph-up-arrow"></i> Progression BUT 1 ➔ BUT 2</span>
+                        <span class="small text-muted">De l'affichage statique à l'intégration sécurisée de données temps réel</span>
+                      </div>
+                      <p class="small text-muted mb-0">J'ai acquis les réflexes de sécurité applicative (protection contre les injections SQL, gestion des secrets et contrôle d'accès aux API) indispensables au développement d'outils R&T fiables.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
 
-        <!-- PÔLE 4 : SÉCURISER UN SI (SPÉCIALITÉ BUT2 CYBER) -->
+        <!-- ==================== PÔLE 4 : SÉCURISER (PARCOURS CYBER BUT 2) ==================== -->
         <div class="tab-pane fade" id="b2-sec" role="tabpanel">
           <div class="card p-4 p-md-5 reveal">
-            <h3 class="h5 fw-bold mb-3 border-start border-4 border-danger ps-3" style="border-color:#f472b6 !important;">
-              Compétence : Sécuriser un système d'information — Spécialité BUT2 Cybersécurité
-            </h3>
-            
+            <div class="mb-4 border-start border-4 border-danger ps-3" style="border-color:#f472b6 !important;">
+              <h3 class="h5 fw-bold mb-1">Compétence Sécuriser — Parcours Cybersécurité (BUT 2)</h3>
+              <p class="text-muted small mb-0">CE4.01 à CE4.05 • Sensibiliser aux vulnérabilités d'un système d'information et aux remédiations possibles</p>
+            </div>
+
             <div class="accordion" id="accBut2Sec">
+
+              <!-- AC24.01Cyber -->
               <div class="accordion-item">
                 <h4 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ac2401">
-                    <span class="ac-code ac-code-but2">AC24.01</span> Mettre en œuvre le durcissement (Hardening) système et le cloisonnement par pare-feu
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#b2_ac2401">
+                    <span class="ac-code ac-code-but2">AC24.01Cyber</span> Connaître et utiliser les bonnes pratiques et les recommandations de cybersécurité
                   </button>
                 </h4>
-                <div id="ac2401" class="accordion-collapse collapse" data-bs-parent="#accBut2Sec">
+                <div id="b2_ac2401" class="accordion-collapse collapse" data-bs-parent="#accBut2Sec">
                   <div class="accordion-body">
                     <div class="mb-3 d-flex flex-wrap gap-2">
-                      <span class="badge bg-primary">R3.03 - Fondamentaux de la sécurité</span>
-                      <span class="badge bg-secondary">Recommandations ANSSI</span>
+                      <span class="badge bg-primary">R3.03 - Hygiène informatique & Gouvernance</span>
+                      <span class="badge bg-secondary">Guides ANSSI & Moindre Privilège</span>
                     </div>
-
                     <div class="reflexive-grid">
                       <div class="reflexive-box">
-                        <div class="reflexive-title"><i class="bi bi-cpu text-primary"></i> Action & Démarche</div>
-                        <p>Durcissement d'OS Linux/Windows Server (désactivation des services et protocoles obsolètes SMBv1, Telnet), configuration d'ACLs d'administration et filtrage pare-feu (UFW / iptables).</p>
-                      </div>
-                      <div class="reflexive-box box-why">
-                        <div class="reflexive-title"><i class="bi bi-diagram-3 text-info"></i> Justification des choix</div>
-                        <p>Appliquer le principe de <strong>défense en profondeur</strong> et de <strong>moindre privilège</strong> préconisé par l'ANSSI afin de limiter la surface d'attaque en cas de compromission d'un service.</p>
+                        <div class="reflexive-title"><i class="bi bi-check2-circle text-success"></i> Ce qui a fonctionné ou non</div>
+                        <p><strong>Fonctionné :</strong> Mise en conformité d'un parc Linux/Windows Server selon le guide d'hygiène informatique de l'ANSSI : séparation des comptes d'administration, politique de complexité des mots de passe et désactivation des protocoles obsolètes (SMBv1, Telnet).<br><strong>Non fonctionné initialement :</strong> Blocage d'une tâche planifiée suite au durcissement.</p>
                       </div>
                       <div class="reflexive-box box-diff">
-                        <div class="reflexive-title"><i class="bi bi-bug text-warning"></i> Analyse des erreurs & pannes</div>
-                        <p>Blocage involontaire des sessions SSH après une règle <code>iptables</code> DROP par défaut sans avoir autorisé au préalable les connexions déjà établies (<code>--ctstate RELATED,ESTABLISHED</code>).</p>
+                        <div class="reflexive-title"><i class="bi bi-bug text-warning"></i> Identification de mes erreurs</div>
+                        <p>L'application d'une GPO de verrouillage de compte trop stricte (3 tentatives) a bloqué un ancien service utilisant des identifiants mis en cache. J'ai corrigé cela en créant un compte de service dédié à privilèges restreints (gMSA).</p>
                       </div>
-                      <div class="reflexive-box box-learn">
-                        <div class="reflexive-title"><i class="bi bi-graph-up-arrow text-success"></i> Bilan critique & Recul</div>
-                        <p>Nécessité absolue de prévoir une session de secours en console physique ou via un temporisateur de retour automatique avant d'appliquer des règles de pare-feu critiques à distance.</p>
-                      </div>
-                    </div>
-
-                    <div class="traces-container">
-                      <h5 class="h6 text-primary fw-bold mb-3"><i class="bi bi-images me-2"></i>Traces ciblées :</h5>
-                      <div class="row g-3">
-                        <div class="col-md-6 text-center">
-                          <p class="small text-muted mb-2"><em>Politique de filtrage iptables / UFW sécurisée</em></p>
-                          <img src="assets/ac1301_1.png" alt="Regles pare-feu" class="zoomable-image">
-                        </div>
-                        <div class="col-md-6 text-center">
-                          <p class="small text-muted mb-2"><em>GPO de durcissement Active Directory</em></p>
-                          <img src="assets/ac1104_1.png" alt="Durcissement AD" class="zoomable-image">
-                        </div>
+                      <div class="reflexive-box box-why">
+                        <div class="reflexive-title"><i class="bi bi-diagram-3 text-info"></i> Explication de mes choix</div>
+                        <p>J'ai appliqué le principe de <strong>défense en profondeur</strong> et de <strong>moindre privilège</strong> afin qu'une compromission d'un poste utilisateur ne permette pas une élévation de privilèges immédiate vers le domaine.</p>
                       </div>
                     </div>
-
+                    <div class="but2-analysis-panel">
+                      <div class="d-flex flex-wrap justify-content-between align-items-center mb-2 gap-2">
+                        <span class="progression-badge"><i class="bi bi-graph-up-arrow"></i> Progression BUT 1 ➔ BUT 2</span>
+                        <span class="small text-muted">Intégration du réflexe « Security by Design »</span>
+                      </div>
+                      <p class="small text-muted mb-0">En BUT 1, la sécurité était abordée de façon ponctuelle. En BUT 2, je m'appuie systématiquement sur les référentiels reconnus (ANSSI, CIS Benchmarks) pour arbitrer entre sécurité et ergonomie utilisateur.</p>
+                    </div>
                   </div>
                 </div>
               </div>
+
+              <!-- AC24.02Cyber -->
+              <div class="accordion-item">
+                <h4 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#b2_ac2402">
+                    <span class="ac-code ac-code-but2">AC24.02Cyber</span> Mettre en œuvre les outils fondamentaux de sécurisation d'une infrastructure du réseau
+                  </button>
+                </h4>
+                <div id="b2_ac2402" class="accordion-collapse collapse" data-bs-parent="#accBut2Sec">
+                  <div class="accordion-body">
+                    <div class="mb-3 d-flex flex-wrap gap-2">
+                      <span class="badge bg-primary">R3.03 / SAÉ 3.03 - Sécurité des infrastructures</span>
+                      <span class="badge bg-secondary">Pare-feu Stateful, DMZ & ACLs</span>
+                    </div>
+                    <div class="reflexive-grid">
+                      <div class="reflexive-box">
+                        <div class="reflexive-title"><i class="bi bi-check2-circle text-success"></i> Ce qui a fonctionné ou non</div>
+                        <p><strong>Fonctionné :</strong> Cloisonnement d'une architecture en 3 zones (LAN interne, DMZ publique, WAN) via pare-feu à états (<code>iptables</code> / <code>nftables</code>) et filtrage par ACLs étendues sur les routeurs Cisco.<br><strong>Non fonctionné initialement :</strong> Coupure de ma propre session SSH d'administration.</p>
+                      </div>
+                      <div class="reflexive-box box-diff">
+                        <div class="reflexive-title"><i class="bi bi-bug text-warning"></i> Identification de mes erreurs</div>
+                        <p>J'avais passé la politique par défaut de la chaîne <code>INPUT</code> à <code>DROP</code> avant d'autoriser les connexions déjà établies (<code>-m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT</code>). J'ai appris à toujours valider les règles avec un temporisateur de retour arrière.</p>
+                      </div>
+                      <div class="reflexive-box box-why">
+                        <div class="reflexive-title"><i class="bi bi-diagram-3 text-info"></i> Explication de mes choix</div>
+                        <p>J'ai interdit tout flux initié depuis la DMZ vers le LAN interne : en cas de piratage du serveur Web exposé en DMZ, l'attaquant reste piégé dans cette zone isolée.</p>
+                      </div>
+                    </div>
+                    <div class="but2-analysis-panel">
+                      <div class="d-flex flex-wrap justify-content-between align-items-center mb-2 gap-2">
+                        <span class="progression-badge"><i class="bi bi-graph-up-arrow"></i> Progression BUT 1 ➔ BUT 2</span>
+                        <span class="small text-muted">De la segmentation VLAN logique au cloisonnement pare-feu strict</span>
+                      </div>
+                      <p class="small text-muted mb-0">Le VLAN de BUT 1 séparait les domaines de diffusion ; le pare-feu stateful de BUT 2 contrôle désormais finement les états de session, les ports et les directions de chaque flux.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- AC24.03Cyber -->
+              <div class="accordion-item">
+                <h4 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#b2_ac2403">
+                    <span class="ac-code ac-code-but2">AC24.03Cyber</span> Sécuriser les services
+                  </button>
+                </h4>
+                <div id="b2_ac2403" class="accordion-collapse collapse" data-bs-parent="#accBut2Sec">
+                  <div class="accordion-body">
+                    <div class="mb-3 d-flex flex-wrap gap-2">
+                      <span class="badge bg-primary">R3.03 - Durcissement (Hardening) Applicatif</span>
+                      <span class="badge bg-secondary">SSH, Nginx/Apache, Fail2ban</span>
+                    </div>
+                    <div class="reflexive-grid">
+                      <div class="reflexive-box">
+                        <div class="reflexive-title"><i class="bi bi-check2-circle text-success"></i> Ce qui a fonctionné ou non</div>
+                        <p><strong>Fonctionné :</strong> Durcissement complet des services exposés : SSH (authentification par clé Ed25519 uniquement, <code>PermitRootLogin no</code>, bannissement automatique avec Fail2ban) et serveur Web (masquage des versions, en-têtes HSTS et CSP).<br><strong>Non fonctionné initialement :</strong> Blocage de ressources CSS/JS légitimes sur le site Web.</p>
+                      </div>
+                      <div class="reflexive-box box-diff">
+                        <div class="reflexive-title"><i class="bi bi-bug text-warning"></i> Identification de mes erreurs</div>
+                        <p>Ma politique <code>Content-Security-Policy (CSP)</code> était trop restrictive (<code>default-src 'self'</code>) et bloquait l'import des polices Google Fonts et des icônes Bootstrap CDN. J'ai affiné les directives <code>style-src</code> et <code>font-src</code>.</p>
+                      </div>
+                      <div class="reflexive-box box-why">
+                        <div class="reflexive-title"><i class="bi bi-diagram-3 text-info"></i> Explication de mes choix</div>
+                        <p>J'ai couplé Fail2ban aux journaux d'authentification (<code>/var/log/auth.log</code>) afin de neutraliser automatiquement les robots effectuant des attaques par force brute sur les services distants.</p>
+                      </div>
+                    </div>
+                    <div class="but2-analysis-panel">
+                      <div class="d-flex flex-wrap justify-content-between align-items-center mb-2 gap-2">
+                        <span class="progression-badge"><i class="bi bi-graph-up-arrow"></i> Progression BUT 1 ➔ BUT 2</span>
+                        <span class="small text-muted">De l'installation par défaut d'un service à son durcissement en production</span>
+                      </div>
+                      <p class="small text-muted mb-0">En BUT 1, un service était validé dès qu'il répondait sur son port. En BUT 2, je réduis systématiquement sa surface d'attaque et vérifie sa résistance face aux tentatives d'abus.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- AC24.04Cyber -->
+              <div class="accordion-item">
+                <h4 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#b2_ac2404">
+                    <span class="ac-code ac-code-but2">AC24.04Cyber</span> Choisir les outils cryptographiques adaptés au besoin fonctionnel du système d'information
+                  </button>
+                </h4>
+                <div id="b2_ac2404" class="accordion-collapse collapse" data-bs-parent="#accBut2Sec">
+                  <div class="accordion-body">
+                    <div class="mb-3 d-flex flex-wrap gap-2">
+                      <span class="badge bg-primary">R3.06 - Cryptographie appliquée</span>
+                      <span class="badge bg-secondary">PKI OpenSSL, TLS 1.3, AES & Hachage</span>
+                    </div>
+                    <div class="reflexive-grid">
+                      <div class="reflexive-box">
+                        <div class="reflexive-title"><i class="bi bi-check2-circle text-success"></i> Ce qui a fonctionné ou non</div>
+                        <p><strong>Fonctionné :</strong> Déploiement d'une Autorité de Certification (PKI) interne avec OpenSSL, émission de certificats X.509 signés pour sécuriser les échanges internes en HTTPS/TLS 1.3 et vérification d'intégrité par empreintes SHA-256.<br><strong>Non fonctionné initialement :</strong> Alerte de sécurité navigateur sur le certificat serveur.</p>
+                      </div>
+                      <div class="reflexive-box box-diff">
+                        <div class="reflexive-title"><i class="bi bi-bug text-warning"></i> Identification de mes erreurs</div>
+                        <p>J'avais renseigné le nom de domaine uniquement dans le champ <code>Common Name (CN)</code> sans configurer l'extension <code>Subject Alternative Name (SAN)</code>, désormais exigée par les navigateurs modernes pour valider l'identité d'un serveur.</p>
+                      </div>
+                      <div class="reflexive-box box-why">
+                        <div class="reflexive-title"><i class="bi bi-diagram-3 text-info"></i> Explication de mes choix</div>
+                        <p>J'ai articulé chiffrement asymétrique (RSA/ECDSA pour l'authentification et l'échange de clés), chiffrement symétrique (AES-256-GCM pour la rapidité sur les flux de données) et hachage avec sel (Argon2/bcrypt pour les mots de passe).</p>
+                      </div>
+                    </div>
+                    <div class="but2-analysis-panel">
+                      <div class="d-flex flex-wrap justify-content-between align-items-center mb-2 gap-2">
+                        <span class="progression-badge"><i class="bi bi-graph-up-arrow"></i> Progression BUT 1 ➔ BUT 2</span>
+                        <span class="small text-muted">De la théorie mathématique à l'ingénierie des certificats et du chiffrement</span>
+                      </div>
+                      <p class="small text-muted mb-0">Je sais désormais associer le bon mécanisme cryptographique à chaque objectif de sécurité : confidentialité, intégrité, authentification et non-répudiation.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- AC24.05Cyber -->
+              <div class="accordion-item">
+                <h4 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#b2_ac2405">
+                    <span class="ac-code ac-code-but2">AC24.05Cyber</span> Connaître les différents types d'attaque
+                  </button>
+                </h4>
+                <div id="b2_ac2405" class="accordion-collapse collapse" data-bs-parent="#accBut2Sec">
+                  <div class="accordion-body">
+                    <div class="mb-3 d-flex flex-wrap gap-2">
+                      <span class="badge bg-primary">R3.03 / SAÉ 3.03 - Menaces & Remédiations</span>
+                      <span class="badge bg-secondary">MITM, ARP Spoofing, OWASP Top 10</span>
+                    </div>
+                    <div class="reflexive-grid">
+                      <div class="reflexive-box">
+                        <div class="reflexive-title"><i class="bi bi-check2-circle text-success"></i> Ce qui a fonctionné ou non</div>
+                        <p><strong>Fonctionné :</strong> Reproduction contrôlée en environnement isolé (sandbox) d'attaques réseau (ARP Spoofing, DHCP Starvation, attaque par dictionnaire) et Web (SQLi, XSS) afin d'observer leurs traces réseau et de valider les contre-mesures.<br><strong>Non fonctionné initialement :</strong> Saturation du commutateur virtuel lors d'un test d'inondation MAC.</p>
+                      </div>
+                      <div class="reflexive-box box-diff">
+                        <div class="reflexive-title"><i class="bi bi-bug text-warning"></i> Identification de mes erreurs</div>
+                        <p>J'avais lancé un script de test sans limiter le débit d'envoi des trames forgées, paralysant l'hyperviseur de TP. J'ai appris à calibrer mes tests et à isoler strictement mes maquettes sur un réseau virtuel fermé (Host-Only).</p>
+                      </div>
+                      <div class="reflexive-box box-why">
+                        <div class="reflexive-title"><i class="bi bi-diagram-3 text-info"></i> Explication de mes choix</div>
+                        <p>Comprendre le fonctionnement interne d'une attaque (ex: empoisonnement du cache ARP) m'a permis de démontrer concrètement l'efficacité des protections matérielles comme le <code>Dynamic ARP Inspection</code>.</p>
+                      </div>
+                    </div>
+                    <div class="but2-analysis-panel">
+                      <div class="d-flex flex-wrap justify-content-between align-items-center mb-2 gap-2">
+                        <span class="progression-badge"><i class="bi bi-graph-up-arrow"></i> Progression BUT 1 ➔ BUT 2</span>
+                        <span class="small text-muted">Comprendre la logique offensive pour bâtir une défense pertinente</span>
+                      </div>
+                      <p class="small text-muted mb-0">Cette double lecture (attaquant / défenseur) me permet d'identifier rapidement les vecteurs d'exploitation probables lors de l'analyse d'une architecture réseau ou applicative.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- AC24.06Cyber -->
+              <div class="accordion-item">
+                <h4 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#b2_ac2406">
+                    <span class="ac-code ac-code-but2">AC24.06Cyber</span> Comprendre des documents techniques en anglais
+                  </button>
+                </h4>
+                <div id="b2_ac2406" class="accordion-collapse collapse" data-bs-parent="#accBut2Sec">
+                  <div class="accordion-body">
+                    <div class="mb-3 d-flex flex-wrap gap-2">
+                      <span class="badge bg-primary">R3.12 / Veille Cyber - Anglais technique</span>
+                      <span class="badge bg-secondary">Bulletins CVE, RFC, Docs Cisco & Linux</span>
+                    </div>
+                    <div class="reflexive-grid">
+                      <div class="reflexive-box">
+                        <div class="reflexive-title"><i class="bi bi-check2-circle text-success"></i> Ce qui a fonctionné ou non</div>
+                        <p><strong>Fonctionné :</strong> Exploitation directe des bulletins de vulnérabilités internationaux (NVD/CVE), des RFC protocolaires et de la documentation officielle Cisco/Linux en anglais, complétée par mon pipeline de veille automatisée.<br><strong>Non fonctionné initialement :</strong> Mauvaise appréciation du périmètre d'une faille critique.</p>
+                      </div>
+                      <div class="reflexive-box box-diff">
+                        <div class="reflexive-title"><i class="bi bi-bug text-warning"></i> Identification de mes erreurs</div>
+                        <p>Lors de la lecture d'un avis de sécurité en anglais, j'avais confondu le prérequis d'exploitation locale (<code>Attack Vector: Local</code>) avec une exploitation à distance (<code>Network</code>). Une lecture attentive de la matrice CVSS v3.1 m'a permis de rectifier l'analyse de risque.</p>
+                      </div>
+                      <div class="reflexive-box box-why">
+                        <div class="reflexive-title"><i class="bi bi-diagram-3 text-info"></i> Explication de mes choix</div>
+                        <p>En cybersécurité, les correctifs (patches) et indicateurs de compromission (IoC) paraissent d'abord en anglais : lire directement les sources primaires garantit une réactivité maximale sans perte d'information liée aux traductions.</p>
+                      </div>
+                    </div>
+                    <div class="but2-analysis-panel">
+                      <div class="d-flex flex-wrap justify-content-between align-items-center mb-2 gap-2">
+                        <span class="progression-badge"><i class="bi bi-graph-up-arrow"></i> Progression BUT 1 ➔ BUT 2</span>
+                        <span class="small text-muted">Autonomie complète sur la documentation constructeur et les avis CVE</span>
+                      </div>
+                      <p class="small text-muted mb-0">L'anglais technique est devenu mon outil de travail quotidien pour déboguer des configurations complexes et assurer une veille cybersécurité fiable.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
 
-        <!-- PÔLE 5 : SURVEILLER UN SI (SPÉCIALITÉ BUT2 CYBER) -->
+        <!-- ==================== PÔLE 5 : SURVEILLER (PARCOURS CYBER BUT 2) ==================== -->
         <div class="tab-pane fade" id="b2-surv" role="tabpanel">
           <div class="card p-4 p-md-5 reveal">
-            <h3 class="h5 fw-bold mb-3 border-start border-4 border-info ps-3">
-              Compétence : Surveiller un système d'information — Spécialité BUT2 Cybersécurité
-            </h3>
-            
+            <div class="mb-4 border-start border-4 border-info ps-3">
+              <h3 class="h5 fw-bold mb-1">Compétence Surveiller — Parcours Cybersécurité (BUT 2)</h3>
+              <p class="text-muted small mb-0">CE5.01 à CE5.06 • Prendre en main les outils de surveillance et de test du système d'information</p>
+            </div>
+
             <div class="accordion" id="accBut2Surv">
+
+              <!-- AC25.01Cyber -->
               <div class="accordion-item">
                 <h4 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ac2501">
-                    <span class="ac-code ac-code-but2">AC25.01</span> Auditer le réseau, analyser les vulnérabilités et corréler les journaux d'événements
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#b2_ac2501">
+                    <span class="ac-code ac-code-but2">AC25.01Cyber</span> Administrer les protections contre les logiciels malveillants
                   </button>
                 </h4>
-                <div id="ac2501" class="accordion-collapse collapse" data-bs-parent="#accBut2Surv">
+                <div id="b2_ac2501" class="accordion-collapse collapse" data-bs-parent="#accBut2Surv">
                   <div class="accordion-body">
                     <div class="mb-3 d-flex flex-wrap gap-2">
-                      <span class="badge bg-primary">R3.03 - Sécurité des réseaux</span>
-                      <span class="badge bg-secondary">Supervision & Audit</span>
+                      <span class="badge bg-primary">R3.03 - Protection des terminaux & Serveurs</span>
+                      <span class="badge bg-secondary">ClamAV, Signatures, Durcissement & Sauvegardes</span>
                     </div>
-
                     <div class="reflexive-grid">
                       <div class="reflexive-box">
-                        <div class="reflexive-title"><i class="bi bi-cpu text-primary"></i> Action & Démarche</div>
-                        <p>Cartographie active des hôtes et des ports via <strong>Nmap</strong>, détection d'anomalies de trafic sous <strong>Wireshark</strong> et centralisation des journaux système avec <strong>Syslog</strong>.</p>
-                      </div>
-                      <div class="reflexive-box box-why">
-                        <div class="reflexive-title"><i class="bi bi-diagram-3 text-info"></i> Justification des choix</div>
-                        <p>Un administrateur ne peut protéger que ce qu'il connaît : l'audit continu permet de détecter les services non déclarés (*Shadow IT*) et les tentatives d'intrusion avant qu'elles n'aboutissent.</p>
+                        <div class="reflexive-title"><i class="bi bi-check2-circle text-success"></i> Ce qui a fonctionné ou non</div>
+                        <p><strong>Fonctionné :</strong> Déploiement de l'antivirus open-source <strong>ClamAV</strong> avec mise à jour automatique des bases de signatures (<code>freshclam</code>), analyses planifiées des répertoires exposés et restriction d'exécution des scripts.<br><strong>Non fonctionné initialement :</strong> Faux positifs sur des outils d'administration internes.</p>
                       </div>
                       <div class="reflexive-box box-diff">
-                        <div class="reflexive-title"><i class="bi bi-bug text-warning"></i> Analyse des erreurs & pannes</div>
-                        <p>Génération de faux positifs lors d'un scan SYN agressif (<code>nmap -T5</code>) ayant provoqué le crash temporaire d'un service embarqué fragile. Ajustement vers un profil temporel mesuré (<code>-T3</code>).</p>
+                        <div class="reflexive-title"><i class="bi bi-bug text-warning"></i> Identification de mes erreurs</div>
+                        <p>Une règle heuristique trop sensible avait placé en quarantaine un script PowerShell d'administration légitime non signé. J'ai résolu ce blocage en signant numériquement nos scripts internes via notre PKI et en configurant des exclusions ciblées par empreinte SHA-256.</p>
                       </div>
-                      <div class="reflexive-box box-learn">
-                        <div class="reflexive-title"><i class="bi bi-graph-up-arrow text-success"></i> Bilan critique & Recul</div>
-                        <p>L'audit de sécurité doit respecter des règles éthiques et contractuelles strictes. La centralisation des logs est inutile sans règles d'alerte automatiques pertinentes.</p>
-                      </div>
-                    </div>
-
-                    <div class="traces-container">
-                      <h5 class="h6 text-primary fw-bold mb-3"><i class="bi bi-images me-2"></i>Traces ciblées :</h5>
-                      <div class="row g-3">
-                        <div class="col-md-6 text-center">
-                          <p class="small text-muted mb-2"><em>Rapport d'audit de ports et versions de services avec Nmap</em></p>
-                          <img src="assets/ac1105_2.png" alt="Audit Nmap" class="zoomable-image">
-                        </div>
-                        <div class="col-md-6 text-center">
-                          <p class="small text-muted mb-2"><em>Analyse d'une tentative de brute-force sous Wireshark</em></p>
-                          <img src="assets/ac1105_1.png" alt="Wireshark Cyber" class="zoomable-image">
-                        </div>
+                      <div class="reflexive-box box-why">
+                        <div class="reflexive-title"><i class="bi bi-diagram-3 text-info"></i> Explication de mes choix</div>
+                        <p>La détection par signatures ne suffisant pas face aux malwares polymorphes ou rançongiciels, j'ai complété le dispositif par le contrôle d'exécution des binaires et la règle de sauvegarde 3-2-1 déconnectée.</p>
                       </div>
                     </div>
-
+                    <div class="but2-analysis-panel">
+                      <div class="d-flex flex-wrap justify-content-between align-items-center mb-2 gap-2">
+                        <span class="progression-badge"><i class="bi bi-graph-up-arrow"></i> Progression BUT 1 ➔ BUT 2</span>
+                        <span class="small text-muted">D'un simple antivirus poste client à une politique globale anti-malware</span>
+                      </div>
+                      <p class="small text-muted mb-0">J'ai compris que la lutte contre les codes malveillants repose sur l'articulation entre prévention (mises à jour, moindre privilège), détection (analyses automatisées, logs) et résilience (sauvegardes saines).</p>
+                    </div>
                   </div>
                 </div>
               </div>
+
+              <!-- AC25.02Cyber -->
+              <div class="accordion-item">
+                <h4 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#b2_ac2502">
+                    <span class="ac-code ac-code-but2">AC25.02Cyber</span> Prendre en main des outils de test de pénétration réseau/système
+                  </button>
+                </h4>
+                <div id="b2_ac2502" class="accordion-collapse collapse" data-bs-parent="#accBut2Surv">
+                  <div class="accordion-body">
+                    <div class="mb-3 d-flex flex-wrap gap-2">
+                      <span class="badge bg-primary">SAÉ 3.03 - Audit & Test d'intrusion</span>
+                      <span class="badge bg-secondary">Nmap, Wireshark, Gobuster, Nikto & Metasploit</span>
+                    </div>
+                    <div class="reflexive-grid">
+                      <div class="reflexive-box">
+                        <div class="reflexive-title"><i class="bi bi-check2-circle text-success"></i> Ce qui a fonctionné ou non</div>
+                        <p><strong>Fonctionné :</strong> Cartographie précise des services actifs et de leurs versions via <strong>Nmap</strong> (scripts NSE), énumération de répertoires Web (Gobuster) et exploitation contrôlée de vulnérabilités connues sur une maquette d'audit.<br><strong>Non fonctionné initialement :</strong> Crash d'un service cible durant la phase de scan.</p>
+                      </div>
+                      <div class="reflexive-box box-diff">
+                        <div class="reflexive-title"><i class="bi bi-bug text-warning"></i> Identification de mes erreurs</div>
+                        <p>J'avais lancé un scan SYN trop agressif (<code>nmap -sV -T5</code>) sur une machine cible légère, saturant sa pile TCP et provoquant un déni de service involontaire. J'ai ajusté la temporisation à <code>-T3</code> et ciblé les ports pertinents.</p>
+                      </div>
+                      <div class="reflexive-box box-why">
+                        <div class="reflexive-title"><i class="bi bi-diagram-3 text-info"></i> Explication de mes choix</div>
+                        <p>J'ai suivi une méthodologie structurée en 4 étapes (reconnaissance, énumération, exploitation maîtrisée, rapport de remédiation) en respectant strictement le périmètre d'autorisation défini par le cadre légal.</p>
+                      </div>
+                    </div>
+                    <div class="but2-analysis-panel">
+                      <div class="d-flex flex-wrap justify-content-between align-items-center mb-2 gap-2">
+                        <span class="progression-badge"><i class="bi bi-graph-up-arrow"></i> Progression BUT 1 ➔ BUT 2</span>
+                        <span class="small text-muted">De l'analyse de trames Wireshark (BUT1) à l'audit actif de vulnérabilités</span>
+                      </div>
+                      <p class="small text-muted mb-0">En BUT 1 (AC11.05), j'utilisais Wireshark pour diagnostiquer une panne de connectivité. En BUT 2, je maîtrise les outils d'audit offensif pour évaluer objectivement la robustesse d'un SI et prioriser les correctifs.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
@@ -509,58 +1115,111 @@
 
 
     <!-- ========================================================================= -->
-    <!-- SECTION NIVEAU 1 : BUT 1 (DESCRIPTIF & EXPLICATIF - VALIDÉ)                -->
+    <!-- SECTION BUT 1 : NIVEAU DESCRIPTIF / EXPLICATIF (17 AC VALIDÉS)            -->
     <!-- ========================================================================= -->
     <div id="sectionLevelBut1" class="d-none">
       <div class="methodo-banner mb-5 reveal" style="border-color: rgba(16, 185, 129, 0.45);">
-        <div class="d-flex flex-wrap justify-content-between align-items-center mb-2">
+        <div class="d-flex flex-wrap justify-content-between align-items-center mb-3">
           <div class="d-flex align-items-center gap-2">
             <i class="bi bi-check-circle-fill text-success fs-3"></i>
-            <h2 class="h5 fw-bold mb-0 text-white">Posture BUT 1 : Descriptif & Explicatif (Validé)</h2>
+            <h2 class="h5 fw-bold mb-0 text-white">BUT 1 — Niveau Descriptif & Explicatif (Validé)</h2>
           </div>
-          <span class="badge bg-success">Année 1 Validée avec Succès</span>
+          <span class="badge bg-success">Année 1 Validée • 17 Apprentissages Critiques</span>
         </div>
-        <p class="text-muted small mb-0">
-          Les apprentissages ci-dessous reflètent le travail fondamental de première année : description claire des protocoles manipulés, explications des démarches expérimentales et mobilisation rigoureuse des ressources académiques (cours, TP, SAÉ).
-        </p>
+        <div class="row g-2">
+          <div class="col-md-4"><div class="methodo-pill"><i class="bi bi-check2-circle text-success"></i> Décrire clairement mes actions</div></div>
+          <div class="col-md-4"><div class="methodo-pill"><i class="bi bi-tools text-info"></i> Expliquer comment j'ai procédé</div></div>
+          <div class="col-md-4"><div class="methodo-pill"><i class="bi bi-book text-primary"></i> Identifier les ressources mobilisées (Cours, TP, SAÉ)</div></div>
+        </div>
       </div>
 
-      <!-- Onglets BUT1 (Administrer, Connecter, Programmer) -->
+      <!-- ONGLETS DES 3 COMPÉTENCES BUT 1 -->
       <ul class="nav nav-pills nav-fill mb-4 reveal delay-1" id="but1Tabs" role="tablist">
         <li class="nav-item" role="presentation">
-          <button class="nav-link active" id="b1-admin-tab" data-bs-toggle="tab" data-bs-target="#b1-admin" type="button" role="tab">⚙️ Administrer</button>
+          <button class="nav-link active" id="b1-admin-tab" data-bs-toggle="tab" data-bs-target="#b1-admin" type="button" role="tab">
+            <i class="bi bi-hdd-network me-1"></i> Administrer (6)
+          </button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="b1-connect-tab" data-bs-toggle="tab" data-bs-target="#b1-connect" type="button" role="tab">🔗 Connecter</button>
+          <button class="nav-link" id="b1-connect-tab" data-bs-toggle="tab" data-bs-target="#b1-connect" type="button" role="tab">
+            <i class="bi bi-broadcast-pin me-1"></i> Connecter (5)
+          </button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="b1-prog-tab" data-bs-toggle="tab" data-bs-target="#b1-prog" type="button" role="tab">💻 Programmer</button>
+          <button class="nav-link" id="b1-prog-tab" data-bs-toggle="tab" data-bs-target="#b1-prog" type="button" role="tab">
+            <i class="bi bi-terminal me-1"></i> Programmer (6)
+          </button>
         </li>
       </ul>
 
       <div class="tab-content" id="but1TabsContent">
-        <!-- PÔLE ADMINISTRER (BUT1) -->
+
+        <!-- ==================== PÔLE 1 : ADMINISTRER (NIVEAU 1) ==================== -->
         <div class="tab-pane fade show active" id="b1-admin" role="tabpanel">
           <div class="card p-4 p-md-5 reveal">
-            <h3 class="h5 fw-bold mb-3 border-start border-4 border-primary ps-3">Compétence : Administrer les réseaux et l'Internet — Niveau 1</h3>
+            <div class="mb-4 border-start border-4 border-primary ps-3">
+              <h3 class="h5 fw-bold mb-1">Compétence Administrer — Niveau 1 : Assister l'administrateur du réseau</h3>
+              <p class="text-muted small mb-0">Électricité, systèmes numériques, configuration LAN, systèmes d'exploitation et diagnostic</p>
+            </div>
+
             <div class="accordion" id="accBut1Admin">
+
               <!-- AC11.01 -->
               <div class="accordion-item">
                 <h4 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#b1_ac1101">
-                    <span class="ac-code">AC11.01</span> Maîtriser les lois fondamentales de l’électricité afin d’intervenir sur des équipements
+                    <span class="ac-code">AC11.01</span> Maîtriser les lois fondamentales de l’électricité afin d’intervenir sur des équipements de réseaux et télécommunications
                   </button>
                 </h4>
                 <div id="b1_ac1101" class="accordion-collapse collapse" data-bs-parent="#accBut1Admin">
                   <div class="accordion-body">
-                    <div class="mb-3"><span class="badge bg-primary">R1.04 - Fondamentaux des systèmes électroniques</span></div>
+                    <div class="mb-3"><span class="badge bg-primary">Ressource mobilisée : R1.04 - Fondamentaux des systèmes électroniques (Cours & TP)</span></div>
                     <div class="reflexive-grid">
-                      <div class="reflexive-box"><div class="reflexive-title"><i class="bi bi-check2-circle text-primary"></i> Ce que j'ai fait</div><p>Montages sur platines d'essais, mesures au multimètre et vérification des lois de Kirchhoff et d'Ohm.</p></div>
-                      <div class="reflexive-box box-why"><div class="reflexive-title"><i class="bi bi-bullseye text-info"></i> Pourquoi je l'ai fait</div><p>Indispensable pour comprendre la couche physique des réseaux (OSI 1) et le transport du signal (PoE, signaux binaires).</p></div>
-                      <div class="reflexive-box box-how"><div class="reflexive-title"><i class="bi bi-tools text-primary"></i> Comment je l'ai fait</div><p>Câblage série/parallèle, générateurs de tension continue et comparaison valeurs théoriques/pratiques.</p></div>
-                      <div class="reflexive-box box-diff"><div class="reflexive-title"><i class="bi bi-exclamation-triangle text-warning"></i> Mes difficultés</div><p>Différencier le branchement série (ampèremètre) et parallèle (voltmètre) sans provoquer de court-circuit.</p></div>
-                      <div class="reflexive-box box-learn"><div class="reflexive-title"><i class="bi bi-lightbulb text-success"></i> Ce que j'en ai appris</div><p>Validation concrète de la théorie et compréhension de l'atténuation du signal dans un support physique.</p></div>
-                      <div class="reflexive-box box-next"><div class="reflexive-title"><i class="bi bi-arrow-repeat" style="color:#f472b6;"></i> Ce que je ferais autrement</div><p>Modéliser systématiquement le circuit sur LTspice avant de passer au câblage réel.</p></div>
+                      <div class="reflexive-box"><div class="reflexive-title"><i class="bi bi-check2-circle text-primary"></i> Mes actions (Ce que j'ai fait)</div><p>J'ai réalisé des montages de circuits électriques sur platines d'essais, effectué des mesures avec des multimètres et vérifié expérimentalement les lois de Kirchhoff (mailles et nœuds) ainsi que la loi d'Ohm.</p></div>
+                      <div class="reflexive-box box-how"><div class="reflexive-title"><i class="bi bi-tools text-info"></i> Ma procédure (Comment j'ai procédé)</div><p>En TP, j'ai câblé des résistances en série et en parallèle alimentées par des générateurs de tension continue, puis j'ai consigné et comparé les valeurs théoriques calculées aux valeurs mesurées.</p></div>
+                      <div class="reflexive-box box-why"><div class="reflexive-title"><i class="bi bi-bullseye text-primary"></i> Pourquoi je l'ai fait</div><p>Pour comprendre la couche physique des réseaux (couche 1 du modèle OSI) et savoir comment le signal électrique transite dans les câbles (PoE, signaux binaires).</p></div>
+                      <div class="reflexive-box box-diff"><div class="reflexive-title"><i class="bi bi-exclamation-triangle text-warning"></i> Mes difficultés</div><p>La manipulation des outils de mesure pour éviter les courts-circuits et bien distinguer le branchement en série (ampèremètre) du branchement en parallèle (voltmètre).</p></div>
+                      <div class="reflexive-box box-learn"><div class="reflexive-title"><i class="bi bi-lightbulb text-success"></i> Ce que j'en ai appris</div><p>J'ai validé la théorie par la pratique et compris l'importance de l'atténuation et de la dissipation électrique dans un support physique.</p></div>
+                      <div class="reflexive-box box-next"><div class="reflexive-title"><i class="bi bi-arrow-repeat" style="color:#f472b6;"></i> Ce que je ferais autrement</div><p>Modéliser systématiquement le circuit sur un simulateur comme LTspice avant de passer au câblage réel pour anticiper les résultats.</p></div>
+                    </div>
+                    <div class="traces-container">
+                      <h5 class="h6 text-primary fw-bold mb-3"><i class="bi bi-images me-2"></i>Traces ciblées :</h5>
+                      <div class="row g-3">
+                        <div class="col-md-6 text-center"><p class="small text-muted mb-2"><em>Schéma de montage électrique</em></p><img src="assets/ac1101_1.png" alt="Schéma électrique" class="zoomable-image"></div>
+                        <div class="col-md-6 text-center"><p class="small text-muted mb-2"><em>Relevé de mesures et calculs</em></p><img src="assets/ac1101_2.png" alt="Tableau de mesures" class="zoomable-image"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- AC11.02 -->
+              <div class="accordion-item">
+                <h4 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#b1_ac1102">
+                    <span class="ac-code">AC11.02</span> Comprendre l'architecture et les fondements des systèmes numériques, les principes du codage de l'information, des communications et de l'Internet
+                  </button>
+                </h4>
+                <div id="b1_ac1102" class="accordion-collapse collapse" data-bs-parent="#accBut1Admin">
+                  <div class="accordion-body">
+                    <div class="mb-3 d-flex flex-wrap gap-2">
+                      <span class="badge bg-primary">R1.06 - Architecture des systèmes numériques</span>
+                      <span class="badge bg-secondary">R2.06 - Numérisation de l'information</span>
+                    </div>
+                    <div class="reflexive-grid">
+                      <div class="reflexive-box"><div class="reflexive-title"><i class="bi bi-check2-circle text-primary"></i> Mes actions (Ce que j'ai fait)</div><p>J'ai étudié le fonctionnement interne d'un processeur, réalisé des conversions de bases (binaire, hexadécimal) et conçu des circuits de logique combinatoire (portes logiques, tables de vérité).</p></div>
+                      <div class="reflexive-box box-how"><div class="reflexive-title"><i class="bi bi-tools text-info"></i> Ma procédure (Comment j'ai procédé)</div><p>Par des exercices d'algèbre de Boole, des simplifications de tableaux de Karnaugh et l'utilisation du simulateur logique Logisim pour recréer des additionneurs binaires.</p></div>
+                      <div class="reflexive-box box-why"><div class="reflexive-title"><i class="bi bi-bullseye text-primary"></i> Pourquoi je l'ai fait</div><p>Pour comprendre comment un équipement réseau traite l'information au niveau matériel et comment les masques de sous-réseaux IPv4/IPv6 sont calculés mathématiquement.</p></div>
+                      <div class="reflexive-box box-diff"><div class="reflexive-title"><i class="bi bi-exclamation-triangle text-warning"></i> Mes difficultés</div><p>L'abstraction mathématique de l'algèbre de Boole et la méthode de Karnaugh pour simplifier les équations logiques complexes.</p></div>
+                      <div class="reflexive-box box-learn"><div class="reflexive-title"><i class="bi bi-lightbulb text-success"></i> Ce que j'en ai appris</div><p>Une vision claire de la traduction entre données binaires et impulsions physiques, facilitant le calcul mental de masques CIDR.</p></div>
+                      <div class="reflexive-box box-next"><div class="reflexive-title"><i class="bi bi-arrow-repeat" style="color:#f472b6;"></i> Ce que je ferais autrement</div><p>Utiliser davantage d'outils interactifs pour automatiser l'entraînement aux conversions binaires/hexadécimales.</p></div>
+                    </div>
+                    <div class="traces-container">
+                      <h5 class="h6 text-primary fw-bold mb-3"><i class="bi bi-images me-2"></i>Traces ciblées :</h5>
+                      <div class="row g-3">
+                        <div class="col-md-6 text-center"><p class="small text-muted mb-2"><em>Simplification par tableau de Karnaugh</em></p><img src="assets/ac1102_1.png" alt="Tableau de Karnaugh" class="zoomable-image"></div>
+                        <div class="col-md-6 text-center"><p class="small text-muted mb-2"><em>Simulation de circuit sous Logisim</em></p><img src="assets/ac1102_2.png" alt="Simulation Logisim" class="zoomable-image"></div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -575,14 +1234,24 @@
                 </h4>
                 <div id="b1_ac1103" class="accordion-collapse collapse" data-bs-parent="#accBut1Admin">
                   <div class="accordion-body">
-                    <div class="mb-3"><span class="badge bg-primary">R1.01 - Initiation aux réseaux</span> <span class="badge bg-secondary">R1.03 - Réseaux locaux</span></div>
+                    <div class="mb-3 d-flex flex-wrap gap-2">
+                      <span class="badge bg-primary">R1.01 - Initiation aux réseaux</span>
+                      <span class="badge bg-secondary">R1.03 - Réseaux locaux (TP & SAÉ 1.02)</span>
+                    </div>
                     <div class="reflexive-grid">
-                      <div class="reflexive-box"><div class="reflexive-title"><i class="bi bi-check2-circle text-primary"></i> Ce que j'ai fait</div><p>Configuration de commutateurs et routeurs Cisco : VLANs, Trunk 802.1Q, routage inter-VLAN et routes statiques.</p></div>
-                      <div class="reflexive-box box-why"><div class="reflexive-title"><i class="bi bi-bullseye text-info"></i> Pourquoi je l'ai fait</div><p>Segmenter un réseau d'entreprise, isoler les services (RH, Prod) et sécuriser la communication inter-services.</p></div>
-                      <div class="reflexive-box box-how"><div class="reflexive-title"><i class="bi bi-tools text-primary"></i> Comment je l'ai fait</div><p>Simulation Packet Tracer puis mise en œuvre sur baie physique via câble console et CLI Cisco IOS.</p></div>
-                      <div class="reflexive-box box-diff"><div class="reflexive-title"><i class="bi bi-exclamation-triangle text-warning"></i> Mes difficultés</div><p>Mémoriser la hiérarchie des modes Cisco et diagnostiquer les erreurs de tag VLAN sur les ports Trunk.</p></div>
-                      <div class="reflexive-box box-learn"><div class="reflexive-title"><i class="bi bi-lightbulb text-success"></i> Ce que j'en ai appris</div><p>Différenciation nette entre trames Ethernet (L2) et paquets IP (L3), et rigueur de la documentation réseau.</p></div>
-                      <div class="reflexive-box box-next"><div class="reflexive-title"><i class="bi bi-arrow-repeat" style="color:#f472b6;"></i> Ce que je ferais autrement</div><p>Systématiser la sauvegarde <code>copy run start</code> à chaque étape clé pour éviter les pertes de configuration.</p></div>
+                      <div class="reflexive-box"><div class="reflexive-title"><i class="bi bi-check2-circle text-primary"></i> Mes actions (Ce que j'ai fait)</div><p>J'ai configuré des commutateurs et routeurs Cisco : création de VLANs, liens Trunk 802.1Q, routage inter-VLAN (Router-on-a-Stick) et définition de routes statiques.</p></div>
+                      <div class="reflexive-box box-how"><div class="reflexive-title"><i class="bi bi-tools text-info"></i> Ma procédure (Comment j'ai procédé)</div><p>J'ai d'abord simulé la topologie sur Cisco Packet Tracer, puis j'ai déployé les commandes CLI (IOS Cisco) sur le matériel physique en baie de brassage via un câble console.</p></div>
+                      <div class="reflexive-box box-why"><div class="reflexive-title"><i class="bi bi-bullseye text-primary"></i> Pourquoi je l'ai fait</div><p>Pour segmenter un réseau d'entreprise, isoler les différents services (RH, Production, Serveurs) et contrôler les communications entre eux.</p></div>
+                      <div class="reflexive-box box-diff"><div class="reflexive-title"><i class="bi bi-exclamation-triangle text-warning"></i> Mes difficultés</div><p>Mémoriser l'arborescence des modes de commandes Cisco (utilisateur, privilégié, configuration globale) et diagnostiquer les erreurs sur les ports Trunk.</p></div>
+                      <div class="reflexive-box box-learn"><div class="reflexive-title"><i class="bi bi-lightbulb text-success"></i> Ce que j'en ai appris</div><p>La logique d'acheminement des trames MAC (couche 2) et des paquets IP (couche 3), ainsi que la rigueur de la documentation réseau.</p></div>
+                      <div class="reflexive-box box-next"><div class="reflexive-title"><i class="bi bi-arrow-repeat" style="color:#f472b6;"></i> Ce que je ferais autrement</div><p>Sauvegarder mes configurations (<code>copy run start</code>) beaucoup plus régulièrement lors des TP sur matériel réel.</p></div>
+                    </div>
+                    <div class="traces-container">
+                      <h5 class="h6 text-primary fw-bold mb-3"><i class="bi bi-images me-2"></i>Traces ciblées :</h5>
+                      <div class="row g-3">
+                        <div class="col-md-6 text-center"><p class="small text-muted mb-2"><em>Topologie réseau sous Cisco Packet Tracer</em></p><img src="assets/ac1103_1.png" alt="Cisco Packet Tracer" class="zoomable-image"></div>
+                        <div class="col-md-6 text-center"><p class="small text-muted mb-2"><em>Configuration VLAN en CLI Cisco</em></p><img src="assets/ac1103_2.png" alt="Terminal Cisco" class="zoomable-image"></div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -592,81 +1261,464 @@
               <div class="accordion-item">
                 <h4 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#b1_ac1104">
-                    <span class="ac-code">AC11.04</span> Systèmes d’exploitation et administration des réseaux/services (Windows Server)
+                    <span class="ac-code">AC11.04</span> Maîtriser les rôles et les principes fondamentaux des systèmes d’exploitation afin d’interagir avec ceux-ci pour la configuration et l'administration des réseaux et services fournis
                   </button>
                 </h4>
                 <div id="b1_ac1104" class="accordion-collapse collapse" data-bs-parent="#accBut1Admin">
                   <div class="accordion-body">
-                    <div class="mb-3"><span class="badge bg-primary">R1.08 - Base des OS</span> <span class="badge bg-secondary">R2.02 - Administration système</span></div>
+                    <div class="mb-3 d-flex flex-wrap gap-2">
+                      <span class="badge bg-primary">R1.08 - Base des systèmes d'exploitation</span>
+                      <span class="badge bg-secondary">R2.02 - Administration système (Windows Server)</span>
+                    </div>
                     <div class="reflexive-grid">
-                      <div class="reflexive-box"><div class="reflexive-title"><i class="bi bi-check2-circle text-primary"></i> Ce que j'ai fait</div><p>Déploiement Windows Server, domaine Active Directory, Unités d'Organisation, partages NTFS et script PowerShell.</p></div>
-                      <div class="reflexive-box box-why"><div class="reflexive-title"><i class="bi bi-bullseye text-info"></i> Pourquoi je l'ai fait</div><p>Centraliser l'authentification des utilisateurs et automatiser l'octroi des droits selon le moindre privilège.</p></div>
-                      <div class="reflexive-box box-how"><div class="reflexive-title"><i class="bi bi-tools text-primary"></i> Comment je l'ai fait</div><p>Console ADUC, GPO, permissions effectives (partage vs NTFS) et cmdlets <code>New-ADUser</code> & <code>icacls</code>.</p></div>
-                      <div class="reflexive-box box-diff"><div class="reflexive-title"><i class="bi bi-exclamation-triangle text-warning"></i> Mes difficultés</div><p>Assimiler la règle de la permission la plus restrictive entre le partage réseau et le système NTFS.</p></div>
-                      <div class="reflexive-box box-learn"><div class="reflexive-title"><i class="bi bi-lightbulb text-success"></i> Ce que j'en ai appris</div><p>Prise de conscience de la puissance des scripts d'industrialisation face à la configuration manuelle.</p></div>
-                      <div class="reflexive-box box-next"><div class="reflexive-title"><i class="bi bi-arrow-repeat" style="color:#f472b6;"></i> Ce que je ferais autrement</div><p>Automatiser l'import massif d'utilisateurs directement depuis des exports CSV des services RH.</p></div>
+                      <div class="reflexive-box"><div class="reflexive-title"><i class="bi bi-check2-circle text-primary"></i> Mes actions (Ce que j'ai fait)</div><p>J'ai conçu et administré une infrastructure centralisée sous Windows Server : création d'un domaine Active Directory, organisation d'OU, gestion de partages NTFS et automatisation des comptes en PowerShell.</p></div>
+                      <div class="reflexive-box box-how"><div class="reflexive-title"><i class="bi bi-tools text-info"></i> Ma procédure (Comment j'ai procédé)</div><p>Via la console <em>Utilisateurs et ordinateurs Active Directory</em>, les GPO, la gestion des permissions NTFS et les cmdlets PowerShell <code>New-ADUser</code> et <code>icacls</code>.</p></div>
+                      <div class="reflexive-box box-why"><div class="reflexive-title"><i class="bi bi-bullseye text-primary"></i> Pourquoi je l'ai fait</div><p>Pour centraliser l'authentification des utilisateurs, sécuriser l'accès aux fichiers selon le moindre privilège et industrialiser la création des comptes.</p></div>
+                      <div class="reflexive-box box-diff"><div class="reflexive-title"><i class="bi bi-exclamation-triangle text-warning"></i> Mes difficultés</div><p>Comprendre que la permission effective résultante est la plus restrictive entre le partage réseau et les droits NTFS.</p></div>
+                      <div class="reflexive-box box-learn"><div class="reflexive-title"><i class="bi bi-lightbulb text-success"></i> Ce que j'en ai appris</div><p>La complémentarité entre administration graphique et automatisation par scripts PowerShell pour gagner en fiabilité.</p></div>
+                      <div class="reflexive-box box-next"><div class="reflexive-title"><i class="bi bi-arrow-repeat" style="color:#f472b6;"></i> Ce que je ferais autrement</div><p>Améliorer le script PowerShell pour importer directement les comptes à partir d'un fichier CSV fourni par les RH.</p></div>
+                    </div>
+                    <div class="traces-container">
+                      <h5 class="h6 text-primary fw-bold mb-3"><i class="bi bi-images me-2"></i>Traces ciblées :</h5>
+                      <div class="row g-3">
+                        <div class="col-md-6 text-center"><p class="small text-muted mb-2"><em>Organisation Active Directory</em></p><img src="assets/ac1104_1.png" alt="Capture Active Directory" class="zoomable-image"></div>
+                        <div class="col-md-6 text-center"><p class="small text-muted mb-2"><em>Script d'automatisation PowerShell</em></p><img src="assets/ac1104_2.png" alt="Capture PowerShell" class="zoomable-image"></div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
+
+              <!-- AC11.05 -->
+              <div class="accordion-item">
+                <h4 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#b1_ac1105">
+                    <span class="ac-code">AC11.05</span> Identifier les dysfonctionnements du réseau local et savoir les signaler
+                  </button>
+                </h4>
+                <div id="b1_ac1105" class="accordion-collapse collapse" data-bs-parent="#accBut1Admin">
+                  <div class="accordion-body">
+                    <div class="mb-3 d-flex flex-wrap gap-2">
+                      <span class="badge bg-primary">R1.02 - Principes des réseaux</span>
+                      <span class="badge bg-secondary">R2.03 - Base des services réseaux</span>
+                    </div>
+                    <div class="reflexive-grid">
+                      <div class="reflexive-box"><div class="reflexive-title"><i class="bi bi-check2-circle text-primary"></i> Mes actions (Ce que j'ai fait)</div><p>J'ai utilisé l'analyseur de trames Wireshark pour capturer du trafic et diagnostiquer des pannes réseau (boucles de routage, requêtes DHCP sans réponse, conflits IP).</p></div>
+                      <div class="reflexive-box box-how"><div class="reflexive-title"><i class="bi bi-tools text-info"></i> Ma procédure (Comment j'ai procédé)</div><p>Application d'une méthode « Bottom-Up » (de la couche physique 1 à applicative 7) avec <code>ping</code>, <code>tracert / traceroute</code> et des filtres d'affichage Wireshark.</p></div>
+                      <div class="reflexive-box box-why"><div class="reflexive-title"><i class="bi bi-bullseye text-primary"></i> Pourquoi je l'ai fait</div><p>Pour isoler méthodiquement la cause racine d'un incident réseau et produire un diagnostic précis plutôt que de procéder au hasard.</p></div>
+                      <div class="reflexive-box box-diff"><div class="reflexive-title"><i class="bi bi-exclamation-triangle text-warning"></i> Mes difficultés</div><p>Interpréter la structure des en-têtes TCP/IP et isoler les trames pertinentes au milieu d'un trafic dense.</p></div>
+                      <div class="reflexive-box box-learn"><div class="reflexive-title"><i class="bi bi-lightbulb text-success"></i> Ce que j'en ai appris</div><p>L'efficacité des outils de diagnostic en ligne de commande et l'importance d'une démarche par élimination structurée.</p></div>
+                      <div class="reflexive-box box-next"><div class="reflexive-title"><i class="bi bi-arrow-repeat" style="color:#f472b6;"></i> Ce que je ferais autrement</div><p>Rédiger systématiquement une fiche d'incident structurée (symptôme, diagnostic, résolution) comme dans un outil de ticketing IT.</p></div>
+                    </div>
+                    <div class="traces-container">
+                      <h5 class="h6 text-primary fw-bold mb-3"><i class="bi bi-images me-2"></i>Traces ciblées :</h5>
+                      <div class="row g-3">
+                        <div class="col-md-6 text-center"><p class="small text-muted mb-2"><em>Analyse de trames sous Wireshark</em></p><img src="assets/ac1105_1.png" alt="Wireshark" class="zoomable-image"></div>
+                        <div class="col-md-6 text-center"><p class="small text-muted mb-2"><em>Diagnostic réseau avec tracert</em></p><img src="assets/ac1105_2.png" alt="Tracert cmd" class="zoomable-image"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- AC11.06 -->
+              <div class="accordion-item">
+                <h4 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#b1_ac1106">
+                    <span class="ac-code">AC11.06</span> Installer un poste client, expliquer la procédure mise en place
+                  </button>
+                </h4>
+                <div id="b1_ac1106" class="accordion-collapse collapse" data-bs-parent="#accBut1Admin">
+                  <div class="accordion-body">
+                    <div class="mb-3"><span class="badge bg-primary">Ressource mobilisée : R1.08 - Base des systèmes d'exploitation</span></div>
+                    <div class="reflexive-grid">
+                      <div class="reflexive-box"><div class="reflexive-title"><i class="bi bi-check2-circle text-primary"></i> Mes actions (Ce que j'ai fait)</div><p>J'ai installé des systèmes d'exploitation clients (Windows 10/11, Ubuntu Linux) sur machines physiques et virtuelles (VirtualBox, VMware) et configuré leur intégration au réseau.</p></div>
+                      <div class="reflexive-box box-how"><div class="reflexive-title"><i class="bi bi-tools text-info"></i> Ma procédure (Comment j'ai procédé)</div><p>Création de supports bootables avec Rufus, configuration du BIOS/UEFI, partitionnement GPT, installation des pilotes et jonction au domaine Active Directory.</p></div>
+                      <div class="reflexive-box box-why"><div class="reflexive-title"><i class="bi bi-bullseye text-primary"></i> Pourquoi je l'ai fait</div><p>Pour fournir aux utilisateurs un poste de travail opérationnel, sécurisé et correctement connecté aux ressources de l'entreprise.</p></div>
+                      <div class="reflexive-box box-diff"><div class="reflexive-title"><i class="bi bi-exclamation-triangle text-warning"></i> Mes difficultés</div><p>Comprendre les différences entre schémas de partitionnement MBR et GPT et résoudre les problèmes de pilotes réseau post-installation.</p></div>
+                      <div class="reflexive-box box-learn"><div class="reflexive-title"><i class="bi bi-lightbulb text-success"></i> Ce que j'en ai appris</div><p>L'importance des étapes de post-installation (mises à jour de sécurité, pare-feu local, logiciels métiers) et de la rédaction d'une procédure claire.</p></div>
+                      <div class="reflexive-box box-next"><div class="reflexive-title"><i class="bi bi-arrow-repeat" style="color:#f472b6;"></i> Ce que je ferais autrement</div><p>Utiliser des solutions de déploiement réseau automatisé (WDS ou FOG) pour déployer des images standardisées sur plusieurs postes simultanément.</p></div>
+                    </div>
+                    <div class="traces-container">
+                      <h5 class="h6 text-primary fw-bold mb-3"><i class="bi bi-images me-2"></i>Traces ciblées :</h5>
+                      <div class="row g-3">
+                        <div class="col-md-6 text-center"><p class="small text-muted mb-2"><em>Déploiement d'une VM sous VirtualBox</em></p><img src="assets/ac1106_1.png" alt="VirtualBox" class="zoomable-image"></div>
+                        <div class="col-md-6 text-center"><p class="small text-muted mb-2"><em>Configuration de l'adressage IP</em></p><img src="assets/ac1106_2.png" alt="Paramètres IP" class="zoomable-image"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
 
-        <!-- PÔLE CONNECTER (BUT1) -->
+        <!-- ==================== PÔLE 2 : CONNECTER (NIVEAU 1) ==================== -->
         <div class="tab-pane fade" id="b1-connect" role="tabpanel">
           <div class="card p-4 p-md-5 reveal">
-            <h3 class="h5 fw-bold mb-3 border-start border-4 border-info ps-3">Compétence : Connecter les entreprises et les usagers — Niveau 1</h3>
+            <div class="mb-4 border-start border-4 border-info ps-3">
+              <h3 class="h5 fw-bold mb-1">Compétence Connecter — Niveau 1 : Découvrir les transmissions et la ToIP</h3>
+              <p class="text-muted small mb-0">Mesure de signaux, modélisation, supports de transmission, téléphonie IP et communication</p>
+            </div>
+
             <div class="accordion" id="accBut1Connect">
+
+              <!-- AC12.01 -->
+              <div class="accordion-item">
+                <h4 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#b1_ac1201">
+                    <span class="ac-code">AC12.01</span> Mesurer, analyser et commenter les signaux
+                  </button>
+                </h4>
+                <div id="b1_ac1201" class="accordion-collapse collapse" data-bs-parent="#accBut1Connect">
+                  <div class="accordion-body">
+                    <div class="mb-3 d-flex flex-wrap gap-2">
+                      <span class="badge bg-primary">R1.13 - Mathématiques du signal</span>
+                      <span class="badge bg-secondary">R2.05 - Signaux et systèmes</span>
+                    </div>
+                    <div class="reflexive-grid">
+                      <div class="reflexive-box"><div class="reflexive-title"><i class="bi bi-check2-circle text-primary"></i> Mes actions (Ce que j'ai fait)</div><p>J'ai généré des signaux électriques (carrés, sinusoïdaux) et mesuré leurs caractéristiques temporelles et fréquentielles à l'aide d'oscilloscopes numériques.</p></div>
+                      <div class="reflexive-box box-how"><div class="reflexive-title"><i class="bi bi-tools text-info"></i> Ma procédure (Comment j'ai procédé)</div><p>Utilisation de générateurs basses fréquences (GBF), réglage de la base de temps et du déclenchement (trigger) sur l'oscilloscope, et calcul des périodes, fréquences et amplitudes.</p></div>
+                      <div class="reflexive-box box-why"><div class="reflexive-title"><i class="bi bi-bullseye text-primary"></i> Pourquoi je l'ai fait</div><p>Parce que toute communication réseau repose sur la propagation de signaux physiques sujets au bruit et à l'atténuation.</p></div>
+                      <div class="reflexive-box box-diff"><div class="reflexive-title"><i class="bi bi-exclamation-triangle text-warning"></i> Mes difficultés</div><p>Stabiliser des signaux rapides à l'écran via la fonction trigger et convertir rapidement les divisions d'écran en valeurs physiques réelles.</p></div>
+                      <div class="reflexive-box box-learn"><div class="reflexive-title"><i class="bi bi-lightbulb text-success"></i> Ce que j'en ai appris</div><p>Un signal numérique réel présente des temps de montée et des déformations qui limitent physiquement le débit binaire maximal d'un canal.</p></div>
+                      <div class="reflexive-box box-next"><div class="reflexive-title"><i class="bi bi-arrow-repeat" style="color:#f472b6;"></i> Ce que je ferais autrement</div><p>Exporter systématiquement les captures numériques sur clé USB depuis l'oscilloscope pour enrichir mes comptes rendus de TP.</p></div>
+                    </div>
+                    <div class="traces-container">
+                      <h5 class="h6 text-primary fw-bold mb-3"><i class="bi bi-images me-2"></i>Traces ciblées :</h5>
+                      <div class="row g-3">
+                        <div class="col-md-6 text-center"><p class="small text-muted mb-2"><em>Relevé de signal à l'oscilloscope</em></p><img src="assets/ac1201_1.png" alt="Oscilloscope" class="zoomable-image"></div>
+                        <div class="col-md-6 text-center"><p class="small text-muted mb-2"><em>Analyse fréquentielle et spectre</em></p><img src="assets/ac1201_2.png" alt="Analyse fréquentielle" class="zoomable-image"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- AC12.02 -->
+              <div class="accordion-item">
+                <h4 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#b1_ac1202">
+                    <span class="ac-code">AC12.02</span> Caractériser des systèmes de transmissions élémentaires et découvrir la modélisation mathématique de leur fonctionnement
+                  </button>
+                </h4>
+                <div id="b1_ac1202" class="accordion-collapse collapse" data-bs-parent="#accBut1Connect">
+                  <div class="accordion-body">
+                    <div class="mb-3 d-flex flex-wrap gap-2">
+                      <span class="badge bg-primary">R1.14 - Mathématiques des transmissions</span>
+                      <span class="badge bg-secondary">SAÉ 1.03 - Découvrir un dispositif de transmission</span>
+                    </div>
+                    <div class="reflexive-grid">
+                      <div class="reflexive-box"><div class="reflexive-title"><i class="bi bi-check2-circle text-primary"></i> Mes actions (Ce que j'ai fait)</div><p>Dans le cadre de la SAÉ 1.03, j'ai modélisé mathématiquement et numériquement une ligne de transmission en cuivre (câble coaxial, paires torsadées) sous LTspice.</p></div>
+                      <div class="reflexive-box box-how"><div class="reflexive-title"><i class="bi bi-tools text-info"></i> Ma procédure (Comment j'ai procédé)</div><p>Modélisation de tronçons de câble par des cellules élémentaires RLC (Résistance, Inductance, Capacité) et lancement de simulations temporelles et diagrammes de Bode.</p></div>
+                      <div class="reflexive-box box-why"><div class="reflexive-title"><i class="bi bi-bullseye text-primary"></i> Pourquoi je l'ai fait</div><p>Pour prédire l'atténuation et la déformation du signal en fonction de la fréquence et de la distance sans dérouler physiquement des centaines de mètres de câble.</p></div>
+                      <div class="reflexive-box box-diff"><div class="reflexive-title"><i class="bi bi-exclamation-triangle text-warning"></i> Mes difficultés</div><p>La prise en main de l'interface de LTspice et le lien entre les fonctions de transfert théoriques et les courbes simulées.</p></div>
+                      <div class="reflexive-box box-learn"><div class="reflexive-title"><i class="bi bi-lightbulb text-success"></i> Ce que j'en ai appris</div><p>La justification physique de la limite de longueur de 100 mètres des câbles Ethernet cuivre avant dégradation critique du signal.</p></div>
+                      <div class="reflexive-box box-next"><div class="reflexive-title"><i class="bi bi-arrow-repeat" style="color:#f472b6;"></i> Ce que je ferais autrement</div><p>Compléter les simulations LTspice par des scripts Python (Matplotlib) pour tracer des courbes comparatives plus lisibles.</p></div>
+                    </div>
+                    <div class="traces-container">
+                      <h5 class="h6 text-primary fw-bold mb-3"><i class="bi bi-images me-2"></i>Traces ciblées :</h5>
+                      <div class="row g-3">
+                        <div class="col-md-6 text-center"><p class="small text-muted mb-2"><em>Modélisation de ligne sous LTspice</em></p><img src="assets/ac1202_1.png" alt="Schéma LTspice" class="zoomable-image"></div>
+                        <div class="col-md-6 text-center"><p class="small text-muted mb-2"><em>Simulation temporelle / Diagramme de Bode</em></p><img src="assets/ac1202_2.png" alt="Diagramme de Bode" class="zoomable-image"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- AC12.03 -->
+              <div class="accordion-item">
+                <h4 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#b1_ac1203">
+                    <span class="ac-code">AC12.03</span> Déployer des supports de transmission
+                  </button>
+                </h4>
+                <div id="b1_ac1203" class="accordion-collapse collapse" data-bs-parent="#accBut1Connect">
+                  <div class="accordion-body">
+                    <div class="mb-3"><span class="badge bg-primary">Ressource mobilisée : R1.05 - Supports de transmission pour les réseaux</span></div>
+                    <div class="reflexive-grid">
+                      <div class="reflexive-box"><div class="reflexive-title"><i class="bi bi-check2-circle text-primary"></i> Mes actions (Ce que j'ai fait)</div><p>J'ai confectionné des cordons réseau RJ45 (droits et croisés), raccordé des prises murales et brassé les liens jusqu'à la baie informatique.</p></div>
+                      <div class="reflexive-box box-how"><div class="reflexive-title"><i class="bi bi-tools text-info"></i> Ma procédure (Comment j'ai procédé)</div><p>Dénudage et sertissage de câbles UTP/STP selon la norme de câblage T568B, suivi d'une validation avec un testeur de continuité et de paires.</p></div>
+                      <div class="reflexive-box box-why"><div class="reflexive-title"><i class="bi bi-bullseye text-primary"></i> Pourquoi je l'ai fait</div><p>Un câblage défectueux provoque des pertes de paquets intermittentes et des chutes de débit difficiles à diagnostiquer aux couches supérieures.</p></div>
+                      <div class="reflexive-box box-diff"><div class="reflexive-title"><i class="bi bi-exclamation-triangle text-warning"></i> Mes difficultés</div><p>Maintenir les 8 brins de cuivre parfaitement alignés dans l'ordre T568B lors de l'insertion dans le connecteur RJ45 avant sertissage.</p></div>
+                      <div class="reflexive-box box-learn"><div class="reflexive-title"><i class="bi bi-lightbulb text-success"></i> Ce que j'en ai appris</div><p>La rigueur manuelle nécessaire au câblage structuré et le rôle du blindage (STP/FTP) contre les perturbations électromagnétiques.</p></div>
+                      <div class="reflexive-box box-next"><div class="reflexive-title"><i class="bi bi-arrow-repeat" style="color:#f472b6;"></i> Ce que je ferais autrement</div><p>Réaliser des tests de qualification avancés (paradiaphonie NEXT, atténuation) avec un certificateur de câblage.</p></div>
+                    </div>
+                    <div class="traces-container">
+                      <h5 class="h6 text-primary fw-bold mb-3"><i class="bi bi-images me-2"></i>Traces ciblées :</h5>
+                      <div class="row g-3">
+                        <div class="col-md-6 text-center"><p class="small text-muted mb-2"><em>Norme de câblage T568B</em></p><img src="assets/ac1203_1.png" alt="Câble RJ45" class="zoomable-image"></div>
+                        <div class="col-md-6 text-center"><p class="small text-muted mb-2"><em>Validation avec testeur de continuité</em></p><img src="assets/ac1203_2.png" alt="Testeur réseau" class="zoomable-image"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- AC12.04 -->
               <div class="accordion-item">
                 <h4 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#b1_ac1204">
-                    <span class="ac-code">AC12.04</span> Connecter les systèmes de ToIP (Asterisk / VoIP)
+                    <span class="ac-code">AC12.04</span> Connecter les systèmes de ToIP
                   </button>
                 </h4>
                 <div id="b1_ac1204" class="accordion-collapse collapse" data-bs-parent="#accBut1Connect">
                   <div class="accordion-body">
-                    <div class="mb-3"><span class="badge bg-primary">R2.04 - Téléphonie d'entreprise</span></div>
+                    <div class="mb-3"><span class="badge bg-primary">Ressource mobilisée : R2.04 - Initiation à la téléphonie d'entreprise</span></div>
                     <div class="reflexive-grid">
-                      <div class="reflexive-box"><div class="reflexive-title"><i class="bi bi-check2-circle text-primary"></i> Ce que j'ai fait</div><p>Serveur IPBX Asterisk (Linux Alpine), postes Fanvil et téléphones Cisco avec auto-provisioning TFTP.</p></div>
-                      <div class="reflexive-box box-why"><div class="reflexive-title"><i class="bi bi-bullseye text-info"></i> Pourquoi je l'ai fait</div><p>Assurer la communication voix et l'interopérabilité multi-constructeurs via le protocole SIP.</p></div>
-                      <div class="reflexive-box box-how"><div class="reflexive-title"><i class="bi bi-tools text-primary"></i> Comment je l'ai fait</div><p>Édition de <code>pjsip.conf</code> et <code>extensions.conf</code>, service <code>tftpd</code> et profils XML par adresse MAC.</p></div>
-                      <div class="reflexive-box box-diff"><div class="reflexive-title"><i class="bi bi-exclamation-triangle text-warning"></i> Mes difficultés</div><p>Syntaxe stricte d'Asterisk et gestion rigoureuse des noms de fichiers XML pour le provisionnement.</p></div>
-                      <div class="reflexive-box box-learn"><div class="reflexive-title"><i class="bi bi-lightbulb text-success"></i> Ce que j'en ai appris</div><p>Fonctionnement du protocole SIP (UDP 5060) et RTP pour les flux voix en temps réel.</p></div>
-                      <div class="reflexive-box box-next"><div class="reflexive-title"><i class="bi bi-arrow-repeat" style="color:#f472b6;"></i> Ce que je ferais autrement</div><p>Générer dynamiquement les fichiers de provisioning XML via un script Python basé sur un inventaire CSV.</p></div>
+                      <div class="reflexive-box"><div class="reflexive-title"><i class="bi bi-check2-circle text-primary"></i> Mes actions (Ce que j'ai fait)</div><p>J'ai déployé un serveur IPBX sous Asterisk (Linux Alpine), configuré des téléphones IP Fanvil et Cisco en auto-provisioning et paramétré le plan de numérotation (Dialplan, messagerie, SVI).</p></div>
+                      <div class="reflexive-box box-how"><div class="reflexive-title"><i class="bi bi-tools text-info"></i> Ma procédure (Comment j'ai procédé)</div><p>Configuration des fichiers <code>pjsip.conf</code> et <code>extensions.conf</code> sous Asterisk, et déploiement d'un serveur TFTP distribuant les fichiers XML (<code>SEP&lt;MAC&gt;.cnf.xml</code>) aux postes Cisco.</p></div>
+                      <div class="reflexive-box box-why"><div class="reflexive-title"><i class="bi bi-bullseye text-primary"></i> Pourquoi je l'ai fait</div><p>Pour mettre en place une solution de téléphonie sur IP interopérable entre différents constructeurs grâce au standard SIP.</p></div>
+                      <div class="reflexive-box box-diff"><div class="reflexive-title"><i class="bi bi-exclamation-triangle text-warning"></i> Mes difficultés</div><p>La syntaxe stricte des fichiers de configuration Asterisk et la rigueur requise sur les adresses MAC des fichiers d'auto-provisioning.</p></div>
+                      <div class="reflexive-box box-learn"><div class="reflexive-title"><i class="bi bi-lightbulb text-success"></i> Ce que j'en ai appris</div><p>La séparation entre signalisation (SIP sur UDP 5060) et transport de la voix (flux RTP), ainsi que le gain de temps de l'auto-provisioning.</p></div>
+                      <div class="reflexive-box box-next"><div class="reflexive-title"><i class="bi bi-arrow-repeat" style="color:#f472b6;"></i> Ce que je ferais autrement</div><p>Développer un script Python lisant un fichier CSV (MAC et numéros internes) pour générer automatiquement les profils XML.</p></div>
+                    </div>
+                    <div class="traces-container">
+                      <h5 class="h6 text-primary fw-bold mb-3"><i class="bi bi-images me-2"></i>Traces ciblées :</h5>
+                      <div class="row g-3">
+                        <div class="col-md-6 text-center"><p class="small text-muted mb-2"><em>Configuration du Dialplan Asterisk</em></p><img src="assets/ac1204_1.png" alt="Fichier de conf Asterisk" class="zoomable-image"></div>
+                        <div class="col-md-6 text-center"><p class="small text-muted mb-2"><em>Provisioning de téléphone IP</em></p><img src="assets/ac1204_2.png" alt="Interface téléphone IP" class="zoomable-image"></div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
+
+              <!-- AC12.05 -->
+              <div class="accordion-item">
+                <h4 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#b1_ac1205">
+                    <span class="ac-code">AC12.05</span> Communiquer avec un tiers (client, collaborateur...) et adapter son discours et sa langue à son interlocuteur
+                  </button>
+                </h4>
+                <div id="b1_ac1205" class="accordion-collapse collapse" data-bs-parent="#accBut1Connect">
+                  <div class="accordion-body">
+                    <div class="mb-3 d-flex flex-wrap gap-2">
+                      <span class="badge bg-primary">R1.11 / R2.11 - Expression & Communication</span>
+                      <span class="badge bg-secondary">R1.12 / R2.12 - Anglais professionnel</span>
+                    </div>
+                    <div class="reflexive-grid">
+                      <div class="reflexive-box"><div class="reflexive-title"><i class="bi bi-check2-circle text-primary"></i> Mes actions (Ce que j'ai fait)</div><p>J'ai rédigé des rapports techniques pour chaque SAÉ, conçu des supports visuels et soutenu mes réalisations à l'oral en français et en anglais.</p></div>
+                      <div class="reflexive-box box-how"><div class="reflexive-title"><i class="bi bi-tools text-info"></i> Ma procédure (Comment j'ai procédé)</div><p>Structuration claire des dossiers (contexte, méthodologie, résultats, bilan), création de schémas d'architecture synthétiques et préparation des soutenances chronométrées.</p></div>
+                      <div class="reflexive-box box-why"><div class="reflexive-title"><i class="bi bi-bullseye text-primary"></i> Pourquoi je l'ai fait</div><p>Un spécialiste R&T doit savoir vulgariser ses choix techniques auprès d'un décideur non expert tout en restant précis face à un jury technique.</p></div>
+                      <div class="reflexive-box box-diff"><div class="reflexive-title"><i class="bi bi-exclamation-triangle text-warning"></i> Mes difficultés</div><p>Synthétiser plusieurs semaines de travail technique dans le temps imparti sans perdre l'auditoire dans des détails de syntaxe.</p></div>
+                      <div class="reflexive-box box-learn"><div class="reflexive-title"><i class="bi bi-lightbulb text-success"></i> Ce que j'en ai appris</div><p>Un schéma d'architecture clair est bien plus parlant qu'un long bloc de texte, et l'adaptation du registre de langage est clé.</p></div>
+                      <div class="reflexive-box box-next"><div class="reflexive-title"><i class="bi bi-arrow-repeat" style="color:#f472b6;"></i> Ce que je ferais autrement</div><p>Effectuer systématiquement une répétition enregistrée avant chaque soutenance pour optimiser la gestion du temps.</p></div>
+                    </div>
+                    <div class="traces-container">
+                      <h5 class="h6 text-primary fw-bold mb-3"><i class="bi bi-images me-2"></i>Traces ciblées :</h5>
+                      <div class="row g-3">
+                        <div class="col-md-6 text-center"><p class="small text-muted mb-2"><em>Support de présentation de projet</em></p><img src="assets/ac1205_1.png" alt="Diapositive" class="zoomable-image"></div>
+                        <div class="col-md-6 text-center"><p class="small text-muted mb-2"><em>Extrait de compte-rendu technique</em></p><img src="assets/ac1205_2.png" alt="Rapport" class="zoomable-image"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
 
-        <!-- PÔLE PROGRAMMER (BUT1) -->
+        <!-- ==================== PÔLE 3 : PROGRAMMER (NIVEAU 1) ==================== -->
         <div class="tab-pane fade" id="b1-prog" role="tabpanel">
           <div class="card p-4 p-md-5 reveal">
-            <h3 class="h5 fw-bold mb-3 border-start border-4 border-success ps-3">Compétence : Créer des outils et applications informatiques — Niveau 1</h3>
+            <div class="mb-4 border-start border-4 border-success ps-3">
+              <h3 class="h5 fw-bold mb-1">Compétence Programmer — Niveau 1 : S'intégrer dans un service informatique</h3>
+              <p class="text-muted small mb-0">Outils système Linux, débogage, algorithmique Python, technologies Web, données et travail collaboratif Git</p>
+            </div>
+
             <div class="accordion" id="accBut1Prog">
+
+              <!-- AC13.01 -->
               <div class="accordion-item">
                 <h4 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#b1_ac1301">
-                    <span class="ac-code">AC13.01</span> Utiliser un système informatique et ses outils (Linux CLI)
+                    <span class="ac-code">AC13.01</span> Utiliser un système informatique et ses outils
                   </button>
                 </h4>
                 <div id="b1_ac1301" class="accordion-collapse collapse" data-bs-parent="#accBut1Prog">
                   <div class="accordion-body">
-                    <div class="mb-3"><span class="badge bg-primary">R1.08 - Base des OS</span> <span class="badge bg-secondary">R1.07 - Programmation</span></div>
+                    <div class="mb-3 d-flex flex-wrap gap-2">
+                      <span class="badge bg-primary">R1.08 - Base des systèmes d'exploitation</span>
+                      <span class="badge bg-secondary">R1.07 - Fondamentaux de programmation</span>
+                    </div>
                     <div class="reflexive-grid">
-                      <div class="reflexive-box"><div class="reflexive-title"><i class="bi bi-check2-circle text-primary"></i> Ce que j'ai fait</div><p>Administration Linux en ligne de commande pure : arborescence, droits (chmod/chown), gestion des paquets.</p></div>
-                      <div class="reflexive-box box-why"><div class="reflexive-title"><i class="bi bi-bullseye text-info"></i> Pourquoi je l'ai fait</div><p>La majorité des équipements réseau et serveurs s'administrent sans interface graphique via le shell SSH.</p></div>
-                      <div class="reflexive-box box-how"><div class="reflexive-title"><i class="bi bi-tools text-primary"></i> Comment je l'ai fait</div><p>Sessions SSH PuTTY/Terminal, commandes Bash (<code>grep, awk, tar, nano, vim</code>) et gestionnaire APT.</p></div>
-                      <div class="reflexive-box box-diff"><div class="reflexive-title"><i class="bi bi-exclamation-triangle text-warning"></i> Mes difficultés</div><p>Retenir les nombreuses options des commandes système et prendre en main l'éditeur Vim.</p></div>
-                      <div class="reflexive-box box-learn"><div class="reflexive-title"><i class="bi bi-lightbulb text-success"></i> Ce que j'en ai appris</div><p>Rapidité et puissance inégalées du shell, automatisation par redirection de flux et consultation des manpages.</p></div>
-                      <div class="reflexive-box box-next"><div class="reflexive-title"><i class="bi bi-arrow-repeat" style="color:#f472b6;"></i> Ce que je ferais autrement</div><p>Centraliser un aide-mémoire personnel (cheat sheet Markdown) documentant chaque syntaxe utile.</p></div>
+                      <div class="reflexive-box"><div class="reflexive-title"><i class="bi bi-check2-circle text-primary"></i> Mes actions (Ce que j'ai fait)</div><p>J'ai administré des systèmes Linux (Debian/Ubuntu) en ligne de commande (CLI) : gestion de l'arborescence, des permissions (<code>chmod</code>, <code>chown</code>) et des paquets logiciels.</p></div>
+                      <div class="reflexive-box box-how"><div class="reflexive-title"><i class="bi bi-tools text-info"></i> Ma procédure (Comment j'ai procédé)</div><p>Connexion en SSH et utilisation quotidienne des commandes Bash (<code>ls, grep, awk, tar, nano, vim</code>) et du gestionnaire <code>apt</code>.</p></div>
+                      <div class="reflexive-box box-why"><div class="reflexive-title"><i class="bi bi-bullseye text-primary"></i> Pourquoi je l'ai fait</div><p>La majorité des serveurs et équipements réseaux fonctionnent sous Unix/Linux sans interface graphique ; la maîtrise du shell est indispensable.</p></div>
+                      <div class="reflexive-box box-diff"><div class="reflexive-title"><i class="bi bi-exclamation-triangle text-warning"></i> Mes difficultés</div><p>Retenir les options des commandes système et s'habituer à l'éditeur en mode texte <code>vim</code>.</p></div>
+                      <div class="reflexive-box box-learn"><div class="reflexive-title"><i class="bi bi-lightbulb text-success"></i> Ce que j'en ai appris</div><p>La rapidité et la puissance du terminal par rapport à une interface graphique, ainsi que l'exploitation des pages de manuel (<code>man</code>).</p></div>
+                      <div class="reflexive-box box-next"><div class="reflexive-title"><i class="bi bi-arrow-repeat" style="color:#f472b6;"></i> Ce que je ferais autrement</div><p>Construire un pense-bête numérique (cheat sheet) dès les premières séances pour centraliser les commandes clés.</p></div>
+                    </div>
+                    <div class="traces-container">
+                      <h5 class="h6 text-primary fw-bold mb-3"><i class="bi bi-images me-2"></i>Traces ciblées :</h5>
+                      <div class="row g-3">
+                        <div class="col-md-6 text-center"><p class="small text-muted mb-2"><em>Navigation et gestion des droits en CLI</em></p><img src="assets/ac1301_1.png" alt="Terminal Linux" class="zoomable-image"></div>
+                        <div class="col-md-6 text-center"><p class="small text-muted mb-2"><em>Édition de fichier système via Nano/Vim</em></p><img src="assets/ac1301_2.png" alt="Éditeur texte Linux" class="zoomable-image"></div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
+
+              <!-- AC13.02 -->
+              <div class="accordion-item">
+                <h4 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#b1_ac1302">
+                    <span class="ac-code">AC13.02</span> Lire, exécuter, corriger et modifier un programme
+                  </button>
+                </h4>
+                <div id="b1_ac1302" class="accordion-collapse collapse" data-bs-parent="#accBut1Prog">
+                  <div class="accordion-body">
+                    <div class="mb-3"><span class="badge bg-primary">Ressource mobilisée : R1.07 - Fondamentaux de la programmation (Python)</span></div>
+                    <div class="reflexive-grid">
+                      <div class="reflexive-box"><div class="reflexive-title"><i class="bi bi-check2-circle text-primary"></i> Mes actions (Ce que j'ai fait)</div><p>J'ai analysé des programmes Python existants comportant des bugs de syntaxe ou de logique afin d'en comprendre le fonctionnement et de les corriger.</p></div>
+                      <div class="reflexive-box box-how"><div class="reflexive-title"><i class="bi bi-tools text-info"></i> Ma procédure (Comment j'ai procédé)</div><p>Utilisation du débogueur de Visual Studio Code avec pose de points d'arrêt (breakpoints) et exécution pas à pas pour observer l'état des variables.</p></div>
+                      <div class="reflexive-box box-why"><div class="reflexive-title"><i class="bi bi-bullseye text-primary"></i> Pourquoi je l'ai fait</div><p>En milieu professionnel, la maintenance et l'évolution de scripts existants occupent une part majeure du travail technique.</p></div>
+                      <div class="reflexive-box box-diff"><div class="reflexive-title"><i class="bi bi-exclamation-triangle text-warning"></i> Mes difficultés</div><p>Comprendre la logique d'un code peu commenté et repérer les erreurs de typage dynamique en Python.</p></div>
+                      <div class="reflexive-box box-learn"><div class="reflexive-title"><i class="bi bi-lightbulb text-success"></i> Ce que j'en ai appris</div><p>Savoir lire un traceback Python pour remonter immédiatement à la ligne et à la cause exacte d'une exception.</p></div>
+                      <div class="reflexive-box box-next"><div class="reflexive-title"><i class="bi bi-arrow-repeat" style="color:#f472b6;"></i> Ce que je ferais autrement</div><p>Activer un linter comme Flake8 ou Pylint dans VS Code pour détecter les anomalies avant même l'exécution.</p></div>
+                    </div>
+                    <div class="traces-container">
+                      <h5 class="h6 text-primary fw-bold mb-3"><i class="bi bi-images me-2"></i>Traces ciblées :</h5>
+                      <div class="row g-3">
+                        <div class="col-md-6 text-center"><p class="small text-muted mb-2"><em>Utilisation de breakpoints sur VS Code</em></p><img src="assets/ac1302_1.png" alt="VS Code debug" class="zoomable-image"></div>
+                        <div class="col-md-6 text-center"><p class="small text-muted mb-2"><em>Résolution d'erreurs d'exécution</em></p><img src="assets/ac1302_2.png" alt="Traceback Python" class="zoomable-image"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- AC13.03 -->
+              <div class="accordion-item">
+                <h4 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#b1_ac1303">
+                    <span class="ac-code">AC13.03</span> Traduire un algorithme, dans un langage et pour un environnement donné
+                  </button>
+                </h4>
+                <div id="b1_ac1303" class="accordion-collapse collapse" data-bs-parent="#accBut1Prog">
+                  <div class="accordion-body">
+                    <div class="mb-3 d-flex flex-wrap gap-2">
+                      <span class="badge bg-primary">R1.07 - Fondamentaux de programmation</span>
+                      <span class="badge bg-secondary">R2.08 - Analyse de données structurées</span>
+                    </div>
+                    <div class="reflexive-grid">
+                      <div class="reflexive-box"><div class="reflexive-title"><i class="bi bi-check2-circle text-primary"></i> Mes actions (Ce que j'ai fait)</div><p>J'ai conçu des algorithmes (recherche, tri, traitement de listes et dictionnaires) en pseudo-code avant de les implémenter en Python.</p></div>
+                      <div class="reflexive-box box-how"><div class="reflexive-title"><i class="bi bi-tools text-info"></i> Ma procédure (Comment j'ai procédé)</div><p>Découpage du problème sur papier sous forme de logigrammes, puis écriture de fonctions modulaires utilisant des boucles (<code>for</code>, <code>while</code>) et structures conditionnelles.</p></div>
+                      <div class="reflexive-box box-why"><div class="reflexive-title"><i class="bi bi-bullseye text-primary"></i> Pourquoi je l'ai fait</div><p>Pour dissocier la résolution logique du problème des contraintes syntaxiques du langage de programmation.</p></div>
+                      <div class="reflexive-box box-diff"><div class="reflexive-title"><i class="bi bi-exclamation-triangle text-warning"></i> Mes difficultés</div><p>Maîtriser les conditions d'arrêt des boucles <code>while</code> et manipuler les index dans les structures de données imbriquées.</p></div>
+                      <div class="reflexive-box box-learn"><div class="reflexive-title"><i class="bi bi-lightbulb text-success"></i> Ce que j'en ai appris</div><p>La phase de conception sur papier réduit considérablement le temps de débogage lors du codage.</p></div>
+                      <div class="reflexive-box box-next"><div class="reflexive-title"><i class="bi bi-arrow-repeat" style="color:#f472b6;"></i> Ce que je ferais autrement</div><p>Écrire systématiquement des jeux de tests unitaires (assertions) pour valider les cas limites de chaque fonction.</p></div>
+                    </div>
+                    <div class="traces-container">
+                      <h5 class="h6 text-primary fw-bold mb-3"><i class="bi bi-images me-2"></i>Traces ciblées :</h5>
+                      <div class="row g-3">
+                        <div class="col-md-6 text-center"><p class="small text-muted mb-2"><em>Conception d'algorithme (Logigramme)</em></p><img src="assets/ac1303_1.png" alt="Logigramme" class="zoomable-image"></div>
+                        <div class="col-md-6 text-center"><p class="small text-muted mb-2"><em>Traduction en langage Python</em></p><img src="assets/ac1303_2.png" alt="Code Python" class="zoomable-image"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- AC13.04 -->
+              <div class="accordion-item">
+                <h4 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#b1_ac1304">
+                    <span class="ac-code">AC13.04</span> Connaître l’architecture et les technologies d’un site Web
+                  </button>
+                </h4>
+                <div id="b1_ac1304" class="accordion-collapse collapse" data-bs-parent="#accBut1Prog">
+                  <div class="accordion-body">
+                    <div class="mb-3 d-flex flex-wrap gap-2">
+                      <span class="badge bg-primary">R1.09 - Intro aux technologies Web</span>
+                      <span class="badge bg-secondary">R2.09 / SAÉ 1.04 - Création de ce Portfolio</span>
+                    </div>
+                    <div class="reflexive-grid">
+                      <div class="reflexive-box"><div class="reflexive-title"><i class="bi bi-check2-circle text-primary"></i> Mes actions (Ce que j'ai fait)</div><p>J'ai conçu, développé et mis en ligne ce site portfolio personnel complet en gérant l'arborescence des pages et l'adaptation multi-écrans.</p></div>
+                      <div class="reflexive-box box-how"><div class="reflexive-title"><i class="bi bi-tools text-info"></i> Ma procédure (Comment j'ai procédé)</div><p>Structuration sémantique en HTML5, mise en forme en CSS3 avec Bootstrap 5 pour la responsivité mobile, et déploiement continu via GitHub Pages.</p></div>
+                      <div class="reflexive-box box-why"><div class="reflexive-title"><i class="bi bi-bullseye text-primary"></i> Pourquoi je l'ai fait</div><p>Pour maîtriser les bases du développement Web client/serveur et disposer d'un support réflexif professionnel pour mon parcours R&T.</p></div>
+                      <div class="reflexive-box box-diff"><div class="reflexive-title"><i class="bi bi-exclamation-triangle text-warning"></i> Mes difficultés</div><p>Le positionnement précis des éléments avec Flexbox/Grid CSS et l'adaptation de la barre de navigation sur smartphones.</p></div>
+                      <div class="reflexive-box box-learn"><div class="reflexive-title"><i class="bi bi-lightbulb text-success"></i> Ce que j'en ai appris</div><p>La séparation nette entre structure (HTML), présentation (CSS) et comportement dynamique (JavaScript), ainsi que le Mobile First.</p></div>
+                      <div class="reflexive-box box-next"><div class="reflexive-title"><i class="bi bi-arrow-repeat" style="color:#f472b6;"></i> Ce que je ferais autrement</div><p>Enrichir l'interactivité JavaScript (filtres dynamiques, recherche instantanée) comme je l'ai fait dans cette version BUT 2.</p></div>
+                    </div>
+                    <div class="traces-container">
+                      <h5 class="h6 text-primary fw-bold mb-3"><i class="bi bi-images me-2"></i>Traces ciblées :</h5>
+                      <div class="row g-3">
+                        <div class="col-md-6 text-center"><p class="small text-muted mb-2"><em>Structure HTML et stylisation CSS</em></p><img src="assets/ac1304_1.png" alt="Code source HTML CSS" class="zoomable-image"></div>
+                        <div class="col-md-6 text-center"><p class="small text-muted mb-2"><em>Adaptation Mobile First (Responsive)</em></p><img src="assets/ac1304_2.png" alt="Vue mobile inspecteur web" class="zoomable-image"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- AC13.05 -->
+              <div class="accordion-item">
+                <h4 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#b1_ac1305">
+                    <span class="ac-code">AC13.05</span> Choisir les mécanismes de gestion de données adaptés au développement de l’outil et argumenter ses choix
+                  </button>
+                </h4>
+                <div id="b1_ac1305" class="accordion-collapse collapse" data-bs-parent="#accBut1Prog">
+                  <div class="accordion-body">
+                    <div class="mb-3 d-flex flex-wrap gap-2">
+                      <span class="badge bg-primary">R2.07 - Sources de données</span>
+                      <span class="badge bg-secondary">SAÉ 1.05 - Traiter des données</span>
+                    </div>
+                    <div class="reflexive-grid">
+                      <div class="reflexive-box"><div class="reflexive-title"><i class="bi bi-check2-circle text-primary"></i> Mes actions (Ce que j'ai fait)</div><p>Lors de la SAÉ 1.05, j'ai développé un programme modulaire Python exploitant un jeu de données Open Data (<code>clubs-data-2023.csv</code>) pour en extraire des statistiques et générer des graphiques ASCII.</p></div>
+                      <div class="reflexive-box box-how"><div class="reflexive-title"><i class="bi bi-tools text-info"></i> Ma procédure (Comment j'ai procédé)</div><p>Lecture via le module <code>csv</code>, indexation des données en mémoire à l'aide de dictionnaires et listes Python pour un accès rapide par clé, puis export des résultats.</p></div>
+                      <div class="reflexive-box box-why"><div class="reflexive-title"><i class="bi bi-bullseye text-primary"></i> Pourquoi je l'ai fait</div><p>Pour automatiser l'analyse de gros volumes de données structurées en choisissant des structures de données performantes.</p></div>
+                      <div class="reflexive-box box-diff"><div class="reflexive-title"><i class="bi bi-exclamation-triangle text-warning"></i> Mes difficultés</div><p>Gérer les particularités d'encodage UTF-8 et les séparateurs internes des fichiers CSV réels.</p></div>
+                      <div class="reflexive-box box-learn"><div class="reflexive-title"><i class="bi bi-lightbulb text-success"></i> Ce que j'en ai appris</div><p>L'impact du choix de la structure de données (dictionnaire vs liste) sur la complexité et la vitesse d'exécution d'un traitement.</p></div>
+                      <div class="reflexive-box box-next"><div class="reflexive-title"><i class="bi bi-arrow-repeat" style="color:#f472b6;"></i> Ce que je ferais autrement</div><p>Utiliser la bibliothèque Pandas pour manipuler des jeux de données volumineux encore plus efficacement.</p></div>
+                    </div>
+                    <div class="traces-container">
+                      <h5 class="h6 text-primary fw-bold mb-3"><i class="bi bi-images me-2"></i>Traces ciblées :</h5>
+                      <div class="row g-3">
+                        <div class="col-md-12 text-center"><p class="small text-muted mb-2"><em>Traitement de données CSV et génération de graphiques ASCII</em></p><img src="assets/ac1305_1.png" alt="Terminal Python Data" class="zoomable-image" style="max-width: 500px;"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- AC13.06 -->
+              <div class="accordion-item">
+                <h4 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#b1_ac1306">
+                    <span class="ac-code">AC13.06</span> S’intégrer dans un environnement propice au développement et au travail collaboratif
+                  </button>
+                </h4>
+                <div id="b1_ac1306" class="accordion-collapse collapse" data-bs-parent="#accBut1Prog">
+                  <div class="accordion-body">
+                    <div class="mb-3 d-flex flex-wrap gap-2">
+                      <span class="badge bg-primary">R1.15 - Gestion de projet</span>
+                      <span class="badge bg-secondary">SAÉ 1.05 - Git & GitLab en équipe</span>
+                    </div>
+                    <div class="reflexive-grid">
+                      <div class="reflexive-box"><div class="reflexive-title"><i class="bi bi-check2-circle text-primary"></i> Mes actions (Ce que j'ai fait)</div><p>J'ai développé en équipe un projet Python découpé en modules (<code>main.py</code>, <code>make_chart.py</code>, <code>create_ascii_chart.py</code>) hébergé et versionné sur GitLab.</p></div>
+                      <div class="reflexive-box box-how"><div class="reflexive-title"><i class="bi bi-tools text-info"></i> Ma procédure (Comment j'ai procédé)</div><p>Utilisation quotidienne des commandes Git (<code>clone, branch, commit, push, pull, merge</code>) et répartition des modules entre les membres du groupe.</p></div>
+                      <div class="reflexive-box box-why"><div class="reflexive-title"><i class="bi bi-bullseye text-primary"></i> Pourquoi je l'ai fait</div><p>Pour travailler simultanément sur un même projet logiciel sans écraser le code des autres collaborateurs et conserver un historique complet.</p></div>
+                      <div class="reflexive-box box-diff"><div class="reflexive-title"><i class="bi bi-exclamation-triangle text-warning"></i> Mes difficultés</div><p>La résolution des conflits de fusion (merge conflicts) lorsque deux équipiers modifiaient simultanément le fichier principal.</p></div>
+                      <div class="reflexive-box box-learn"><div class="reflexive-title"><i class="bi bi-lightbulb text-success"></i> Ce que j'en ai appris</div><p>L'importance d'une architecture modulaire et de commits atomiques bien documentés pour fluidifier le travail d'équipe.</p></div>
+                      <div class="reflexive-box box-next"><div class="reflexive-title"><i class="bi bi-arrow-repeat" style="color:#f472b6;"></i> Ce que je ferais autrement</div><p>Adopter dès le départ la convention « Conventional Commits » et systématiser les Merge Requests avec relecture.</p></div>
+                    </div>
+                    <div class="traces-container">
+                      <h5 class="h6 text-primary fw-bold mb-3"><i class="bi bi-images me-2"></i>Traces ciblées :</h5>
+                      <div class="row g-3">
+                        <div class="col-md-12 text-center"><p class="small text-muted mb-2"><em>Historique collaboratif et gestion de branches sous Git</em></p><img src="assets/ac1305_2.png" alt="Historique commits Git" class="zoomable-image" style="max-width: 500px;"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
